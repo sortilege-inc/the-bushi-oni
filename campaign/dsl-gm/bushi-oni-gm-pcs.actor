@@ -1,0 +1,231 @@
+EXTENSION "BushiOni_GM_Characters" {
+    NAME "The Bushi Oni — the GM's characters"
+    VERSION "0.1.0"
+    SPEC_VERSION "0.5"
+    RELEASE_DATE "2026-09-26"
+    DEPENDS_ON "L5R5e_Core_Core"
+
+    # The GM's characters — full sheets like the players', kept in a layer (a book) of their own. Converted from
+    # campaign/source/foundry/ (the Foundry exports, byte for byte) by campaign/source/convert_pcs.py;
+    # campaign/source/check_pcs.py reads the built layer back against them field by field.
+
+    # The current sheet: foundry/fvtt-Actor-aarav-57-xp-(astradhari,-rank-2)-uW17YY6OOTDGXelj.2025-10-27.json.
+    #BOgmAarav ^"Aarav" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Aarav" FIXED
+            ^"Foundry Name" STRING "Aarav 57 XP (Astradhari, Rank 2)"
+            ^"Clan" STRING "The Sheelavaan of Bhavyatapura" FIXED
+            ^"Family" STRING "Fallen Noble (Gaijin)" FIXED
+            ^"School" STRING "Ivory Kingdoms Sage Tradition"
+            ^"School Rank" INTEGER 2
+            ^"Roles" LIST OF STRING ["Bushi"]
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 2 ^"Fire" INTEGER 2 ^"Water" INTEGER 2 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 50
+            ^"Glory" INTEGER 33
+            ^"Status" INTEGER 0
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 8
+            ^"Focus" INTEGER 4
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "Regain his home; he seeks to reconquer his homeland."
+            ^"Giri" STRING "Aarav's family was betrayed, his brothers executed; he fled east."
+            ^"Skills" LIST OF STRING ["Fitness 1", "Martial Arts [Melee] 1", "Martial Arts [Ranged] 4", "Martial Arts [Unarmed] 2", "Meditation 1", "Culture 1", "Theology 1", "Command 3", "Courtesy 1", "Seafaring 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#wipC0ms8dqRk9zuBoXaerX ^"Earth Needs No Eyes", #krwQclUIQMQy7qHb1lnnUT ^"Cleansing Spirit", #AzCGIVbmmmxR18NvYcsqsZ ^"Threshold Barrier", #ljraTkR8WCagfD9OMZaKar ^"Countering Mantra", #xNK1aTBpoAgTR8T2DHSt4M ^"Ki Protection", #vOpIPIgApjNJyCQtOvqKYq ^"The Great Silence", #gUcoDi35nS8S7iuOZXeMFF ^"Bellow of Resolve", #CSwcaSp40Sm8BJctylbrT1 ^"Landslide Strike"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#esSp6Eof1QH3kxH40Z7DB7 ^"Blessed Lineage", #TRPKf3PWIglw9AIbwILynA ^"Glorious Deeds", #FH1M8O6rJN4ocFVaq6pkZK ^"Benten's Blessing"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#i4yiQq94IMkdTDyfLeTyNE ^"Gaijin Name, Culture, or Appearance", #ftz7YOMxg7jFoZvsaQmDZl ^"Fear of Mediocrity"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#6o7PrHWSOSCzBToxFW6eb0 ^"Astradhari"]
+            ^"Bonds" LIST OF #L5R262wX4yZ6aB8cD0eF2g ^"Bond" [#arsQdV1J4H8dzvvtg23jJs ^"Wanderers Fellowship Bond"]
+            ^"Equipment" LIST OF STRING ["Sanctified Robes", "Traveling Clothes", "Talwar", "Daikyū", "Traveling pack", "Map (Ivory Kingdoms)", "Gunbai", "Signet Ring (Royal Family)", "Uma-Jirushi"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "" ^"Less Significant Tenet" STRING "" }
+            ^"Experience" INTEGER 0
+            ^"Experience Spent" INTEGER 57
+            ^"Experience Ledger" LIST OF STRING ["36 · Astradhari · rank 1", "3 · Countering Mantra · rank 1", "3 · Ki Protection · rank 1", "3 · The Great Silence · rank 1", "3 · Bellow of Resolve · rank 1", "3 · Landslide Strike · rank 1", "2 · Fitness +1 (0 -> 1) · rank 1", "4 · Martial Arts [Unarmed] +1 (1 -> 2) · rank 1"]
+            ^"Stance" STRING "Void"
+            ^"As Recorded" LIST OF STRING ["Wanderers Fellowship"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-hiruma-kaede-74-xp-(gunsō,-rank-3)-EpQ9GnZloHoDjLfQ.2025-10-27.json.
+    #BOgmHirumaKaede ^"Hiruma Kaede" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Hiruma Kaede" FIXED
+            ^"Foundry Name" STRING "Hiruma Kaede 74 XP (Gunsō, Rank 3)"
+            ^"Clan" STRING "Crab" FIXED
+            ^"Family" STRING "Hiruma" FIXED
+            ^"School" STRING "Hida Defender"
+            ^"School Rank" INTEGER 3
+            ^"Roles" LIST OF STRING ["Bushi"]
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 3 ^"Fire" INTEGER 2 ^"Water" INTEGER 1 ^"Void" INTEGER 3 }
+            ^"Honor" INTEGER 45
+            ^"Glory" INTEGER 44
+            ^"Status" INTEGER 30
+            ^"Endurance" INTEGER 10
+            ^"Composure" INTEGER 8
+            ^"Focus" INTEGER 4
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 3
+            ^"Ninjō" STRING "Longs to travel Rokugan, or possibly even beyond."
+            ^"Giri" STRING "Hiruma Nobuyasu is their lord. They insist that she command her unit, defending the Kaiu Wall."
+            ^"Skills" LIST OF STRING ["Composition 1", "Fitness 2", "Martial Arts [Melee] 2", "Martial Arts [Ranged] 2", "Martial Arts [Unarmed] 1", "Tactics 2", "Government 1", "Command 4", "Courtesy 1", "Labor 1", "Skulduggery 1", "Survival 2"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #VZRaBoZ23jv6pba1NYHPZz ^"Lord Hida's Grip", #9GbhR8jUu9LFAswOnG7qm1 ^"Appreciate the Scenery", #mfl9jlCknrtobgA4Rc4Rmp ^"Honest Assessment", #mbd9b1u2gOkuihy6u4a1OD ^"Rushing Avalanche Style", #kBxbj5M32A9X5JkS7zTXUb ^"Staggering Shot", #lT1wuCRy1xXQY9icJVke8t ^"Touchstone of Courage"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#ZaRBxpji1gXG47PojQidDR ^"Light Sleeper", #rsqJX4nHU5Ktf2UaZjxUnp ^"Travel", #sAJjgAk4AYKKWv62goQTpF ^"Paragon of a Bushidō Tenet"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#ViZEZC9NLFpkr6h8uRsThv ^"Encompassing Duty", #qaolJmgY2Mlhdo0i1fJlz9 ^"Battle Trauma"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#Q93fb38lIZlK7MrgtxkTBc ^"Gunso"]
+            ^"Equipment" LIST OF STRING ["Lacquered Armor", "Traveling Clothes", "Club", "Katana", "Knife", "Tetsubō", "Wakizashi", "Traveling pack", "Kubi Bukuro", "Kamayari", "150 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Courage" ^"Less Significant Tenet" STRING "Sincerity" }
+            ^"Experience" INTEGER 0
+            ^"Experience Spent" INTEGER 74
+            ^"Experience Ledger" LIST OF STRING ["3 · Appreciate the Scenery · rank 1", "3 · Honest Assessment · rank 1", "3 · Rushing Avalanche Style · rank 1", "2 · Martial Arts [Ranged] +1 (0 -> 1) · rank 1", "4 · Martial Arts [Melee] +1 (1 -> 2) · rank 1", "2 · Martial Arts [Unarmed] +1 (0 -> 1) · rank 1", "4 · Martial Arts [Ranged] +1 (1 -> 2) · rank 1", "4 · Command +1 (1 -> 2) · rank 2", "3 · Staggering Shot · rank 2", "3 · Touchstone of Courage · rank 2", "9 · Void +1 (2 -> 3) · rank 2", "2 · Labor +1 (0 -> 1) · rank 2", "6 · Command +1 (2 -> 3) · rank 2", "2 · Composition +1 (0 -> 1) · rank 2", "24 · Gunsō · rank 3"]
+            ^"Stance" STRING "Void"
+            ^"As Recorded" LIST OF STRING ["Lord Hida’s Grip (Crab)", "Paragon of Courage", "Gunsō"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-isawa-yukiko-98-xp-(awakened-soul,-rank-3)-(copy)-ZvntKy8YbdelvTHg.2025-10-27.json.
+    #BOgmIsawaYukiko ^"Isawa Yukiko" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Isawa Yukiko" FIXED
+            ^"Foundry Name" STRING "Isawa Yukiko 98 XP (Awakened Soul, Rank 3) (Copy)"
+            ^"Clan" STRING "Phoenix" FIXED
+            ^"Family" STRING "Isawa" FIXED
+            ^"School" STRING "Ishiken Initiate"
+            ^"School Rank" INTEGER 3
+            ^"Roles" LIST OF STRING ["Sage"]
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 2 ^"Fire" INTEGER 2 ^"Water" INTEGER 2 ^"Void" INTEGER 4 }
+            ^"Honor" INTEGER 30
+            ^"Glory" INTEGER 44
+            ^"Status" INTEGER 30
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 8
+            ^"Focus" INTEGER 4
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 4
+            ^"Ninjō" STRING "To be allowed to just be a child—to play, to make mistakes, to eat sweets without it being a \"lesson,\" to not carry the weight of destiny for just one day."
+            ^"Giri" STRING "To fulfill her role as the reincarnated Little Teacher, with all the baggage and expectations that comes with that."
+            ^"Skills" LIST OF STRING ["Aesthetics 1", "Composition 1", "Design 1", "Fitness 1", "Meditation 5", "Sentiment 2", "Theology 3", "Command 3", "Courtesy 1", "Games 1", "Labor 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#oSNFgOvcypSN4OVr8Hhc1F ^"Sight beyond Existence", #bNxt2ZFUbgSKhc6XxSTMUh ^"Divination", #NQn7sBvlEBYJctesfGDqZH ^"All in Jest", #Avqr2DDV67BerlxHaFv4Pd ^"One within the Void", #LqzP8pxVfEv2IxA67lSDD8 ^"Nature's Touch", #xPU8WmbyxLxC5CxRZEdt3b ^"Tea Ceremony", #kVXN7d6hHmaHfUcKdInRxO ^"All Arts Are One", #QetgKdkKHD7pRlKZC8xbaJ ^"Fires of Purity", #0iXA2g3OUb6xOSBNtMjUD1 ^"The Lotus Blooms"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#VtGG4mA3gym8wzlhbPWde8 ^"Portentous Birth", #x0Zi5b4zaxe1o0S3USAX6K ^"Generosity", #6mtGpooRQqU08Oy2ug2MsQ ^"Support of [One Group]"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#LNjuBllzZy96FciDv3nPHI ^"Adopted Peasant", #5ZnYSn7VTCnJXKFQXMjmzb ^"Loneliness"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#nvyv6lGxpdpZJDVqwf4zj5 ^"Awakened Soul"]
+            ^"Equipment" LIST OF STRING ["Sanctified Robes", "Wakizashi", "Bō", "Scroll satchel", "Traveling pack", "Hana [Doll]", "Finger of Jade", "150 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Compassion" ^"Less Significant Tenet" STRING "Righteousness" }
+            ^"Experience" INTEGER 0
+            ^"Experience Spent" INTEGER 98
+            ^"Experience Ledger" LIST OF STRING ["44 · Awakened Soul · rank 1", "6 · Air +1 (1 -> 2) · rank 1", "12 · Void +1 (3 -> 4) · rank 1", "6 · One Within the Void · rank 1", "3 · Nature’s Touch · rank 1", "3 · Tea Ceremony · rank 1", "4 · Command +1 (1 -> 2) · rank 2", "3 · All Arts Are One · rank 2", "3 · Fires of Purity · rank 2", "6 · The Lotus Blooms · rank 2", "2 · Composition +1 (0 -> 1) · rank 2", "6 · Command +1 (2 -> 3) · rank 2"]
+            ^"Stance" STRING "Void"
+            ^"As Recorded" LIST OF STRING ["Support of Brotherhood of Shinsei", "One Within the Void"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-nasu-kogo-63-xp-(interpreter,-rank-3)-V3TnTThmKScrdhQK.2025-10-27.json.
+    #BOgmNasuKogo ^"Nasu Kogo" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Nasu Kogo" FIXED
+            ^"Foundry Name" STRING "Nasu Kogo 63 XP (Interpreter, Rank 3)"
+            ^"Clan" STRING "Phoenix" FIXED
+            ^"Family" STRING "Nasu" FIXED
+            ^"School" STRING "Shosuro Shadowweaver"
+            ^"School Rank" INTEGER 3
+            ^"Roles" LIST OF STRING ["Shugenja"]
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 1 ^"Fire" INTEGER 3 ^"Water" INTEGER 2 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 30
+            ^"Glory" INTEGER 45
+            ^"Status" INTEGER 32
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 6
+            ^"Focus" INTEGER 5
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "Kogo yearns for power that cannot be taken away by political whims or clan hierarchies. Deep down, she wants to transcend the petty limitations of clan politics entirely - to become something more than a samurai bound by duty and status."
+            ^"Giri" STRING "Her lord is Nasu Tadaaki, her own father and current head of the declining Nasu family. Her duty is to restore the family's status and influence with the Imperial families. Kogo must prove the Nasu worthy of their former position."
+            ^"Skills" LIST OF STRING ["Composition 2", "Martial Arts [Ranged] 2", "Meditation 1", "Tactics 1", "Government 3", "Sentiment 1", "Theology 1", "Command 1", "Courtesy 2", "Performance 2", "Skulduggery 2"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#8oUal3jbDPcxKD67zs8nqC ^"Prey on the Weak", #i2GEqhySgpp0wZ2MGeJZXo ^"Commune with the Spirits", #92FDBSLYNzoMbnc4ueKtnX ^"By the Light of the Lord Moon", #YY6q3YNKSDp3EMJu8qmnwY ^"Cloak of Night", #orPoOAzUjZe7O1yz4NpGD7 ^"Fukurokujin's Wit", #4W0IygSdrLHDKytB1I8yIw ^"Deadly Sting", #Fw3nwqrRGKBgIpzO0vFakT ^"Skulk", #kcz9tYqb7ZkxEjkD96CUXF ^"Courtier's Resolve", #Mm0nf52NuXTKisPrdeDQ8m ^"Sensational Distraction", #FKmujLSSs35USGKWx0VVg9 ^"Commune with Evil", #E7dbkpcgyzgOINco7KmXAx ^"Incite Haunting", #ZVD5eQXiGpcpsn5fmAKVJc ^"Sinful Whispers", #HEiZLRgKB0B99Z4IeLqn0p ^"Unholy Fervor", #aKuW4Oy3IdcioGBRU5JrFf ^"Accursed Summoning", #ahpgcTigitmTmFf8vWGMX1 ^"Lord Bayushi's Whispers", #J9YUdC7vpxoBSE9qHfoMoI ^"Fluid Shadows"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#dWO9RlDf64XjNq3jWl5pwe ^"Blackmail on [Name]", #dsJzMEJYNlSShX2VUQEzVM ^"Tea"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#BPT43oMJgUVbW6ByGsqf29 ^"Shadowlands Taint (Air)", #VwJL896PcbUKjUbMiWjGGM ^"Conspiracy", #0NEvVD0DmofOjSHYMVpF1f ^"Disdain for a Bushidō Tenet", #bDRUDqvSGVZW1drTAjDMVA ^"Benten's Curse"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#Fwvpl4N26fV9XBwt7ctKA0 ^"Interpreter"]
+            ^"Equipment" LIST OF STRING ["Concealed Armor", "Sanctified Robes", "Wakizashi", "Shuriken", "Poison (One Vial)", "Tetsubishi", "Calligraphy Set", "Personal Seal or Chop", "250 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING " Duty and Loyalty" ^"Less Significant Tenet" STRING "Compassion" }
+            ^"Experience" INTEGER 0
+            ^"Experience Spent" INTEGER 63
+            ^"Experience Ledger" LIST OF STRING ["4 · Courtesy +1 (1 -> 2) · rank 1", "3 · Deadly Sting · rank 1", "3 · Skulk · rank 1", "3 · Courtier’s Resolve · rank 1", "3 · Sensational Distraction · rank 1", "4 · Government +1 (1 -> 2) · rank 1", "13 · Interpreter (Ivory Kingdoms) · rank 2", "3 · Linguistic Liason · rank 2", "3 · Commune with Evil · rank 2", "3 · Incite Haunting · rank 2", "3 · Sinful Whispers · rank 2", "3 · Unholy Fervor · rank 2", "3 · Accursed Summoning · rank 2", "2 · Martial Arts [Ranged] +1 (0 -> 1) · rank 2", "3 · Lord Bayushi’s Whispers (Scorpion) · rank 2", "3 · Fluid Shadows · rank 2", "4 · Martial Arts [Ranged] +1 (1 -> 2) · rank 2"]
+            ^"Stance" STRING "Void"
+            ^"As Recorded" LIST OF STRING ["Blackmail on Akodo Nobuhiko", "Disdain for Compassion", "Interpreter (Ivory Kingdoms)", "Lord Bayushi’s Whispers (Scorpion)", "Shoshuro Shadoweaver School"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-the-beshkara-constrictor-17P6RunUFwDsleJl.2025-10-27.json.
+    #BOgmBeshkaraConstrictor ^"The Beshkara Constrictor" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "The Beshkara Constrictor" FIXED
+            ^"Clan" STRING "Shinomen Forest" FIXED
+            ^"Family" STRING "Hunter" FIXED
+            ^"School" STRING "Shinomen Naga Seer Tradition"
+            ^"School Rank" INTEGER 1
+            ^"Roles" LIST OF STRING []
+            ^"Rings" DEF { ^"Air" INTEGER 1 ^"Earth" INTEGER 3 ^"Fire" INTEGER 1 ^"Water" INTEGER 3 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 65
+            ^"Glory" INTEGER 30
+            ^"Status" INTEGER 3
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 12
+            ^"Focus" INTEGER 2
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "She is fascinated by the humans, and seeks to travel with and observe their ways."
+            ^"Giri" STRING "Selected to serve as an intermediary when the astradhari first entered the forests. Has a destiny to track and remove all tainted beings from the forests."
+            ^"Skills" LIST OF STRING ["Martial Arts [Melee] 1", "Martial Arts [Ranged] 1", "Meditation 1", "Culture 1", "Medicine 1", "Courtesy 1", "Performance 1", "Labor 1", "Survival 2"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#l2wYxPgu8jTyj5EdSlvmOM ^"Crescent Moon Style", #UN5KQZjDq79Is7cPIQCoJo ^"Weight of Duty"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#JvbSJqCWGaNBvu5i74vlcA ^"Large Stature", #7xiGGzlTAmfMEIjBWBv0F1 ^"Bathing", #7XngRLQsEyfpzNQn3yZcf2 ^"Expert Tracker"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#t3kzxvqzliM8jdVguBwZu4 ^"Stalked by [Creature]", #Yps0IWCyFYIV54aNdENLsE ^"Fallen Ancestor"]
+            ^"Bonds" LIST OF #L5R262wX4yZ6aB8cD0eF2g ^"Bond" [#YG6KXbO9ZSMhPW2hp2oRHk ^"Protector and Ward Bond"]
+            ^"Equipment" LIST OF STRING ["Personal Pearl (Sacred)", "Naga Armor", "Traveling pack", "Naginata", "Yumi", "Quiver of Arrow", "Sibling's Sacred Pearl", "Herbal Medicines"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Sincerity" ^"Less Significant Tenet" STRING "Courage" }
+            ^"Experience" INTEGER 0
+            ^"Experience Spent" INTEGER 0
+            ^"Stance" STRING "Void"
+            ^"As Recorded" LIST OF STRING ["Protector and Ward"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-tsume-kunimichi-48-xp-(master-saboteur,-rank-3)-2cTMh1JxGL7nQ3jP.2025-10-27.json.
+    #BOgmTsumeKunimichi ^"Tsume Kunimichi" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Tsume Kunimichi" FIXED
+            ^"Foundry Name" STRING "Tsume Kunimichi 48 XP (Master Saboteur, Rank 3)"
+            ^"Clan" STRING "Crane" FIXED
+            ^"Family" STRING "Tsume" FIXED
+            ^"School" STRING "Daidoji Harrier"
+            ^"School Rank" INTEGER 3
+            ^"Roles" LIST OF STRING ["Shinobi"]
+            ^"Rings" DEF { ^"Air" INTEGER 3 ^"Earth" INTEGER 1 ^"Fire" INTEGER 2 ^"Water" INTEGER 2 ^"Void" INTEGER 3 }
+            ^"Honor" INTEGER 40
+            ^"Glory" INTEGER 44
+            ^"Status" INTEGER 45
+            ^"Endurance" INTEGER 6
+            ^"Composure" INTEGER 6
+            ^"Focus" INTEGER 5
+            ^"Vigilance" INTEGER 3
+            ^"Void Points" INTEGER 3
+            ^"Ninjō" STRING "To see the rigid hierarchy that keeps the common people suffering finally brought low. Kunimichi has witnessed too much injustice perpetuated by the celestial order - peasants starving while nobles feast, talented individuals held back by birth, and the Emperor's divine mandate used to justify cruelty. He longs for a world where merit and compassion matter more than bloodline and divine favor. This desire constantly puts him at odds with his official duties, as he must publicly support the very system he secretly works to undermine."
+            ^"Giri" STRING "Daidoji Masahiro, a regional administrator who oversees border territories and trade routes. Kunimichi's official duty is to serve as an advance scout and intelligence gatherer, traveling ahead of diplomatic missions to assess threats and gather information about local conditions. His reputation for thoroughness and discretion makes him invaluable for sensitive assignments where the Crane need eyes and ears in unfriendly territory."
+            ^"Skills" LIST OF STRING ["Design 1", "Smithing 1", "Fitness 2", "Martial Arts [Melee] 2", "Martial Arts [Ranged] 3", "Martial Arts [Unarmed] 3", "Meditation 1", "Culture 1", "Government 1", "Medicine 3", "Courtesy 1", "Performance 1", "Commerce 1", "Labor 1", "Seafaring 1", "Skulduggery 2"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#Fw3nwqrRGKBgIpzO0vFakT ^"Skulk", #1hQUQrjYJXEBabs23ddxXh ^"Striking as Air", #HSzt420vwOR9WKhZyQc8A4 ^"Swift Scouting", #LbBFOkWe8dv3afzuxUGsgA ^"Trip the Leg", #RDZZV3xdM4zfsyzuH0IQlj ^"Cautious Tread", #8FTMF995xakcuJRgZB5IDZ ^"Employ Terrible Thunder", #kBxbj5M32A9X5JkS7zTXUb ^"Staggering Shot", #fbWIpV8KvO0fta0DnPmJKE ^"The Patient Viper"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#LEO6VozPQNQIqKHnt0XYhO ^"Famously Reliable", #tVvqHQ1enWOy6C37I1vusn ^"Kintsugi"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#AI5QBbDQJvWpIVZAteBywZ ^"Maimed Arm", #25fZgp3uUAUfyLwKuWDnvf ^"Eyes of Many", #56Pk0CrN1f6wxwvRF9jxTu ^"Bitter Betrothal"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#a8OptrJhTxJkmeZgcQiOe5 ^"Master Saboteur"]
+            ^"Equipment" LIST OF STRING ["Traveling pack", "Traveling Clothes", "Common Clothes", "Katana", "Knife", "Wakizashi", "Shuriken", "Engineer's Kit", "Jade Medallion", "400 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Righteousness" ^"Less Significant Tenet" STRING "Duty and Loyalty" }
+            ^"Experience" INTEGER 0
+            ^"Experience Spent" INTEGER 92
+            ^"Experience Ledger" LIST OF STRING ["2 · Commerce +1 (0 -> 1) · rank 1", "3 · Swift Scouting · rank 1", "3 · Trip the Leg · rank 1", "3 · Cautious Tread · rank 1", "2 · Seafaring +1 (0 -> 1) · rank 1", "4 · Martial Arts [Ranged] +1 (1 -> 2) · rank 1", "4 · Fitness +1 (1 -> 2) · rank 1", "3 · Employ Terrible Thunder · rank 2", "3 · Staggering Shot · rank 2", "9 · Void +1 (2 -> 3) · rank 2", "4 · Skulduggery +1 (1 -> 2) · rank 2", "6 · Martial Arts [Ranged] +1 (2 -> 3) · rank 2", "3 · The Patient Viper · rank 2", "40 · Master Saboteur · rank 3", "3 · Ender of Works · rank 3"]
+            ^"Stance" STRING "Void"
+        }
+    }
+}

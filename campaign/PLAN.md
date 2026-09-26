@@ -77,9 +77,9 @@ is a *backup character* (a PC version held in reserve). The six 2025-10-27 prege
 |---|---|---|
 | M0 | Support folder sorted; fork; boundary; standards; local proof | **landed** 2026-09-26 |
 | M1 | PCs into `campaign/dsl/` as `ACTOR Samurai` instances, converted from the Foundry exports by a script in `campaign/source/`, piloted on one PC and checked field by field (planted difference must fail), every version kept | **landed** 2026-09-26 |
-| M2 | NPCs (the pregens, then the named cast) as full statblocks on the corpus's NPC type | after M1 |
+| M2 | The six 2025-10-27 pregens as **GM characters**: full sheets like the PCs, in a layer (a book) of their own | **landed** 2026-09-26 |
 | M3 | GM material into the pack (overview, threads, places, people) by a deterministic converter + an independent every-word check | after M2 |
-| M4 | Site tabs: home, Chronicle (sessions 2026-01-06, 01-20, 01-27, hand-written from the transcripts), Dramatis Personae from the layer, the Otosan Uchi map | after M1–M2 |
+| M4 | Site tabs: home, Chronicle (sessions 2026-01-06, 01-20, 01-27, hand-written from the transcripts), Dramatis Personae (the named cast — no statblocks exist for them), the Otosan Uchi map | after M3 |
 | M5 | Deploy: Worker `the-bushi-oni`, Pages, a domain — each step confirmed with the owner | owner's go |
 
 **M1 — the player characters (landed 2026-09-26).** `campaign/source/foundry/` holds the five Foundry
@@ -99,6 +99,25 @@ back against the exports with its own parsing.
   are Endurance 8, Composure 6, Focus 5, Vigilance 2 — the export's. No console errors. (On the public
   site's character page the derived line reads "?" for every character, corpus pregens included —
   upstream behaviour with the core book not loaded there, not the layer's.)
+
+**M2 — the GM's characters (owner, 2026-09-26: "convert them as full sheets, like the PCs, but track them
+separately, as GM PCs"; landed 2026-09-26).** The corpus gives no formula for an NPC's conflict ranks, so an
+NPC statblock would have meant inventing numbers; the owner chose full sheets. The six exports (copied byte
+for byte, `cmp` identical) are `GM_SHEETS` in `convert_pcs.py`, written to `campaign/dsl-gm/bushi-oni-gm-pcs.actor`
+and built as a second layer — its own book, *The Bushi Oni — GM characters* (`campaign-gm` → `campaign/data-gm/`),
+loaded before the players' so the players' book leads the shelf.
+- Resolving them needed an explicit alias table (a spelling, a case, a " Bond" suffix, and four of the
+  corpus's templated entries filled in by the table — e.g. `Blackmail on [Name]`, `Support of [One Group]`)
+  and one school alias (Foundry's "Shoshuro Shadoweaver" = the corpus's *Shosuro Shadowweaver*, Celestial
+  Realms). Foundry's own wording is kept verbatim in `As Recorded`, and Foundry's actor name (with its XP
+  and title, e.g. "… 74 XP (Gunsō, Rank 3)") in `Foundry Name`.
+- `build_layer.sh campaign/dsl-gm campaign-gm "The Bushi Oni — GM characters" campaign/data-gm` → OK (339
+  strings, 0 uncovered/short/unsourced; 6 ids, none the corpus's; every reference resolves).
+- `check_pcs.py` → **455 fields across 11 sheets, 0 differ**. The first run failed on two corpus entities
+  whose names carry brackets (*Shadowlands Taint (Air)*, *Stalked by [Creature]*) — the check's list, not
+  the data; planted Glory +1 on one GM character → exit 1, named; restored → 0 differ.
+- Browser (:8749): the Characters tab shows *The Bushi Oni* (4) then *The Bushi Oni — GM characters* (6);
+  the GM's party picker labels each with its book. No console errors.
 
 ## Decision log
 

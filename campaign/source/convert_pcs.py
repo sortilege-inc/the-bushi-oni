@@ -17,6 +17,7 @@ spent and its ledger, and — where Foundry's name for an item is not the corpus
 "Dark Secret (In love with …)", a clan suffix such as "(Crab)") — the Foundry name verbatim in
 ^"As Recorded", so nothing the table wrote is lost. School abilities (and a title's ability) come with
 the School (and the Title), as in Portents. An archived sheet is its own DEF, ^"Version Of" the current.
+Two layers: the players' characters (SHEETS → campaign/dsl/) and the GM's (GM_SHEETS → campaign/dsl-gm/).
 
 Anything that does not resolve stops the conversion — nothing is dropped silently.
 """
@@ -32,6 +33,7 @@ TITLE, BOND = '#L5R463nO5pQ7rS9tU1vW3x ^"Title"', '#L5R262wX4yZ6aB8cD0eF2g ^"Bon
 FOUNDRY = os.path.join(HERE, 'campaign/source/foundry')
 
 # (id, the name the character goes by, [(export, version label or None for the current sheet)])
+# The players' characters — layer campaign/dsl/, book "The Bushi Oni".
 SHEETS = [
     ('#BOpcKitsukiHasumi', 'Kitsuki Hasumi', [('fvtt-Actor-kitsuki-hasumi-1OU8cpsBQL7Jq8ea.2026-01-06.json', None)]),
     ('#BOpcIsawaEndo', 'Isawa Endo', [('fvtt-Actor-isawa-endo-9kviwZhYsPXY7lGx.2026-01-04.json', None)]),
@@ -40,10 +42,36 @@ SHEETS = [
     # the backup character: Foundry's name carries the tag "[backup character]"; the entity is named as the person
     ('#BOpcKitsuneYuma', 'Kitsune Yuma', [('fvtt-Actor-kitsune-yuma[backup-character]-OADa0UOcFVEbsyEm.2026-02-17.json', None)]),
 ]
+# The GM's characters (owner, 2026-09-26: full sheets like the PCs, tracked apart) — the six pregens of
+# 2025-10-27, a layer of their own, campaign/dsl-gm/, its own book "The Bushi Oni — GM characters".
+# Foundry names them with their XP and title ("Hiruma Kaede 74 XP (Gunsō, Rank 3)"); the entity is
+# named as the person and Foundry's name is kept verbatim in ^"Foundry Name".
+GM_SHEETS = [
+    ('#BOgmAarav', 'Aarav', [('fvtt-Actor-aarav-57-xp-(astradhari,-rank-2)-uW17YY6OOTDGXelj.2025-10-27.json', None)]),
+    ('#BOgmHirumaKaede', 'Hiruma Kaede', [('fvtt-Actor-hiruma-kaede-74-xp-(gunsō,-rank-3)-EpQ9GnZloHoDjLfQ.2025-10-27.json', None)]),
+    ('#BOgmIsawaYukiko', 'Isawa Yukiko', [('fvtt-Actor-isawa-yukiko-98-xp-(awakened-soul,-rank-3)-(copy)-ZvntKy8YbdelvTHg.2025-10-27.json', None)]),
+    ('#BOgmNasuKogo', 'Nasu Kogo', [('fvtt-Actor-nasu-kogo-63-xp-(interpreter,-rank-3)-V3TnTThmKScrdhQK.2025-10-27.json', None)]),
+    ('#BOgmBeshkaraConstrictor', 'The Beshkara Constrictor', [('fvtt-Actor-the-beshkara-constrictor-17P6RunUFwDsleJl.2025-10-27.json', None)]),
+    ('#BOgmTsumeKunimichi', 'Tsume Kunimichi', [('fvtt-Actor-tsume-kunimichi-48-xp-(master-saboteur,-rank-3)-2cTMh1JxGL7nQ3jP.2025-10-27.json', None)]),
+]
+# (sheets, the .actor file, EXTENSION id, its NAME, what the file's header says)
+LAYERS = [
+    (SHEETS, 'campaign/dsl/bushi-oni-pcs.actor', 'BushiOni_Characters', 'The Bushi Oni — the player characters', '0.1.1',
+     'The task force: instances of the Samurai ACTOR in the corpus\'s pregen conventions.'),
+    (GM_SHEETS, 'campaign/dsl-gm/bushi-oni-gm-pcs.actor', 'BushiOni_GM_Characters', 'The Bushi Oni — the GM\'s characters', '0.1.0',
+     'The GM\'s characters — full sheets like the players\', kept in a layer (a book) of their own.'),
+]
 
 MARTIAL = {'melee': 'Martial Arts [Melee]', 'ranged': 'Martial Arts [Ranged]', 'unarmed': 'Martial Arts [Unarmed]'}
-# Foundry's name → the corpus's, where they differ by more than a clan suffix, a specifier or the apostrophe
-ALIAS = {'Sword Saint': 'Sword-Saint', 'Lover': 'Lover Bond'}
+# Foundry's name → the corpus's, where they differ by more than a clan suffix, a specifier or the apostrophe:
+# a spelling, a case, a " Bond" suffix, or a table's fill-in of an entry the corpus prints as a template
+ALIAS = {'Sword Saint': 'Sword-Saint', 'Lover': 'Lover Bond', 'Gunsō': 'Gunso',
+         'Wanderers Fellowship': 'Wanderers Fellowship Bond', 'Protector and Ward': 'Protector and Ward Bond',
+         'One Within the Void': 'One within the Void',
+         'Paragon of Courage': 'Paragon of a Bushidō Tenet', 'Disdain for Compassion': 'Disdain for a Bushidō Tenet',
+         'Support of Brotherhood of Shinsei': 'Support of [One Group]', 'Blackmail on Akodo Nobuhiko': 'Blackmail on [Name]'}
+# Foundry's school name (less " School" and a "[Clan]") → the corpus's
+SCHOOL_ALIAS = {'Shoshuro Shadoweaver': 'Shosuro Shadowweaver'}
 ADVANTAGE_TYPES, DISADVANTAGE_TYPES = {'distinction', 'passion'}, {'adversity', 'anxiety'}
 COMES_WITH = {'school_ability', 'mastery_ability', 'title_ability'}
 GEAR = {'weapon', 'armor', 'item'}
@@ -56,7 +84,8 @@ def q(s):
 def corpus_name(name):
     """The corpus's name for a Foundry item name: apostrophe, then a trailing (Clan) / [spec] / ": spec" off."""
     n = name.replace('\u2019', "'").strip()
-    n = ALIAS.get(n, n)
+    if n in ALIAS:
+        return ALIAS[n]
     base = re.sub(r'\s*(\([^)]*\)|\[[^\]]*\])$', '', n)
     base = base.split(':')[0].strip()
     return ALIAS.get(base, base)
@@ -71,7 +100,8 @@ def html_text(h):
 
 
 def school_name(s):
-    return re.sub(r'\s+School$', '', re.sub(r'\s*\[[^\]]*\]$', '', s.strip()))
+    n = re.sub(r'\s+School$', '', re.sub(r'\s*\[[^\]]*\]$', '', s.strip()))
+    return SCHOOL_ALIAS.get(n, n)
 
 
 class Unresolved(Exception):
@@ -123,6 +153,8 @@ def fields(D, d, archived=False):
     sch = school_name(idn['school'])
     if not resolve(D, sch)[0]:
         raise Unresolved('school %s → %s: not in the corpus' % (idn['school'], sch))
+    if re.sub(r'\s+School$', '', re.sub(r'\s*\[[^\]]*\]$', '', idn['school'].strip())) != sch:
+        recorded.append(idn['school'])
     skills = []
     for grp in s['skills'].values():
         for k, v in grp.items():
@@ -133,6 +165,7 @@ def fields(D, d, archived=False):
     r = s['rings']
     P = [
         '^"Name" STRING %s FIXED' % q(NAME),
+    ] + (['^"Foundry Name" STRING %s' % q(d['name'])] if d['name'] != NAME else []) + [
         '^"Clan" STRING %s FIXED' % q(idn['clan']),
         '^"Family" STRING %s FIXED' % q(idn['family']),
         '^"School" STRING %s' % q(sch),
@@ -182,41 +215,46 @@ def main():
     global NAME
     D = load()
     only = sys.argv[1:]          # pilot: convert_pcs.py '#BOpcKitsukiHasumi'
-    blocks, errors = [], []
-    for pid, name, versions in SHEETS:
-        if only and pid not in only:
-            continue
-        NAME = name
-        for f, label in versions:
-            d = json.load(open(os.path.join(FOUNDRY, f), encoding='utf-8'))
-            try:
-                if label is None:
-                    blocks.append(block(pid, name, fields(D, d), 'The current sheet: foundry/%s.' % f))
-                else:
-                    date = f.rsplit('.', 2)[1]
-                    P = ['^"Version Of" %s ^"%s"' % (pid, name), '^"Version Label" STRING %s' % q(label), '^"Version Date" STRING %s' % q(date)] + fields(D, d, archived=True)
-                    blocks.append(block(pid + date.replace('-', ''), '%s (%s)' % (name, label.split(' · ')[1]), P, 'Archived: foundry/%s.' % f))
-            except Unresolved as e:
-                errors.append('%s (%s): %s' % (name, f, e))
+    errors, wrote = [], []
+    for sheets, out, ext, title, version, about in LAYERS:
+        blocks = []
+        for pid, name, versions in sheets:
+            if only and pid not in only:
+                continue
+            NAME = name
+            for f, label in versions:
+                d = json.load(open(os.path.join(FOUNDRY, f), encoding='utf-8'))
+                try:
+                    if label is None:
+                        blocks.append(block(pid, name, fields(D, d), 'The current sheet: foundry/%s.' % f))
+                    else:
+                        date = f.rsplit('.', 2)[1]
+                        P = ['^"Version Of" %s ^"%s"' % (pid, name), '^"Version Label" STRING %s' % q(label), '^"Version Date" STRING %s' % q(date)] + fields(D, d, archived=True)
+                        blocks.append(block(pid + date.replace('-', ''), '%s (%s)' % (name, label.split(' · ')[1]), P, 'Archived: foundry/%s.' % f))
+                except Unresolved as e:
+                    errors.append('%s (%s): %s' % (name, f, e))
+        if blocks:
+            wrote.append((out, ext, title, version, about, blocks))
     if errors:
         print('\n'.join('UNRESOLVED ' + e for e in errors)); sys.exit(1)
-    text = '''EXTENSION "BushiOni_Characters" {
-    NAME "The Bushi Oni — the player characters"
-    VERSION "0.1.0"
+    for out, ext, title, version, about, blocks in wrote:
+        text = '''EXTENSION "%s" {
+    NAME "%s"
+    VERSION "%s"
     SPEC_VERSION "0.5"
     RELEASE_DATE "2026-09-26"
     DEPENDS_ON "L5R5e_Core_Core"
 
-    # The task force: instances of the Samurai ACTOR in the corpus's pregen conventions. Converted from
+    # %s Converted from
     # campaign/source/foundry/ (the Foundry exports, byte for byte) by campaign/source/convert_pcs.py;
     # campaign/source/check_pcs.py reads the built layer back against them field by field.
 
 %s}
-''' % '\n'.join(blocks)
-    out = os.path.join(HERE, 'campaign/dsl/bushi-oni-pcs.actor')
-    os.makedirs(os.path.dirname(out), exist_ok=True)
-    open(out, 'w', encoding='utf-8').write(text)
-    print('wrote campaign/dsl/bushi-oni-pcs.actor: %d sheets' % len(blocks))
+''' % (ext, title, version, about, '\n'.join(blocks))
+        path = os.path.join(HERE, out)
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        open(path, 'w', encoding='utf-8').write(text)
+        print('wrote %s: %d sheets' % (out, len(blocks)))
 
 
 if __name__ == '__main__':

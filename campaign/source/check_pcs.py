@@ -4,7 +4,7 @@ check_pcs.py — the conversion's proof for the player characters: each sheet, r
 layer (campaign/data/campaign.js — rebuild first), field by field against its Foundry export in
 campaign/source/foundry/.
 
-    python3 campaign/source/check_pcs.py            # every sheet in convert_pcs.SHEETS
+    python3 campaign/source/check_pcs.py            # every sheet in convert_pcs.SHEETS and GM_SHEETS
     python3 campaign/source/check_pcs.py '#BOpcKitsukiHasumi'
 
 The expected values are read from the export here, not taken from the converter; only the list of
@@ -15,7 +15,10 @@ import json, os, re, sys
 
 HERE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, os.path.join(HERE, 'campaign/source'))
-from convert_pcs import SHEETS, FOUNDRY, ALIAS  # noqa: E402
+from convert_pcs import SHEETS, GM_SHEETS, FOUNDRY, ALIAS, SCHOOL_ALIAS  # noqa: E402
+
+# each group of sheets against its own built layer (a book of its own)
+LAYERS = [(SHEETS, 'campaign/data/campaign.js'), (GM_SHEETS, 'campaign/data-gm/campaign-gm.js')]
 
 NOT_CARRIED = {
     'soft_locked': "Foundry's sheet lock",
@@ -38,8 +41,8 @@ NOT_CARRIED = {
 COMES_WITH = {'school_ability', 'mastery_ability', 'title_ability'}
 
 
-def built():
-    src = open(os.path.join(HERE, 'campaign/data/campaign.js'), encoding='utf-8').read()
+def built(path):
+    src = open(os.path.join(HERE, path), encoding='utf-8').read()
     return json.loads(re.search(r'var d=(\{.*\});var T=window\.L5R5E', src, re.S).group(1))['entities']
 
 
@@ -85,8 +88,9 @@ def text_of(h):
 def plain(n):
     """Foundry's item name as the corpus names it: apostrophe, alias, then a trailing (x) / [x] / ": x" off."""
     n = n.replace('’', "'").strip()
-    n = ALIAS.get(n, n)
-    if n in ('Ally [Name]',):               # a corpus entity whose name carries the brackets
+    if n in ALIAS:
+        return ALIAS[n]
+    if n in ('Ally [Name]', 'Shadowlands Taint (Air)', 'Stalked by [Creature]'):   # corpus entities whose names carry the brackets
         return n
     n = re.sub(r'\s*(\([^)]*\)|\[[^\]]*\])$', '', n).split(':')[0].strip()
     return ALIAS.get(n, n)
@@ -97,11 +101,12 @@ def compare(label, name, d, P, archived=None):
     def eq(field, old, new):
         rows.append((field, old, new, old == new))
     idn, so, items = s['identity'], s['social'], d['items']
-    eq('name (the sheet\'s, less a [tag])', re.sub(r'\s*\[[^\]]*\]$', '', d['name']).strip(), P.get('Name'))
     eq('name = the id\'s', name, P.get('Name'))
+    eq('Foundry\'s name, verbatim (Foundry Name, or Name when the same)', d['name'], P.get('Foundry Name', P.get('Name')))
     eq('identity.clan', idn['clan'], P.get('Clan'))
     eq('identity.family', idn['family'], P.get('Family'))
-    eq('identity.school (less " School", "[Clan]")', re.sub(r' School$', '', re.sub(r' \[[^\]]+\]$', '', idn['school'])), P.get('School'))
+    sch = re.sub(r' School$', '', re.sub(r' \[[^\]]+\]$', '', idn['school']))
+    eq('identity.school (less " School", "[Clan]"; SCHOOL_ALIAS)', SCHOOL_ALIAS.get(sch, sch), P.get('School'))
     eq('identity.school_rank', idn['school_rank'], P.get('School Rank'))
     eq('identity.roles (an empty one is none)', [x.strip() for x in idn['roles'].split(',') if x.strip()], P.get('Roles'))
     for r in ('air', 'earth', 'fire', 'water', 'void'):
@@ -130,7 +135,7 @@ def compare(label, name, d, P, archived=None):
     eq('bonds', [plain(i['name']) for i in items if i['type'] == 'bond'], P.get('Bonds', []))
     money = s.get('zeni') or 0
     eq('gear names + money', [i['name'] for i in items if i['type'] in ('weapon', 'armor', 'item')] + (['%d zeni' % money] if money else []), P.get('Equipment'))
-    eq('as recorded: every item name the corpus spells otherwise', [i['name'] for i in items if i['type'] in ('technique', 'peculiarity', 'title', 'bond') and i['system'].get('technique_type') not in COMES_WITH and plain(i['name']) != i['name'].replace('’', "'")], P.get('As Recorded', []))
+    eq('as recorded: every item (and school) name the corpus spells otherwise', [i['name'] for i in items if i['type'] in ('technique', 'peculiarity', 'title', 'bond') and i['system'].get('technique_type') not in COMES_WITH and plain(i['name']) != i['name'].replace('’', "'")] + ([idn['school']] if sch in SCHOOL_ALIAS else []), P.get('As Recorded', []))
     eq('money koku/bu/zeni all 0 (an empty field counts as 0)', {'koku': 0, 'bu': 0, 'zeni': 0}, {k: (v or 0) for k, v in s['money'].items()})
     for key in ('description', 'notes'):
         # the rich text read here with the stdlib parser, not the converter's regex
@@ -153,22 +158,23 @@ def compare(label, name, d, P, archived=None):
 
 def main():
     only = sys.argv[1:]
-    E = built()
     total = bad = sheets = 0
-    for pid, name, versions in SHEETS:
-        if only and pid not in only:
-            continue
-        for f, label in versions:
-            d = json.load(open(os.path.join(FOUNDRY, f), encoding='utf-8'))
-            date = f.rsplit('.', 2)[1]
-            eid = pid if label is None else pid + date.replace('-', '')
-            if eid not in E:
-                print('== %s: NOT IN THE BUILT LAYER' % eid); bad += 1; continue
-            P = props(E[eid])
-            if label is not None and P.get('Version Of') != pid:
-                print('== %s: Version Of %r, expected %s' % (eid, P.get('Version Of'), pid)); bad += 1
-            n, b = compare('%s ← %s' % (eid, f), name, d, P, (label, date) if label else None)
-            total += n; bad += b; sheets += 1
+    for group, path in LAYERS:
+        E = built(path)
+        for pid, name, versions in group:
+            if only and pid not in only:
+                continue
+            for f, label in versions:
+                d = json.load(open(os.path.join(FOUNDRY, f), encoding='utf-8'))
+                date = f.rsplit('.', 2)[1]
+                eid = pid if label is None else pid + date.replace('-', '')
+                if eid not in E:
+                    print('== %s: NOT IN %s' % (eid, path)); bad += 1; continue
+                P = props(E[eid])
+                if label is not None and P.get('Version Of') != pid:
+                    print('== %s: Version Of %r, expected %s' % (eid, P.get('Version Of'), pid)); bad += 1
+                n, b = compare('%s ← %s' % (eid, f), name, d, P, (label, date) if label else None)
+                total += n; bad += b; sheets += 1
     print('check_pcs: %s — %d fields compared across %d sheets, %d differ' % ('OK' if not bad else 'FAILED', total, sheets, bad))
     sys.exit(1 if bad else 0)
 

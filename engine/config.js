@@ -29,13 +29,14 @@ window.VttConfig = {
   siteBooks: false,
   // the three panels the GM page opens on (engine/app.js)
   defaultSlots: ['overview', 'scenes', 'threads'],
-  // What this instance adds to the upstream pages (engine/instance.js). The campaign's DSL layer —
-  // the player characters (M1) — is built by build/build_layer.sh into campaign/data/; site tabs and
-  // styles are added as campaign/PLAN.md's milestones land.
+  // What this instance adds to the upstream pages (engine/instance.js). Two DSL layers, each a book
+  // built by build/build_layer.sh: the GM's characters (campaign/dsl-gm → campaign/data-gm) and the
+  // players' (campaign/dsl → campaign/data). Each index puts its book first, so the players' loads last
+  // and leads. Site tabs and styles are added as campaign/PLAN.md's milestones land.
   instance: {
     styles: [],
     stages: {
-      data: ['campaign/data/index.js'],
+      data: ['campaign/data-gm/index.js', 'campaign/data/index.js'],
       site: [], gm: [], table: [], play: [],
     },
   },

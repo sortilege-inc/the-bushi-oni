@@ -1,6 +1,6 @@
 EXTENSION "BushiOni_Characters" {
     NAME "The Bushi Oni — the player characters"
-    VERSION "0.1.0"
+    VERSION "0.1.1"
     SPEC_VERSION "0.5"
     RELEASE_DATE "2026-09-26"
     DEPENDS_ON "L5R5e_Core_Core"
@@ -163,6 +163,7 @@ EXTENSION "BushiOni_Characters" {
         EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
         PROPERTIES {
             ^"Name" STRING "Kitsune Yuma" FIXED
+            ^"Foundry Name" STRING "Kitsune Yuma[backup character]"
             ^"Clan" STRING "Fox" FIXED
             ^"Family" STRING "Kitsune" FIXED
             ^"School" STRING "Shiba Guardian"
