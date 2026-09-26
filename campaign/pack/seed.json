@@ -1,0 +1,442 @@
+{
+ "kind": "sortilege-vtt-campaign",
+ "version": 1,
+ "arc": [
+  {
+   "id": "bo-prep-2026-01-27-scene-1-asako-kikue-interview",
+   "title": "Scene 1: Asako Kikue Interview",
+   "session": "Prepared for 27 Jan 2026",
+   "text": "**Purpose:** Follow up on tea ceremony lead, get Phoenix/official investigation perspective\n\nShe's useful because she wears two hats: tea ceremony attendee AND original investigative team member. She can:\n\n- Confirm Toshiyasu seemed troubled in his final days\n- Share what the official investigation concluded (and where it hit walls)\n- Mention that Aramoro's tea ceremony was unusual—Toshiyasu requested it, not Aramoro\n- Hint that political pressure shut down certain lines of inquiry\n- If pressed: admit the Phoenix contingent found taint traces but were told to keep it quiet\n\n**Potential tension:** She's caught between wanting truth and institutional loyalty. Players can push her toward disclosure or alienate her.",
+   "sections": [],
+   "played": false
+  },
+  {
+   "id": "bo-prep-2026-01-27-scene-2-news-of-ujiaki-s-death",
+   "title": "Scene 2: News of Ujiaki's Death",
+   "session": "Prepared for 27 Jan 2026",
+   "text": "**Purpose:** Raise stakes, eliminate witness, create urgency\n\nThey hear it secondhand—a bridge collapsed on the road to Lion lands. Ujiaki's caravan went down. No survivors.\n\nThis lands harder because:\n\n- They just SAW him yesterday\n- They know he was fleeing to get help\n- The divination showed his future... which is now cut short\n\nLet them sit with it a moment. Then someone (Taigan? A messenger?) notes: \"That bridge has stood for forty years.\"",
+   "sections": [],
+   "played": false
+  },
+  {
+   "id": "bo-prep-2026-01-27-scene-3-bridge-collapse-investigation-optional-but-recommended",
+   "title": "Scene 3: Bridge Collapse Investigation (Optional but Recommended)",
+   "session": "Prepared for 27 Jan 2026",
+   "text": "**Purpose:** Confirm sabotage, show the conspiracy has reach\n\nIf they go to the site:\n\n- **Engineering/Craft roll:** Support beams were weakened deliberately. Cut marks hidden by the break.\n- **Theology/Medicine:** Ujiaki's body (if recoverable) shows the taint had progressed significantly—he might not have survived the treatment anyway\n- **Theology/Commune:** Spirits in the area are disturbed, frightened—something unnatural passed through recently\n- **Investigation:** Caravan guards were specifically reassigned last minute. Someone knew the route.\n\nThis tells them: **whoever is behind this has institutional access and is cleaning up loose ends.**",
+   "sections": [],
+   "played": false
+  },
+  {
+   "id": "bo-prep-2026-01-27-scene-4-toshiyasu-s-room-tunnel-discovery",
+   "title": "Scene 4: Toshiyasu's Room → Tunnel Discovery",
+   "session": "Prepared for 27 Jan 2026",
+   "text": "**Purpose:** Answer \"how is it getting in,\" open new mystery\n\nThe room itself might seem unremarkable at first. But:\n\n- **Kitsuki's Method or careful investigation:** A section of floor has been disturbed. Dust patterns are wrong.\n- **Below:** A hidden passage. Old—older than the current buildings. Part of an infrastructure nobody talks about.\n\n**Questions this raises:**\n\n- Who knows about these tunnels?\n- Do they connect to other death sites?\n- Are they natural, or constructed? By whom?\n\nYou can have them encounter evidence of recent use: claw marks on stone, a scrap of fabric, residual spiritual corruption.",
+   "sections": [],
+   "played": false
+  },
+  {
+   "id": "bo-prep-2026-01-27-scene-5-other-rooms-investigation",
+   "title": "Scene 5: Other Rooms Investigation",
+   "session": "Prepared for 27 Jan 2026",
+   "text": "**Purpose:** Confirm or complicate the tunnel theory\n\nTwo possibilities:\n\n**Option A - Pattern confirmed:** Both other rooms connect to the tunnel system. The killer has been using the same method. This suggests planning and knowledge of the infrastructure.\n\n**Option B - One room doesn't connect:** Miya Satoshi's room has no tunnel access. So how was he killed? Different method, different killer, or the tunnels aren't the only answer? This complicates things productively.\n\n**Recommendation:** Lean toward Option B—it prevents the investigation from becoming too linear.",
+   "sections": [],
+   "played": false
+  },
+  {
+   "id": "bo-prep-2026-01-27-scene-6-political-pressure",
+   "title": "Scene 6: Political Pressure",
+   "session": "Prepared for 27 Jan 2026",
+   "text": "**Purpose:** Show conspiracy's reach, create moral tension\n\nSomeone warns them off. Options:\n\n- **Didoji Masahiro:** \"You've done admirable work. But some doors, once opened, cannot be closed. Consider whether the Empire is served by what you might find.\"\n- **An Imperial functionary:** \"The Emerald Champion's office appreciates your diligence. Your investigation is concluded. File your report.\"\n- **An anonymous letter:** Names of people they care about. No threat stated. None needed.\n\nThis forces a choice: comply and stay safe, or push forward knowing there are consequences.",
+   "sections": [],
+   "played": false
+  },
+  {
+   "id": "bo-prep-2026-01-27-scene-7-bayushi-aramoro",
+   "title": "Scene 7: Bayushi Aramoro",
+   "session": "Prepared for 27 Jan 2026",
+   "text": "**Purpose:** Climactic interview, Scorpion ambiguity, possible alliance or threat\n\nHe doesn't avoid them—he *summons* them. Or appears where they're staying, unannounced, with sake.\n\nAramoro is dangerous because he's *helpful.* He can:\n\n- Confirm Toshiyasu was investigating something and wanted Scorpion resources\n- Suggest the cover-up comes from above—someone powerful wants this buried\n- Offer assistance... for a price, or a future favor\n- Imply he knows about the tunnels: \"The palace has many secrets. Some older than the clans.\"\n\n**The ambiguity:** Is he a suspect? An ally? Using them as pawns? All three?\n\nLet him leave them with more questions than answers, but one concrete lead they didn't have before.",
+   "sections": [],
+   "played": false
+  }
+ ],
+ "threads": [
+  {
+   "id": "bo-final-thread-thread-1-the-capital-investigation",
+   "title": "Thread 1: The Capital Investigation",
+   "text": "**Focus:** Who killed the advisors? Court intrigue, political maneuvering, social investigation.\n\n**Key Discoveries:**\n\n- The murders are connected to Crane political interests\n- Miya Satoshi had secret correspondence that doesn't add up\n- Someone is using supernatural methods\n- Kunimichi's sabotage creates a contradictory pattern\n\n**Characters:** Court-focused PCs, magistrates, courtiers",
+   "open": true
+  },
+  {
+   "id": "bo-final-thread-thread-2-the-shinomen-hunt",
+   "title": "Thread 2: The Shinomen Hunt",
+   "text": "**Focus:** What happened to the oni? Wilderness survival, supernatural horror, tracking.\n\n**Key Discoveries:**\n\n- The oni fled west after the failed attack\n- It can be tracked to a summoning point\n- Physical evidence links back to Kogo\n- The oni itself may be more victim than villain—bound, corrupted, suffering\n\n**Characters:** Scouts, shugenja, wilderness-capable PCs",
+   "open": true
+  },
+  {
+   "id": "bo-final-thread-thread-3-the-conspiracy-web",
+   "title": "Thread 3: The Conspiracy Web",
+   "text": "**Focus:** Who benefits? Following money, political analysis, connecting dots.\n\n**Key Discoveries:**\n\n- Crane needed distraction (motive for first murder)\n- Kolat exists and lost an agent (motive for second murder)\n- Aramoro is too interested in the investigation\n- Kogo is connected to multiple handlers\n\n**Characters:** Politically savvy PCs, investigators, information brokers",
+   "open": true
+  }
+ ],
+ "gm": {
+  "overview": [
+   {
+    "id": "bo-final-overview",
+    "title": "Overview",
+    "text": "A Legend of the Five Rings campaign set in early 1120, blending courtly intrigue, supernatural horror, wilderness survival, and political conspiracy. The campaign uses **troupe-style play**, allowing players to control multiple characters across different investigation threads that eventually converge.\n\nThe murders of the Emperor's most trusted advisors—informal confidants who embody the virtues of Bushidō—trigger a crisis that exposes three separate conspiracies operating in dangerous parallel."
+   },
+   {
+    "id": "bo-final-the-three-conspiracies",
+    "title": "The Three Conspiracies",
+    "text": "Unknown to nearly everyone, **three separate conspiracies** are now operating simultaneously, each pursuing different goals but creating compounding chaos. The key insight is that they emerged *sequentially*, not in parallel:\n\nORIGINAL CONSPIRACY (Crane)\n↓\nUses KOGO to kill Satoshi\n↓\nKOLAT DISCOVERY (Satoshi was theirs!)\n↓\nUses KOGO (via Kunimichi) to kill Toshiyasu\n↓\nARAMORO'S OPPORTUNITY (observing, then acting)\n↓\nEventually recruits KOGO through his own agent\n↓\nKOGO becomes the nexus of THREE handlers",
+    "sections": [
+     {
+      "id": "bo-final-the-three-conspiracies-conspiracy-1-the-crane-distraction",
+      "title": "Conspiracy 1: The Crane Distraction",
+      "text": "**Origin:** Early 1120\n\n**Background:** The Crane Clan suffered two devastating blows:\n1. **Tsume Retsu**, lord of Kyotei Castle in the contested Kintani Valley, was assassinated—a humiliating political failure\n2. **A massive tsunami** struck the coastline, devastating holdings and requiring resources for recovery\n\nThe Crane had been positioning for aggressive moves against both the Scorpion (in court) and the Lion (on the battlefield). These disasters left them operating from a position of unexpected weakness.\n\n**The Solution:** Create a massive distraction. Kill an Imperial advisor in a spectacular, terrifying way. Throw the capital into paranoid chaos while the Crane recover and prepare for their master stroke—the Toshi Ranbo deal.\n\n**The Method:** **Daidoji Masahiro** (a Crane lord) authorized the operation. **Tsume Kunimichi** (a Crane shinobi and saboteur) was tasked with execution. Kunimichi had previously discovered that **Nasu Kogo**, a Phoenix courtier, was secretly a maho-tsukai. Rather than expose her, he recruited her.\n\n**First Murder:** Kogo summoned an oni to kill **Miya Satoshi**. The death was brutal, supernatural, and terrifying—exactly as planned. The capital erupted in fear and suspicion.\n\n**What the Crane Didn't Know:** Miya Satoshi was a Kolat agent. They had just murdered a member of an ancient conspiracy that doesn't forgive."
+     },
+     {
+      "id": "bo-final-the-three-conspiracies-conspiracy-2-kolat-retaliation",
+      "title": "Conspiracy 2: Kolat Retaliation",
+      "text": "**Origin:** Days after Satoshi's death\n\n**Background:** The Kolat—an ancient conspiracy against the kami and the Celestial Order—had cultivated Miya Satoshi for decades. His position as Imperial Herald gave them unparalleled access to Imperial communications. His death was a catastrophic loss.\n\nWhen Kolat agents investigated, they traced the killing to Crane involvement. They didn't know the full picture—they didn't know about Kogo or the oni—but they knew the Crane were responsible.\n\n**The Response:** Strike back. Kill a Crane advisor. Send a message.\n\n**The Method:** The Kolat activated **Yuki**, a handler who had connections to Kunimichi. Through channels Kunimichi didn't fully understand, he was instructed to eliminate **Doji Toshiyasu**. Kunimichi recruited Kogo a second time.\n\n**Second Murder:** Kogo's oni tore Toshiyasu apart. A Crane killed for a Crane's actions. The Kolat considered the matter addressed—for now.\n\n**What the Kolat Didn't Know:** The third attack would fail. The oni would escape. And their agent Kunimichi would soon be juggling far more than they realized."
+     },
+     {
+      "id": "bo-final-the-three-conspiracies-conspiracy-3-aramoro-s-opportunity",
+      "title": "Conspiracy 3: Aramoro's Opportunity",
+      "text": "**Origin:** After the second murder\n\n**Background:** Bayushi Aramoro has spent twenty years planning revenge against the Emperor for the secret execution of his son. His plan was patient, methodical, waiting for the perfect moment.\n\nThen two Imperial advisors died in supernatural attacks, and a third survived. The capital descended into paranoia. And Aramoro recognized *opportunity*.\n\n**Phase 1 — Observer:** Aramoro watched. He deployed Scorpion agents to investigate. He tried to identify who was behind the killings—and whether they were friend, foe, or tool.\n\n**Phase 2 — Calculate:** He weighed his options. The chaos was perfect cover. But was the unknown killer a threat to his plans? Would they target him next? Could they be recruited?\n\n**Phase 3 — Actor:** Aramoro's agents eventually discovered Nasu Kogo. They didn't know she already worked for Kunimichi (and through him, the Crane and Kolat). They saw only a useful weapon—a maho-tsukai who had already killed two advisors.\n\nAramoro's agent approached Kogo with an offer: protection and resources in exchange for her services. From Kogo's perspective, this was salvation—Asako Tsuki was getting too close, and Aramoro's agent promised to shield her from investigation.\n\n**Current Status:** Aramoro is recruiting Kogo without knowing she's already compromised. He's preparing to use the chaos as cover for moving against the Emperor. He's the patient threat that investigators will stop looking for once they \"solve\" the immediate murders."
+     },
+     {
+      "id": "bo-final-the-three-conspiracies-the-nexus-nasu-kogo",
+      "title": "The Nexus: Nasu Kogo",
+      "text": "**Nasu Kogo** is the connection point between all three conspiracies—though none of her handlers realize the full extent of her entanglements.\n\n**Background:** Kogo is a Phoenix courtier who fell to maho years ago in a desperate attempt to save her family from ruin. She has been walking a path of increasing corruption ever since.\n\n**Her Handlers:**\n1. **Tsume Kunimichi** (Crane/Kolat) — Recruited her originally, used her for both murders\n2. **Aramoro's Agent** (Scorpion) — Recently approached her, offering protection from investigation\n3. (Indirectly) **The Crane lords and Kolat masters** — Who give Kunimichi his orders\n\n**What Kogo Knows:**\n\n- She works for Kunimichi (first for Crane purposes, then for whoever Kunimichi serves—she doesn't know about the Kolat specifically)\n- She now works for a Scorpion agent (she doesn't know Aramoro is behind them)\n- The oni escaped to Shinomen Forest after the third attack failed\n- Asako Tsuki is getting dangerously close to discovering her\n- Her corruption is deepening with each summoning\n\n**What Kogo Doesn't Know:**\n\n- Aramoro is the mastermind behind her new Scorpion handler\n- The Kolat exists and was behind the second murder order\n- That Kunimichi knows about her Scorpion contact (he's suspicious but not certain)\n\n**Kogo's Dilemma:** She's serving three masters, each believing she works primarily for them. She's using the Scorpion connection as protection against investigation. She's terrified of the oni's escape being traced back to her. And her soul is slipping further into darkness with every blood ritual."
+     },
+     {
+      "id": "bo-final-the-three-conspiracies-the-third-conspirator-tsume-kunimichi",
+      "title": "The Third Conspirator: Tsume Kunimichi",
+      "text": "**Tsume Kunimichi** is a Crane shinobi and saboteur who serves as the operational link between the Crane conspiracy and its execution.\n\n**His Masters:**\n\n- **Daidoji Masahiro** — His Crane lord, who authorized the original distraction operation\n- **Yuki** — His Kolat handler, who directed the retaliation against Toshiyasu\n\n**What Kunimichi Knows:**\n\n- Nasu Kogo is a maho-tsukai (he discovered this and recruited her rather than exposing her)\n- Kogo is also talking to Scorpion agents (he's noticed, he's worried)\n- The Crane conspiracy created the first murder\n- His Kolat handlers ordered the second murder (though he may not fully understand Kolat as an organization)\n- His next assignment: Kill Ikoma Ujiaki through sabotage, creating a non-supernatural murder to confuse investigators\n\n**What Kunimichi Doesn't Know:**\n\n- Aramoro is the Scorpion mastermind approaching Kogo\n- That the oni escaped (Kogo hasn't told him)\n- The full scope of what he's part of\n\n**His Role Going Forward:** Kunimichi will commit the **third murder**—Ikoma Ujiaki—using clever sabotage methods that look nothing like the oni killings. This creates investigative confusion: a new method, a new pattern, suggesting either a second killer or an evolution in tactics."
+     }
+    ]
+   },
+   {
+    "id": "bo-final-the-murder-timeline",
+    "title": "The Murder Timeline",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-final-the-murder-timeline-pre-campaign",
+      "title": "Pre-Campaign",
+      "text": "**First Murder — Miya Satoshi (Sincerity)**\n\n- Ordered by: Crane conspiracy (Daidoji Masahiro)\n- Executed by: Nasu Kogo (oni summoning)\n- Method: Brutal supernatural attack\n- Purpose: Create chaos/distraction for Crane recovery\n- Consequence: Kolat loses a key agent\n\n**Second Murder — Doji Toshiyasu (Courtesy)**\n\n- Ordered by: Kolat (through Yuki and Kunimichi)\n- Executed by: Nasu Kogo (oni summoning again)\n- Method: Same brutal supernatural attack\n- Purpose: Retaliation for Satoshi's death\n- Consequence: Pattern established; paranoia spreads\n\n**Third Attack — Ikoma Ujiaki (Courage) — FAILED**\n\n- Ordered by: Unclear (possibly continued Kolat operation, possibly independent Kogo action)\n- Executed by: Nasu Kogo (oni summoning)\n- Target fought back: Ujiaki's cowardice saved him—he ran and hid while guards responded\n- Oni wounded and fled west into **Shinomen Forest**\n- **Only Kogo knows what happened to the oni**\n- Consequence: Aramoro begins investigating; Kogo becomes vulnerable"
+     },
+     {
+      "id": "bo-final-the-murder-timeline-campaign-timeline",
+      "title": "Campaign Timeline",
+      "text": "**Session 1 — Task Force Assembled**\n\n- Emperor (or surviving advisors) brings in outside investigators\n- Two confirmed dead (Satoshi, Toshiyasu), one survivor (Ujiaki)\n- Oni believed still at large near capital\n- Aramoro is observing, not yet acting\n- Asako Tsuki is already investigating spiritual disturbances\n\n**Early Campaign — Third Murder Succeeds (Kunimichi)**\n\n- **Ikoma Ujiaki dies** in apparent accident\n- Method: Sabotage (structural failure, poison, or similar)\n- Completely different from oni attacks\n- Creates investigative confusion:\n- Was the \"failed\" attack actually delayed success?\n- Is there a second killer?\n- Why the change in method?\n\n**Mid Campaign — Conspiracies Complicate**\n\n- Aramoro's agent recruits Kogo\n- Investigators may discover Kogo's involvement\n- Shinomen thread emerges (tracking the escaped oni)\n- Kunimichi becomes aware of Scorpion interest in his asset\n- Asako Tsuki gets dangerously close to the truth\n\n**Late Campaign — Convergence**\n\n- Potential fourth murder (Asako Tsuki?) threatened\n- Aramoro's true agenda emerges\n- Investigators must unravel THREE conspiracies\n- Race to prevent Emperor assassination\n- Moral complexity: Do you expose everything and cause clan war?"
+     }
+    ]
+   },
+   {
+    "id": "bo-final-the-task-force",
+    "title": "The Task Force",
+    "text": "With paranoia spreading through the capital and standard investigative channels compromised, the Emperor (or a surviving advisor) decides to bring in outside help.",
+    "sections": [
+     {
+      "id": "bo-final-the-task-force-why-outsiders",
+      "title": "Why Outsiders?",
+      "text": "- Every Great Clan is suspected\n- Internal investigators might be compromised\n- The supernatural element requires unusual expertise\n- Political neutrality is essential"
+     },
+     {
+      "id": "bo-final-the-task-force-potential-task-force-composition",
+      "title": "Potential Task Force Composition",
+      "text": "- **Minor Clan Representatives** — Outside the Great Clan web of obligation\n- **Ronin** — No clan loyalty to compromise investigation\n- **Brotherhood Monks** — Spiritual expertise, political neutrality\n- **Imperial Functionaries** — Loyal to throne, not clans\n- **Specialized Experts** — Monster hunters, maho investigators"
+     },
+     {
+      "id": "bo-final-the-task-force-troupe-play-structure",
+      "title": "Troupe Play Structure",
+      "text": "Players control multiple characters across different threads:\n\n- **Court Character** — Navigates the political investigation\n- **Wilderness Character** — Tracks the oni to Shinomen\n- **Specialist Character** — Brings unique expertise (shugenja, investigator, etc.)\n\nCharacters can die; players continue with remaining characters. Information is shared between sessions through \"downtime reports.\""
+     }
+    ]
+   },
+   {
+    "id": "bo-1120-legend-of-the-five-rings-campaign-reference",
+    "title": "Legend of the Five Rings: Campaign Reference",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-1120-legend-of-the-five-rings-campaign-reference-starting-date-early-1120",
+      "title": "Starting Date: Early 1120",
+      "text": ""
+     }
+    ]
+   },
+   {
+    "id": "bo-1120-part-i-the-state-of-the-empire-end-of-1119",
+    "title": "Part I: The State of the Empire (End of 1119)",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-1120-part-i-the-state-of-the-empire-end-of-1119-the-throne-and-imperial-court",
+      "title": "The Throne and Imperial Court",
+      "text": "**Emperor:** Hantei XXXVIII (Jodan) sits upon the throne. He has two sons:\n\n- **Hantei Sotorii** – the elder, hot-tempered and difficult\n- **Hantei Daisetsu** – the younger, scholarly and thoughtful\n\n**Empress:** Hantei Hochiahime (née Crane)\n\n**Emerald Champion:** Doji Satsume (also Crane Clan Champion) [dies in 1123]\n\n**Imperial Herald:** Miya Satoshi\n\nThere is no Imperial Regent or Imperial Advisor at this time. The Emperor rules directly."
+     },
+     {
+      "id": "bo-1120-part-i-the-state-of-the-empire-end-of-1119-great-clan-leadership",
+      "title": "Great Clan Leadership",
+      "text": "Clan · Champion · Notes\n\n- **Crab** · Hida Kisada · \"The Great Bear\" – aging but powerful\n- **Crane** · Doji Satsume · Also serves as Emerald Champion\n- **Dragon** · Togashi Yokuni · Mysterious, rarely leaves the mountains\n- **Lion** · Akodo Arasou · Young, aggressive, engaged to Matsu Tsuko - dies in 1123\n- **Phoenix** · Shiba Ujimitsu · Elderly, serving the Elemental Council\n- **Scorpion** · Bayushi Shoju · Married to Bayushi Kachiko\n- **Unicorn** · Shinjo Altansarnai · First female Khan in generations"
+     },
+     {
+      "id": "bo-1120-part-i-the-state-of-the-empire-end-of-1119-key-family-daimyo",
+      "title": "Key Family Daimyo",
+      "text": "**Crab Clan**\n\n- **Hida Kisada** – Hida Daimyo (also Champion)\n- **Hiruma Yoshino** – Hiruma Daimyo\n- **Kaiu Shihobu** – Kaiu Daimyo\n- **Kuni Yori** – Kuni Daimyo (secretly conducting dark experiments)\n- **Yasuki Taka** – Yasuki Daimyo\n\n**Crane Clan**\n\n- **Doji Satsume** – Doji Daimyo (also Champion and Emerald Champion)\n- **Doji Hotaru** – Satsume's heir, increasingly handling clan affairs\n- **Doji Kuwanan** – Satsume's second child\n- **Kakita Yoshi** – Kakita Daimyo, Imperial Chancellor\n- **Kakita Toshimoko** – The Grey Crane, legendary duelist and sensei\n- **Daidoji Uji** – Daidoji Daimyo and General\n- **Asahina Takamori** – Asahina Daimyo\n\n**Dragon Clan**\n\n- **Togashi Yokuni** – Togashi Daimyo (also Champion)\n- **Mirumoto Masashige** – Mirumoto Daimyo\n- **Kitsuki Jusai** – Kitsuki Daimyo\n- **Agasha Yuriko** – Agasha Daimyo\n\n**Lion Clan**\n\n- **Akodo Arasou** – Akodo Daimyo (also Champion)\n- **Akodo Toturi** – Arasou's younger brother, brilliant general\n- **Matsu Tsuko** – Matsu Daimyo, Arasou's betrothed\n- **Ikoma Anakazu** – Ikoma Daimyo\n- **Kitsu Takeko** – Kitsu Daimyo\n\n**Phoenix Clan**\n\n- **Shiba Ujimitsu** – Shiba Daimyo (also Champion)\n- **Shiba Tsukune** – Young prodigy being groomed as successor\n- **Asako Togama** – Asako Daimyo\n\n**Elemental Masters:**\n\n- **Air:** Isawa Eju\n- **Earth:** Isawa Rujo (elderly)\n- **Fire:** Isawa Tsuke\n- **Void:** Isawa Ujina\n- **Water:** Asako Azunami\n\n**Scorpion Clan**\n\n- **Bayushi Shoju** – Bayushi Daimyo (also Champion)\n- **Bayushi Kachiko** – Shoju's wife, master manipulator\n- **Shosuro Hametsu** – Shosuro Daimyo\n- **Soshi Shiori** – Soshi Daimyo\n- **Yogo Junzo** – Yogo Daimyo\n\n**Unicorn Clan**\n\n- **Shinjo Altansarnai** – Shinjo Daimyo (also Champion/Khan)\n- **Ide Tadaji** – Ide Daimyo, master diplomat\n- **Iuchi Daiyu** – Iuchi Daimyo\n- **Moto Ogodei** – Moto Daimyo\n- **Utaku Rumaru** – Utaku Daimyo"
+     },
+     {
+      "id": "bo-1120-part-i-the-state-of-the-empire-end-of-1119-recent-history-what-everyone-knows",
+      "title": "Recent History (What Everyone Knows)",
+      "text": "**The Crane-Lion Conflict**\n\n- **~60 years ago:** The Lion captured Toshi Ranbo and the Osari Plains from the Crane\n- **~1103:** The Crane captured the Kintani Valley\n- The border remains tense; skirmishes are common\n\n**The Dragon's Isolation**\n\n- The Dragon Clan remains largely withdrawn in their mountains\n- Togashi Yokuni rarely appears in public\n- The clan's motives are inscrutable to outsiders\n\n**The Crab's Burden**\n\n- The Crab Clan maintains the Kaiu Wall against the Shadowlands\n- Resources are always stretched thin\n- Hida Kisada grows frustrated with the Empire's lack of support\n\n**The Perfect Land Sect (1118)**\n\n- A heretical Buddhist sect was scattered by Imperial forces\n- Survivors have gone underground\n- The sect promises escape from the Celestial Wheel's suffering\n\n**Minor Clan Tensions**\n\n- **Yoritomo** leads the Mantis, growing increasingly bold and ambitious\n- The Mantis are not yet recognized as a Great Clan\n- Piracy in the seas is increasing"
+     },
+     {
+      "id": "bo-1120-part-i-the-state-of-the-empire-end-of-1119-established-relationships-and-tensions",
+      "title": "Established Relationships and Tensions",
+      "text": "**Romantic/Political**\n\n- **Akodo Arasou & Matsu Tsuko** – Betrothed; passionate relationship\n- **Bayushi Shoju & Bayushi Kachiko** – Married; Kachiko is ambitious\n- **Doji Hotaru** – Unmarried; the question of her marriage is politically significant\n\n**Rivalries**\n\n- **Akodo Arasou vs. Doji Satsume** – Personal enmity over Toshi Ranbo\n- **Hida Kisada vs. the Imperial Court** – Kisada believes the Empire ignores the Shadowlands threat\n- **Isawa Tadaka vs. Kuni Yori** – Both interested in dark magic, for different reasons\n\n**Hidden Threats (Unknown to Most)**\n\n- **Kuni Yori** is conducting experiments with Shadowlands corruption\n- **Bayushi Shoju** possesses forbidden knowledge about the nature of Fu Leng\n- The **Kolat** conspiracy operates in the shadows (Miya Satoshi is secretly a member)"
+     }
+    ]
+   },
+   {
+    "id": "bo-1120-part-ii-events-of-early-1120-january-april",
+    "title": "Part II: Events of Early 1120 (January–April)",
+    "text": "These are the canonical events you may wish to modify or build upon.",
+    "sections": [
+     {
+      "id": "bo-1120-part-ii-events-of-early-1120-january-april-confirmed-1120-events",
+      "title": "Confirmed 1120 Events",
+      "text": "**The Tsunami (Reference: \"Her Father's Daughter\")**\n\n- **What:** A massive tsunami strikes the coastline, devastating Mantis holdings\n- **When:** Early 1120 (approximately 3 years before the main storyline)\n- **Significance:** This disaster shapes Yoritomo's ambitions and the Mantis Clan's desperation\n\n**The Heart of the Mountain (Reference: \"The Heart of the Mountain\")**\n\n- **What:** Yoritomo steals a powerful nemuranai called \"The Heart of the Mountain\"\n- **When:** Shortly before or during the Tsunami\n- **Connection:** The theft may be connected to the Tsunami itself\n- **Significance:** Establishes Yoritomo as willing to take dramatic action\n\n**The Assassination at Kyotei Castle (Reference: \"Wedding at Kyotei Castle\" RPG)**\n\n- **What:** Tsume Retsu, lord of Kyotei Castle in the Kintani Valley, is assassinated\n- **When:** 1120\n- **Context:** Retsu had ruled for 17 years after capturing both Kyotei Castle and the Kintani Valley\n- **Significance:** Creates a power vacuum in a contested border region between Crane and Lion"
+     },
+     {
+      "id": "bo-1120-part-ii-events-of-early-1120-january-april-what-is-not-yet-happening",
+      "title": "What Is NOT Yet Happening",
+      "text": "The following events are still **3 years away** and should not be foreshadowed too heavily:\n\n- Doji Satsume is still alive and serving as both Clan Champion and Emerald Champion\n- Shiba Ujimitsu is still the Phoenix Champion\n- Akodo Arasou is still alive\n- The Emperor is healthy\n- The Unicorn-Lion war has not begun\n- Toshi Ranbo is still held by the Crane"
+     }
+    ]
+   },
+   {
+    "id": "bo-1120-part-iii-major-plot-threads-1120-1124",
+    "title": "Part III: Major Plot Threads (1120–1124)",
+    "text": "Below are the major storylines that will develop over the next four years, with notes on their status as of early 1120.",
+    "sections": [
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-1-the-succession-crisis",
+      "title": "Plot 1: The Succession Crisis",
+      "text": "**Summary:** Emperor Hantei XXXVIII's two sons—the difficult Sotorii and the capable Daisetsu—represent a brewing succession crisis that will eventually tear the Empire apart.\n\n**Status in Early 1120:**\n\n- **Dormant** – Sotorii is still a child (his gempukku is in March 1123)\n- The brothers' rivalry is present but not yet critical\n- No formal heir has been named\n\n**Key Figures:**\n\n- Hantei XXXVIII (Emperor)\n- Hantei Sotorii (elder son)\n- Hantei Daisetsu (younger son)\n- Bayushi Kachiko (will become Imperial Advisor)\n- Kakita Yoshi (will become Regent)\n\n**Where It's Going:**\n\n- Sotorii becomes increasingly unstable\n- Kachiko manipulates events to favor Daisetsu\n- Culminates in the Emperor's death (Sept 1123) and civil war\n\n**Campaign Use:** Plant seeds of the brothers' personalities. Sotorii's temper, Daisetsu's wisdom. NPCs might gossip about which son would make a better Emperor."
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-2-the-crane-lion-war",
+      "title": "Plot 2: The Crane-Lion War",
+      "text": "**Summary:** Generations of conflict over the Osari Plains and Toshi Ranbo will erupt into open warfare, claiming the lives of both clan champions.\n\n**Status in Early 1120:**\n\n- **Simmering** – Toshi Ranbo is held by the Crane (captured ~1121)\n- Tsume Retsu's assassination creates new instability\n- Akodo Arasou burns with desire to retake lost territory\n\n**Key Figures:**\n\n- Akodo Arasou (Lion Champion) – dies May 1123\n- Doji Satsume (Crane Champion) – dies April 1123\n- Doji Hotaru (becomes Crane Champion ~1121-1122)\n- Matsu Tsuko (Arasou's lover, will become Champion)\n- Doji Kuwanan (Satsume's son)\n- Daidoji Uji (Crane general)\n\n**Key Locations:**\n\n- Toshi Ranbo (Violence Behind Courtliness City)\n- Osari Plains\n- Kyuden Kakita\n- Kintani Valley / Kyotei Castle\n\n**Where It's Going:**\n\n- Arasou dies attacking Toshi Ranbo (May 1123)\n- Lion eventually capture Kyuden Kakita (Sept 1123)\n- Crane retake it briefly before losing it again\n- War only ends when larger threats emerge\n\n**Campaign Use:** The Tsume Retsu assassination is happening NOW. PCs could investigate, be caught in the fallout, or have connections to the contested territories."
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-3-the-unicorn-lion-war",
+      "title": "Plot 3: The Unicorn-Lion War",
+      "text": "**Summary:** A separate conflict between Lion and Unicorn erupts over old grievances, drawing both clans' attention away from other threats.\n\n**Status in Early 1120:**\n\n- **Distant** – Won't formally begin until April 1123\n- Historical grievances exist (Utaku Kamoko's mother was killed by Lion ~1112)\n- No active hostilities\n\n**Key Figures:**\n\n- Shinjo Altansarnai (Unicorn Champion)\n- Utaku Kamoko (driven by personal vendetta)\n- Ide Tadaji (diplomat trying to prevent war)\n- Shinjo Shono (Altansarnai's son)\n- Various Lion generals\n\n**Key Locations:**\n\n- Hisu Mori Mura (Unicorn village, repeatedly contested)\n- The northern plains\n\n**Where It's Going:**\n\n- Unicorn declare war April 1123\n- Back-and-forth battles over Hisu Mori Mura\n- Eventually both sides join alliance against greater threat\n\n**Campaign Use:** The old wound of Kamoko's mother could be explored. Unicorn-Lion tensions simmer beneath diplomatic surfaces."
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-4-the-shadowlands-rising",
+      "title": "Plot 4: The Shadowlands Rising",
+      "text": "**Summary:** Kuni Yori's dark experiments and the weakening of the Kaiu Wall will lead to a massive Shadowlands incursion, culminating in the Battle of Cherry Blossom Snow.\n\n**Status in Early 1120:**\n\n- **Early Stage** – Kuni Yori is already conducting experiments\n- The Wall holds, but resources are strained\n- No major breaches yet\n\n**Key Figures:**\n\n- Hida Kisada (Crab Champion)\n- Kuni Yori (Kuni Daimyo, secretly corrupt)\n- Hida Sukune (Kisada's son)\n- Hida O-Ushi (Kisada's daughter)\n- Yasuki Oguri (will investigate the Wall's fall)\n- Isawa Tadaka (will become involved with dark magic)\n\n**Key Locations:**\n\n- The Kaiu Wall\n- Shiro Kuni\n- Various watchtowers (especially the 9th)\n- Hiruma Castle\n\n**Where It's Going:**\n\n- Kuni Yori's corruption spreads\n- Ishigaki Watchtower falls (Aug 1123)\n- The Wall itself falls (Dec 1123)\n- Massive oni invasion\n- Battle of Cherry Blossom Snow (Jan 1124)\n\n**Campaign Use:** Crab PCs might notice something wrong with Kuni lands. Shadowlands activity could be increasing. Yori's experiments might need \"subjects.\""
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-5-the-scorpion-coup",
+      "title": "Plot 5: The Scorpion Coup",
+      "text": "**Summary:** Bayushi Shoju, believing he is saving the Empire from a prophesied doom, will kill the Emperor and seize power—only to be defeated and driven to open a Black Scroll.\n\n**Status in Early 1120:**\n\n- **Seeds Being Planted** – Shoju possesses knowledge of dark prophecies\n- Kachiko is positioning herself at court\n- The Scorpion are patient\n\n**Key Figures:**\n\n- Bayushi Shoju (Champion)\n- Bayushi Kachiko (his wife, Imperial Advisor by 1123)\n- Bayushi Yojiro (will become Champion after Shoju)\n- Bayushi Aramoro (Shoju's brother, assassin)\n- Yogo Junzo (Yogo Daimyo, will die defending a cursed sword)\n\n**Key Locations:**\n\n- Kyuden Bayushi\n- Otosan Uchi (Imperial Capital)\n- Toshi Ranbo (given to Scorpion in 1123)\n- Castle of Learning (Yogo stronghold)\n\n**Where It's Going:**\n\n- Shoju kills Emperor (Sept 1123)\n- Brief Scorpion regency\n- Shoju deposed, opens Black Scroll\n- Second coup attempt (Dec 1123)\n- Shoju's final defeat (Jan 1124)\n\n**Campaign Use:** Scorpion machinations are always present. Kachiko is building her network. Whispers of ancient prophecies might surface."
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-6-the-dragon-s-prophecy",
+      "title": "Plot 6: The Dragon's Prophecy",
+      "text": "**Summary:** Togashi Yokuni has foreseen coming catastrophe and is quietly positioning his clan—and specific individuals—to play crucial roles.\n\n**Status in Early 1120:**\n\n- **Ongoing** – Yokuni always sees further than others\n- Togashi Mitsu is searching for someone named Senzai\n- The Dragon remain mysterious\n\n**Key Figures:**\n\n- Togashi Yokuni (Champion, actually the Kami Togashi)\n- Togashi Mitsu (will become Champion after Yokuni)\n- Mirumoto Hitomi (will kill Shoju, driven by vengeance)\n- Agasha Sumiko (Ruby Champion, truth-seeker)\n- Kitsuki Chiari (investigator who finds crucial evidence)\n\n**Key Locations:**\n\n- Kyuden Togashi\n- Various Dragon monasteries\n\n**Where It's Going:**\n\n- Yokuni sends agents to key locations\n- Hitomi develops obsession with revenge\n- Mitsu gathers the \"army of the rising wave\"\n- Yokuni sacrifices himself at Cherry Blossom Snow\n\n**Campaign Use:** Dragon NPCs might appear with cryptic warnings. Yokuni could take interest in PCs. Prophecy fragments might surface."
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-7-the-phoenix-schism",
+      "title": "Plot 7: The Phoenix Schism",
+      "text": "**Summary:** The Phoenix Clan struggles with questions of forbidden magic, the role of the Elemental Masters, and internal conflicts that will cost them their champion and one of their greatest shugenja.\n\n**Status in Early 1120:**\n\n- **Early Stage** – The Council functions, but tensions exist\n- Isawa Tadaka is young and ambitious\n- Isawa Ujina (Master of Void) is stable\n\n**Key Figures:**\n\n- Shiba Ujimitsu (Champion) – dies April 1123\n- Shiba Tsukune (successor)\n- Isawa Tadaka (becomes Master of Earth, eventually corrupted)\n- Isawa Ujina (Master of Void) – disappears July 1123\n- Isawa Kaede (will marry Toturi)\n- Asako Tsuki (investigator, discovers Yori's corruption)\n\n**Key Locations:**\n\n- Kyuden Isawa\n- Kaito lands\n- The Shrine of Azusa\n\n**Where It's Going:**\n\n- Ujimitsu dies, Tsukune becomes Champion\n- Tadaka takes forbidden path to gain power against Shadowlands\n- Ujina vanishes mysteriously\n- Tadaka ultimately redeems himself at Cherry Blossom Snow\n\n**Campaign Use:** Phoenix internal politics are complex. Questions of how far one can go to fight evil. Kaito lands have spiritual significance."
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-8-the-perfect-land-sect",
+      "title": "Plot 8: The Perfect Land Sect",
+      "text": "**Summary:** A heretical religious movement promises escape from suffering, attracting desperate peasants and creating a shadow network that will shelter fleeing Imperial heirs.\n\n**Status in Early 1120:**\n\n- **Recently Scattered** – The sect was broken up in 1118\n- Survivors are regrouping in secret\n- The movement continues to attract followers\n\n**Key Figures:**\n\n- Various sect leaders (unnamed)\n- Togashi Mitsu (will infiltrate them)\n- Yuki (undercover Scorpion agent)\n- Eventually shelters Daisetsu and his protectors\n\n**Key Locations:**\n\n- Remote villages\n- Mountain hideaways\n- Among the peasant class everywhere\n\n**Where It's Going:**\n\n- Sect rebuilds in secret\n- Scorpion agents infiltrate\n- Becomes refuge for fleeing princes\n- Mitsu spends winter 1123-1124 with them\n\n**Campaign Use:** PCs might encounter the sect, investigate them, or have family members who joined. Questions of faith and suffering."
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-9-the-mantis-ambition",
+      "title": "Plot 9: The Mantis Ambition",
+      "text": "**Summary:** Yoritomo seeks Great Clan status for the Mantis through any means necessary, including theft, piracy, and leveraging disasters.\n\n**Status in Early 1120:**\n\n- **Active** – The Tsunami is happening NOW\n- Yoritomo has stolen the Heart of the Mountain\n- The Mantis are desperate and dangerous\n\n**Key Figures:**\n\n- Yoritomo (Mantis Champion)\n- Yoritomo Linmei (his wife)\n- Various Mantis captains\n\n**Key Locations:**\n\n- \"Kyuden\" Gotei (Mantis headquarters)\n- The coastal waters\n- Islands of the Mantis\n\n**Where It's Going:**\n\n- Mantis leverage the chaos of 1123\n- Kidnap Yasuki Taka for leverage\n- Eventually gain Great Clan status\n\n**Campaign Use:** The Tsunami is immediate. Mantis desperation could drive many plot hooks. Yoritomo is a wildcard."
+     },
+     {
+      "id": "bo-1120-part-iii-major-plot-threads-1120-1124-plot-10-the-kolat-conspiracy",
+      "title": "Plot 10: The Kolat Conspiracy",
+      "text": "**Summary:** An ancient conspiracy against the Kami and the Celestial Order operates in the shadows, with agents in every clan.\n\n**Status in Early 1120:**\n\n- **Always Active** – The Kolat have existed for centuries\n- Miya Satoshi (Imperial Herald) is a member\n- They watch, wait, and manipulate\n\n**Key Figures:**\n\n- Miya Satoshi (Imperial Herald, secret Kolat)\n- Various unnamed masters\n- Agents in all clans\n\n**Where It's Going:**\n\n- Kolat observe the chaos\n- May try to exploit the civil war\n- Ultimately a background threat\n\n**Campaign Use:** Any NPC could secretly be Kolat. They oppose divine authority itself. Excellent long-term conspiracy."
+     }
+    ]
+   },
+   {
+    "id": "bo-1120-part-iv-quick-reference",
+    "title": "Part IV: Quick Reference",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-1120-part-iv-quick-reference-timeline-summary",
+      "title": "Timeline Summary",
+      "text": "Year · Major Events\n\n- **1118** · Perfect Land Sect scattered; Senzai encounters Togashi Kazue\n- **1119** · Relative peace; tensions building\n- **1120** · Tsunami; Heart of Mountain stolen; Tsume Retsu assassinated\n- **1121** · Crane capture Toshi Ranbo/Osari Plains\n- **1121-22** · Hotaru becomes Crane Champion (Satsume still Emerald Champion)\n- **1122** · Last Hiruma patrol returns; Winter Court events\n- **1123** · The Year Everything Happens (see detailed timeline)\n- **1124** · Battle of Cherry Blossom Snow; new era begins"
+     },
+     {
+      "id": "bo-1120-part-iv-quick-reference-deaths-to-come-spoilers-for-planning",
+      "title": "Deaths to Come (Spoilers for Planning)",
+      "text": "Character · When · How\n\n- Doji Satsume · April 1123 · Murdered (by Scorpion)\n- Shiba Ujimitsu · April 1123 · Dies passing the clan sword\n- Hida Tamako · April 1123 · Unknown\n- Akodo Arasou · May 1123 · Killed attacking Toshi Ranbo\n- Hantei XXXVIII · Sept 1123 · Killed by Bayushi Shoju\n- Togashi Yokuni · Jan 1124 · Sacrifices himself vs. Akuma\n- Bayushi Shoju · Jan 1124 · Killed by Mirumoto Hitomi\n- Isawa Tadaka · Jan 1124 · Dies sealing away darkness"
+     },
+     {
+      "id": "bo-1120-part-iv-quick-reference-power-shifts-summary",
+      "title": "Power Shifts Summary",
+      "text": "Position · 1120 Holder · 1124 Holder\n\n- Emperor · Hantei XXXVIII · Vacant/Disputed\n- Emerald Champion · Doji Satsume · Vacant (was Toturi)\n- Crane Champion · Doji Satsume · Doji Hotaru\n- Lion Champion · Akodo Arasou · Matsu Tsuko\n- Phoenix Champion · Shiba Ujimitsu · Shiba Tsukune\n- Scorpion Champion · Bayushi Shoju · Bayushi Yojiro\n- Dragon Champion · Togashi Yokuni · Togashi Mitsu\n- Imperial Regent · None · Kakita Yoshi\n\n*Document compiled for campaign starting Early 1120. All dates approximate based on contextual analysis of FFG fiction.*"
+     }
+    ]
+   },
+   {
+    "id": "bo-prep-2026-01-27",
+    "title": "Bushy Oni Investigation - Session Planning",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-prep-2026-01-27-current-investigation-state",
+      "title": "Current Investigation State",
+      "text": "**What the Players Have Established**\n\nEvidence · Implication\n\n- Deaths accelerating (months → weeks → days) · Something is escalating or feeding\n- Ujiaki's elongated arm, worn jade, mental lapses · Taint exposure, NOT illusion\n- Toshiyasu's body: bisected, claw marks, pustules at spine · Beast/Oni attack with taint corruption\n- Defensive wounds from own wakizashi (blade facing him) · Disarmed or weapon twisted mid-fight\n- Toshiyasu's last tea ceremony was with Bayushi Aramoro · Scorpion connection to final hours\n- Divination: Ujiaki fleeing to Lion lands, seeking healer he trusts · He knows he's tainted, doesn't feel safe here\n\n**Open Questions They Haven't Answered**\n\n- How is something getting into secured rooms?\n- What connects the victims?\n- Who benefits?\n- Why is Ujiaki lying about \"illusion\"?"
+     },
+     {
+      "id": "bo-prep-2026-01-27-suggested-scene-order",
+      "title": "Suggested Scene Order",
+      "text": "1. **Kikue** — context, official investigation gaps\n2. **Ujiaki's death** — stakes, urgency\n3. **Bridge investigation** — sabotage confirmation\n4. **Toshiyasu's room / tunnels** — mechanical revelation\n5. **Other rooms** — complicate or confirm\n6. **Political pressure** — moral stakes\n7. **Aramoro** — climax, new direction"
+     },
+     {
+      "id": "bo-prep-2026-01-27-notes-for-gm",
+      "title": "Notes for GM",
+      "text": "**Pacing Considerations**\n\n- Scenes 1-3 can happen in quick succession (same session)\n- Scene 4 is a major revelation—give it room to breathe\n- Scene 6 works best after they've committed to pushing forward\n- Aramoro should feel like a reward for persistence\n\n**Player Character Hooks**\n\n- **Hasumi (Kitsuki):** Forensic details, Kitsuki's Method opportunities in tunnels and bridge\n- **Endo (Phoenix Shugenja):** Spiritual investigation, possible Phoenix clan complications via Kikue\n- **Bayushi Taigan:** Scorpion politics, Aramoro interaction, potential loyalty conflicts\n- **Rinji:** Give them a moment to shine—perhaps they notice something others miss\n\n**Clue Redundancy**\n\nIf players miss something critical, have it resurface through:\n\n- Taigan's Scorpion contacts\n- A second witness coming forward\n- Physical evidence at a later scene\n- An NPC directly stating what they should have found"
+     }
+    ],
+    "about": [
+     "#BOpcKitsukiHasumi",
+     "#BOpcIsawaEndo",
+     "#BOpcBayushiTaigen"
+    ]
+   },
+   {
+    "id": "bo-parallel",
+    "title": "Bushi Oni - Parallel Investigation",
+    "text": "What is the timeline of the deaths.\n< 4 days\n< 2 weeks\n< 3 months ago\n\nKitsuki Kagi (male, middle-aged), Miya Kotsumi (female, early 30s), Seppun Hokuto (bushi, late 30s, extremely good investigator, Sherlock Holmes type, tries to solve things from books in his room, currently working on something relating to many years ago.)\n\nDoji Satsume: Satsume walked slightly bow-legged as a result of many years spent on horseback. His stride was purposeful and direct, just like his speech. His voice was sonorous but harsh, carrying hints of a threat, and his eyes were narrow as if clouded by the evils he had seen. His most distinguishing feature was his facial scar. He was five foot, six inches tall, but with a bulky frame.\n\nAgasha Sumiko, Ruby Champion (not yet promoted)\n\nMiya Satoshi\n\nDoji Toshiyasu, imperial delegate\n\nIkoma Ujiaki, survivor\n\nIsawa Tadaka; notable.\n\n// Bayushi\nDoji Shizue, one guard each, traveling with.\n\nHas served under the Hida.\n\nIsawa Endo\n// Bringing a younger peer, still a minor (12-13)\nIsawa Renji\n\nKitsuki Hasumi\n// Travels alone\n\n///\n\nWho knows where Bayushi Taigen sleeps?\nSuccess: 5\n\nBayushi Taigen\n\nTunnels underground.\n\nThings to do:\n\n- Talk to Ikoma Ujiaki\n- Hasumi: reach out to Seppun Hokuto\n- Scenes of the crime (3)\n- Body of Doji Toshiyasu\n- Look at some of the recent tea ceremonies. See if there's a connection?\n- Interview the yojimbo of Doji Toshiyasu\n\nSet up imperial calendar in Foundry\n\nSee how they work together.\n\n// Renji; wil catch him up.\n\nUjiaki - what is his status/stat block?\n\nBushido; what's the situation?\nXP situation?\n\nTo do: Kachiko's letter to the Crab\n\nReview safety tools in discord\n\nGet reviewed on startplaying.games?\n\nWhat are the written testimonies?\n\nReview what the benefits of using Void gives (ignoring strife)?\n\nHave 2 weeks to run with this."
+   }
+  ],
+  "people": [
+   {
+    "id": "bo-final-the-seven-imperial-advisors",
+    "title": "The Seven Imperial Advisors",
+    "text": "The Emperor maintains seven trusted advisors—not formal positions, but individuals he confides in privately, each renowned as an exemplar of a specific virtue of Bushidō. In public, they are paragons of samurai virtue. In private, each harbors secrets that would shatter their carefully maintained reputations."
+   },
+   {
+    "id": "bo-final-the-dead",
+    "title": "THE DEAD",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-final-the-dead-miya-satoshi-first-victim",
+      "title": "Miya Satoshi (First Victim)",
+      "text": "**Clan:** Imperial (Miya Family) | **Role:** Daimyo, Imperial Herald\n**Public Virtue:** **Makoto (Honesty/Sincerity)**\n\n**Public Reputation:** For twenty years, Miya Satoshi served as the Emperor's Herald, carrying proclamations to every corner of the Empire. He was famous for his unwavering integrity—it was said that Satoshi had never told a lie in his life, that his word was as unchangeable as stone. His photographic memory and reputation for absolute honesty made his testimony irrefutable. People confessed their secrets around him, believing he would speak only truth.\n\n**The Secret:** Satoshi's entire reputation was built on careful omission and technical truth. He mastered the art of answering questions that weren't asked, of speaking truths that implied falsehoods. But his deepest secret was far darker: Satoshi was a **Kolat agent**, serving an ancient conspiracy against the Celestial Order itself. Every \"sincere\" word he spoke served a hidden agenda. His position as Imperial Herald gave the Kolat unparalleled access to Imperial communications.\n\n**Death:** Torn apart by an oni in his private chambers. The Crane conspiracy ordered his death as a distraction—they had no idea they had just assassinated a Kolat operative."
+     },
+     {
+      "id": "bo-final-the-dead-doji-toshiyasu-second-victim",
+      "title": "Doji Toshiyasu (Second Victim)",
+      "text": "**Clan:** Crane (Doji Family) | **Role:** Tea Master\n**Public Virtue:** **Rei (Respect/Courtesy)**\n\n**Public Reputation:** Doji Toshiyasu was considered the most courteous samurai in Rokugan—a Tea Master whose ceremonies were legendary for their perfect grace. Every guest who attended his tea room felt honored, respected, valued. He could broker peace between bitter enemies through pure force of refined hospitality. His death was considered a catastrophic loss to Imperial culture.\n\n**The Secret:** Toshiyasu's famous tea ceremonies were intelligence operations. Every guest who relaxed in his presence, every lord who confided over their cup, every lady who gossiped while admiring the flowers—he remembered everything. His \"perfect courtesy\" was a trap that made people comfortable enough to reveal their secrets.\n\nMore than that: Toshiyasu was an assassin of reputations. He killed with whispers, not blades. Carefully placed words destroyed careers, shattered alliances, drove men to fall upon their own swords in shame. Nothing could ever be traced back to his loose lips. He was courtesy weaponized.\n\n**Death:** Torn apart by an oni, just like Satoshi. But this was no Crane operation—this was **Kolat revenge**. The conspiracy had discovered that Satoshi was theirs, and they struck back at the Crane through their advisor. Kunimichi, serving his Kolat handlers, recruited Kogo a second time for this murder."
+     }
+    ]
+   },
+   {
+    "id": "bo-final-the-survivor-for-now",
+    "title": "THE SURVIVOR (For Now)",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-final-the-survivor-for-now-ikoma-ujiaki-survived-third-attack",
+      "title": "Ikoma Ujiaki (Survived Third Attack)",
+      "text": "**Clan:** Lion (Ikoma Family) | **Role:** Imperial Ambassador\n**Public Virtue:** **Yū (Courage)**\n\n**Public Reputation:** Ikoma Ujiaki is famous for his unshakeable courage—not the courage of the battlefield, but the courage to speak difficult truths in hostile courts. He has faced down angry daimyō, delivered unpopular Imperial edicts to furious generals, and never once backed down from confrontation. He advises the Emperor on matters of Lion Clan politics with the confidence of a samurai who fears no challenge.\n\n**The Secret:** Ujiaki sought the field of battle in the courts because he is a **coward in the face of death**. He has never drawn his sword in anger. He avoids any situation where physical violence might occur. His \"courage\" is performative—the bravery of words, not deeds. He knows the whispers: that he is no true Lion, that his courage is mere posturing.\n\n**The Failed Attack:** When the oni came for him, Ujiaki did not stand and fight like a warrior. He ran. He hid. He screamed for guards. His cowardice—the very thing he's spent his life concealing—*saved his life*. The oni expected a Lion's charge; it got a man who fled into a storage room and barricaded the door.\n\nThe oni, wounded by guards who finally responded, escaped west into the Shinomen Forest.\n\n**Current Status:** Alive, shaken, and being hailed as a survivor of supernatural attack. He cannot explain how he survived without admitting his cowardice. He is terrified the oni will return. He is right to be afraid—though the true threat will come from Kunimichi's sabotage, not supernatural attack.\n\n**Scheduled Death:** Early in the campaign, Ujiaki will die in what appears to be an accident. Kunimichi's sabotage—a weakened beam, a poisoned meal, a \"tragic fall\"—will finish what the oni could not. This will create investigative confusion: Was the \"failed\" attack actually delayed success? Or is there a second killer?"
+     }
+    ]
+   },
+   {
+    "id": "bo-final-the-living-four",
+    "title": "THE LIVING FOUR",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-final-the-living-four-bayushi-aramoro",
+      "title": "Bayushi Aramoro",
+      "text": "**Clan:** Scorpion (Bayushi Family) | **Role:** Shoju's Half-Brother\n**Public Virtue:** **Chūgi (Duty/Loyalty)**\n\n**Public Reputation:** In a clan renowned for deception and manipulation, Bayushi Aramoro stands out as the exception—a Scorpion whose loyalty to the Emperor is absolute and unquestionable. For thirty years, he has served the Hantei line with such devoted faithfulness that even Scorpion's enemies acknowledge his integrity. He has repeatedly sacrificed Scorpion Clan interests when they conflicted with Imperial interests, earning him enmity within his own clan but unwavering Imperial trust.\n\nHe is famous for the \"Three Refusals\"—three separate occasions where the Scorpion Champion offered him bribes, threats, and blackmail to influence the Emperor, and each time Aramoro reported the attempts directly to the throne. The fact that Champion Shoju is his own half-brother makes this even more remarkable.\n\n**The Secret:** Aramoro's legendary loyalty is a mask for the greatest act of betrayal in recent Imperial history—he intends to kill the Emperor himself.\n\nTwenty years ago, Aramoro discovered that Emperor Hantei XXXVIII ordered the secret execution of Aramoro's sixteen-year-old son for \"politically inconvenient\" knowledge about Imperial corruption. The boy was guilty only of being in the wrong place at the wrong time. The Emperor had him killed and the death staged as a hunting accident. Aramoro learned the truth through his Scorpion network and has spent two decades planning perfect revenge.\n\n**Current Status:** Aramoro is **not behind the current murders**. When the first advisor died, he was as shocked as anyone. Now he is *investigating*—trying to determine who is responsible, whether they threaten his plans, and whether their chaos might serve his purposes.\n\nHe faces a choice: Does he compete with the unknown killer? Let them continue as long as he isn't targeted? Try to recruit them? Or use the chaos as cover for finally moving against the Emperor?\n\n**Arc:** Aramoro begins as an observer. He will eventually discover Nasu Kogo and attempt to recruit her through his own Scorpion agent—not knowing she already serves Crane and Kolat masters. When he finally acts, he will be the threat the investigators stopped looking for."
+     },
+     {
+      "id": "bo-final-the-living-four-kitsuki-ma-aya",
+      "title": "Kitsuki Ma'aya",
+      "text": "**Clan:** Dragon (Kitsuki Family) | **Role:** Investigator Emerita\n**Public Virtue:** **Gi (Righteousness/Justice)**\n\n**Public Reputation:** Kitsuki Ma'aya spent forty years as one of the Empire's foremost investigators before her retirement to advisory duties. Her record is considered flawless—case after case solved through the famous Kitsuki method of physical evidence and logical deduction. She famously refused to rule in favor of her own clan in a border dispute, citing the evidence without bias. Her judgments are considered beyond appeal because no one doubts her complete impartiality.\n\n**The Secret:** Ma'aya's famous impartiality is a careful construction. Throughout her career, she has used \"evidence\" (or the strategic absence thereof) to shine light only on the facts that support the conclusions she wanted. Inconvenient evidence has had a habit of getting lost. Witnesses whose testimony didn't fit her theory were discredited on technicalities.\n\nShe didn't *lie*—she simply curated truth. She told herself it was in service of justice, that she was steering toward correct outcomes. But she knows: her \"perfect record\" is a monument to bias disguised as objectivity.\n\nMore recently, she accepted a significant bribe to overlook evidence in a murder investigation. The victim's family still awaits justice that will never come.\n\n**Current Status:** Ma'aya is one of the investigators assigned to the advisor murders—poetic irony given her own compromised principles. She is genuinely trying to solve the case, but her instincts keep leading her toward politically convenient conclusions rather than truth."
+     },
+     {
+      "id": "bo-final-the-living-four-asako-tsuki",
+      "title": "Asako Tsuki",
+      "text": "**Clan:** Phoenix (Asako Family) | **Role:** Shugenja, Healer\n**Public Virtue:** **Jin (Compassion/Benevolence)**\n\n**Public Reputation:** Asako Tsuki is renowned throughout Rokugan as the embodiment of mercy. She has dedicated her life to healing the sick, comforting the dying, and advocating for the powerless. Her aunt, Asako Azunami, is the Master of Water—Tsuki grew up immersed in healing magic and its philosophy. She has walked into plague villages without fear, sat with dying peasants when other samurai wouldn't touch them, and wept genuine tears for every patient she couldn't save.\n\nShe established the \"Compassion Houses\"—small clinics in poor districts where anyone, regardless of caste, could receive treatment. This was controversial—some said it disrupted the Celestial Order—but Tsuki's obvious sincerity and the Emperor's tacit approval silenced critics.\n\n**The Secret:** Tsuki has been performing mercy killings for years. She tells herself it's compassion—ending suffering for those beyond saving. But each death has been her choice, not her patients'. She has become the judge of who deserves to continue suffering and who deserves release. Some of her \"peaceful passings\" were people who could have recovered. Some were people whose deaths benefited others.\n\nThe first death was genuine mercy. The tenth was easier. The twentieth was almost routine. She no longer knows where compassion ends and murder begins.\n\n**Current Status:** Tsuki is investigating the use of what appears to be supernatural power in the murders. Her skills as a shugenja allow her to sense spiritual disturbance. She is getting **dangerously close to discovering Nasu Kogo's involvement**.\n\n**Danger:** If Aramoro's conspiracy decides a fourth murder is necessary to distract investigators or silence threats, Asako Tsuki is the likely target. Kogo fears her—and Aramoro's agent might offer Kogo protection in exchange for eliminating the Phoenix who's getting too close to the truth."
+     },
+     {
+      "id": "bo-final-the-living-four-shiba-katsuda",
+      "title": "Shiba Katsuda",
+      "text": "**Clan:** Phoenix (Shiba Family) | **Role:** Lord of Nikesake\n**Public Virtue:** **Meiyo (Honor)**\n\n**Public Reputation:** Shiba Katsuda is celebrated as the greatest living warrior of the Phoenix Clan—a seeming contradiction given Phoenix's scholarly reputation, which makes his martial excellence all the more remarkable. He earned the reputation through a career of legendary victories: the defense of Nishiyama Pass, the Thirty-One Duels, the routing of bandits from Nikesake province. His name is synonymous with martial honor.\n\n**The Secret:** Katsuda is skilled—genuinely skilled. But skill alone didn't make him a legend. Every victory has been helped by unfair advantages concealed from history.\n\nHis famous defense of Nishiyama Pass? He had advance warning from a spy. The Thirty-One Duels? At least a dozen opponents were subtly poisoned beforehand—not enough to be obvious, but enough to slow their reflexes. His routing of the Nikesake bandits was possible because he had already bribed their second-in-command to betray them at the crucial moment.\n\nEach victory built upon the last. Each new accolade became a heavier weight. He has become addicted to glory even as he loathes himself for how he earns it. He cannot stop seeking victory because stopping would mean examining what he's done.\n\nThe cruel irony: if he had simply been himself—talented but fallible—he would have achieved genuine honor through honest effort. Instead, he built a monument to false glory that now imprisons him.\n\n**Current Status:** Katsuda is one of the remaining advisors and knows he could be targeted. He is privately terrified—not of the oni, but that investigation into the murders might somehow expose his own fraudulent history."
+     }
+    ]
+   },
+   {
+    "id": "bo-final-the-surviving-advisors-positions",
+    "title": "The Surviving Advisors' Positions",
+    "text": "Advisor · Virtue · Current Status · Threat Level\n\n- **Bayushi Aramoro** · Loyalty · Investigating/Planning · IS the eventual threat\n- **Kitsuki Ma'aya** · Justice · Assigned to investigate · Low (unless secrets exposed)\n- **Asako Tsuki** · Compassion · Investigating spiritual angle · HIGH (Kogo fears her)\n- **Shiba Katsuda** · Honor · Terrified, hiding secrets · Medium (collateral exposure)\n- **Ikoma Ujiaki** · Courage · Survived, traumatized · DEAD (early campaign)"
+   },
+   {
+    "id": "bo-final-key-npcs",
+    "title": "Key NPCs",
+    "text": "",
+    "sections": [
+     {
+      "id": "bo-final-key-npcs-the-conspirators",
+      "title": "The Conspirators",
+      "text": "**Nasu Kogo** (Phoenix courtier, maho-tsukai)\n\n- The nexus connecting all three conspiracies\n- Increasingly desperate and corrupted\n- Fears Asako Tsuki's investigation\n- Sees Aramoro's agent as protection\n\n**Tsume Kunimichi** (Crane shinobi)\n\n- Operational link for Crane/Kolat conspiracy\n- Recruited Kogo, used her twice\n- Suspicious of her Scorpion contacts\n- Will commit the third murder (sabotage)\n\n**Aramoro's Agent** (Scorpion operative)\n\n- Identity TBD—loyal to Aramoro personally, not to clan\n- Recently recruited Kogo\n- Doesn't know about her other handlers\n- Serves as buffer between Aramoro and operations\n\n**Yuki** (Kolat handler)\n\n- Kunimichi's contact for Kolat operations\n- Directed the second murder as retaliation\n- May or may not appear directly\n\n**Daidoji Masahiro** (Crane lord)\n\n- Authorized the original distraction operation\n- Kunimichi's Crane master\n- May not know about Kolat involvement"
+     },
+     {
+      "id": "bo-final-key-npcs-the-surviving-advisors",
+      "title": "The Surviving Advisors",
+      "text": "**Bayushi Aramoro** — See detailed entry above\n**Kitsuki Ma'aya** — See detailed entry above\n**Asako Tsuki** — See detailed entry above\n**Shiba Katsuda** — See detailed entry above"
+     },
+     {
+      "id": "bo-final-key-npcs-other-key-figures",
+      "title": "Other Key Figures",
+      "text": "**Hantei XXXVIII (Jodan)** — The Emperor\n\n- Ordered Aramoro's son killed twenty years ago\n- Trusts his advisors implicitly\n- Doesn't know the web of secrets surrounding him\n\n**Bayushi Shoju** — Scorpion Champion\n\n- Aramoro's half-brother\n- May or may not suspect Aramoro's true nature\n- His canonical plotlines continue in background\n\n**Bayushi Kachiko** — Imperial Advisor (formal position)\n\n- Not one of the Seven (different role)\n- May have insights into Aramoro\n- Her canonical manipulations continue\n\n*Campaign concept for Legend of the Five Rings 5th Edition, set in Early 1120*"
+     }
+    ],
+    "about": [
+     "#BOgmNasuKogo",
+     "#BOgmTsumeKunimichi"
+    ]
+   }
+  ],
+  "pc": [
+   {
+    "id": "bo-characters",
+    "title": "Bushi Oni Characters",
+    "text": "Kitsuki Hasumi (she/her)\nHaunted by?\nHorrible Scar\nLord: Kitsuki Jusai leads clandestine network, Eyes and Ears of the Dragon)\nHave a dragon clan shinobi added.\n\nLast Step Castle\n\nhttps://l5r.fandom.com/wiki/Nazo_Mori\n\nWhere are the rest of their 20 questions?\n\nIuchi Reijun (left campaign)\nLord: Iuchi Kadokiyo\n\nIsawa Endo (he/him)\nIsawa Uona (Lord)\nAsako Junpei\n\nFull of himself; he is the protagonist. Wears glasses, traditional red garb.\n\nEndo; was in the forest and shrines, focusing on his skills. Good and fast communication with Fire, likes the destruction that goes along with it.\n\nBayushi Taigen (he/him) // twin brother of Bayushi Dairu\nBlack ??? that he always wears\nDoji Shuzue- fiancee Kyuden Doji\nTwo katanas.\nBayushi Shoju\n\nLines and veils for L5R\n\nHiruma Kaede is a powerfully built young woman whose weathered features and thousand-yard stare belie her mere twenty years. Broad-shouldered and muscular from relentless training and Wall defense, she moves with the deliberate economy of a veteran warrior. A thin scar runs from her left temple to her ear, while her calloused hands and sun-darkened skin speak to countless hours exposed to harsh elements. Her most distinctive feature is her deliberately mismatched armor—a breastplate from a fallen comrade, arm guards inherited from her instructor, leg protection she modified herself—all worn beneath a weather-beaten purple Unicorn traveling cloak that stands out starkly against traditional Crab colors. Dark hair tied back with plain cord, strong angular features set in serious neutrality, and dark eyes that observe more than they reveal complete the picture of a dutiful soldier—except for those rare moments when her gaze drifts to distant horizons, and something hungry and alive flickers across her face before discipline reasserts itself.\n\nNotes:\n\n- The Crane order was originally to take out both the Miya and the Ikoma? / Or, they believed the Lion killed the Doji, and target the Ikoma.\n- Kunimichi uses sabotage to \"tidy things up\", since the oni failed.\n- The Miya knew the hypocrisy but had been holding that information in reserve; if the Kolat were to learn this, they might be able to undermine the empire itself.\n\n- Asako Tsuki; is the one who finds the \"avatar\"?\n- Kogo, does she begin to play the three sides against each other?\n- If either Crane or Scorpion believe their connection to Kogo as a blood sorcerer is about to be discovered, it behooves them to throw the other clan under the bus.\n\n- Kogo might go the forest or to the Shadowlands.",
+    "about": [
+     "#BOpcKitsukiHasumi",
+     "#BOpcIsawaEndo",
+     "#BOpcBayushiTaigen",
+     "#BOpcKitsuneYuma",
+     "#BOgmHirumaKaede"
+    ]
+   }
+  ]
+ }
+}

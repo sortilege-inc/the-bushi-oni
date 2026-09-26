@@ -9,9 +9,11 @@ window.VttConfig = {
   // The pages, relative to the site root; the gm/ pages carry <base href="../"> so every
   // path stays root-relative.
   pages: { site: './', gm: 'gm/', table: 'gm/vtt.html', play: 'gm/play.html' },
-  // What a fresh browser opens on until a campaign is created or restored. The seed (the GM's
-  // material, moved into the GM tabs) is added once it exists: seed: 'campaign/pack/seed.json'.
-  defaultCampaign: { name: 'The Bushi Oni', modules: [], books: [] },
+  // What a fresh browser opens on until a campaign is created or restored, and the seed
+  // (engine/state.js seed): the GM's planning documents, moved into the GM tabs (campaign/PLAN.md M3,
+  // campaign/source/absorb_planning.py). It fills what the campaign has never had, entry by entry; the
+  // pack is the source from then on, edited in the tabs.
+  defaultCampaign: { name: 'The Bushi Oni', modules: [], books: [], seed: 'campaign/pack/seed.json' },
   // the campaign is its own adventure: its arc is what the table, the cast and the current scene
   // follow; the published-adventure picker and the Notes document are left out (PLAYBOOK §4b)
   ownAdventure: { title: 'The Bushi Oni' },

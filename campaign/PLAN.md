@@ -78,7 +78,7 @@ is a *backup character* (a PC version held in reserve). The six 2025-10-27 prege
 | M0 | Support folder sorted; fork; boundary; standards; local proof | **landed** 2026-09-26 |
 | M1 | PCs into `campaign/dsl/` as `ACTOR Samurai` instances, converted from the Foundry exports by a script in `campaign/source/`, piloted on one PC and checked field by field (planted difference must fail), every version kept | **landed** 2026-09-26 |
 | M2 | The six 2025-10-27 pregens as **GM characters**: full sheets like the PCs, in a layer (a book) of their own | **landed** 2026-09-26 |
-| M3 | GM material into the pack (overview, threads, places, people) by a deterministic converter + an independent every-word check | after M2 |
+| M3 | GM material into the pack (overview, threads, places, people) by a deterministic converter + an independent every-word check | **landed** 2026-09-26 |
 | M4 | Site tabs: home, Chronicle (sessions 2026-01-06, 01-20, 01-27, hand-written from the transcripts), Dramatis Personae (the named cast — no statblocks exist for them), the Otosan Uchi map | after M3 |
 | M5 | Deploy: Worker `the-bushi-oni`, Pages, a domain — each step confirmed with the owner | owner's go |
 
@@ -119,6 +119,23 @@ loaded before the players' so the players' book leads the shelf.
 - Browser (:8749): the Characters tab shows *The Bushi Oni* (4) then *The Bushi Oni — GM characters* (6);
   the GM's party picker labels each with its book. No console errors.
 
+**M3 — the GM's material into the GM tabs (landed 2026-09-26).** `campaign/source/planning/` holds the five
+carried documents byte for byte (`cmp` identical); `absorb_planning.py` writes `campaign/pack/seed.json`
+(public, B3) and `engine/config.js` names it as `defaultCampaign.seed`. Headings become sections and
+subsections (deeper ones bold lines), tables a header line and a list, the code-fence diagram plain lines;
+no word changes.
+- Where it went: the *Final* draft's overview, conspiracies, murder timeline and task force → **Overview**;
+  the advisors, their positions and the key NPCs → **Cast** (the key-NPC section linked to the two GM
+  characters it names); its three investigation threads → **Threads**; the 1120 reference's four parts →
+  **Overview**; the 27 Jan session plan's seven scenes → **Scenes** ("Prepared for 27 Jan 2026", none marked
+  played), its state, order and GM notes → an Overview section; *Bushi Oni Characters* → **Party** notes
+  (linked to the PCs, Yuma and Hiruma Kaede); *Parallel Investigation* → **Overview**.
+- `check_planning.py` (its own tokenizer, heading by heading, both directions) → **PASS: 5 documents, 98
+  headings, 7,779 words, 0 failures**; the 7,779 matches an independent count of every body word. Planted
+  a dropped word, a swapped pair and an added word → exit 1, all three named; restored → PASS.
+- Browser (:8749 `/gm/`): the seed filled the local campaign (72 entries, the party member kept); Overview,
+  Cast and Scenes render it, the diagram and the table as lines; no console errors.
+
 ## Decision log
 
 - 2026-09-26 — Archive buckets follow Caul/B&OD; the Otosan Uchi map-and-poster set kept as its own
@@ -135,6 +152,13 @@ loaded before the players' so the players' book leads the shelf.
   the ledger lists each such item. A Foundry name the corpus spells otherwise (a specifier, a clan
   suffix, "Sword Saint" = `Sword-Saint`, "Lover" = `Lover Bond`) is kept verbatim in `As Recorded`.
   School and title abilities come with the School/Title (Portents). An empty `koku` (None) is 0.
+- 2026-09-26 — M3: carried the **current** planning set — *Final* (28 Dec), the 1120 reference (6 Jan), the
+  27 Jan session plan, and the two March notes files. **Not carried**, as superseded: *Campaign Summary*,
+  *Revised* and *Seven Imperial Advisors* (all 25 Dec) — their advisors and conspiracies are not the
+  ones *Final* and play use (the Archivist's NPCs are *Final*'s); they stay in the archive, and adding
+  any later is safe (the seed only adds new ids). *L5R Rewrite Public.docx* is a third-party rules
+  rewrite, not campaign material — not carried. The planned scenes are all `played: false`: the
+  transcript cannot say reliably which were run, and the seed can never flip `played`; the GM marks them.
 
 ## To resume
 
