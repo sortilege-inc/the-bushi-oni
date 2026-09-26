@@ -79,7 +79,7 @@ is a *backup character* (a PC version held in reserve). The six 2025-10-27 prege
 | M1 | PCs into `campaign/dsl/` as `ACTOR Samurai` instances, converted from the Foundry exports by a script in `campaign/source/`, piloted on one PC and checked field by field (planted difference must fail), every version kept | **landed** 2026-09-26 |
 | M2 | The six 2025-10-27 pregens as **GM characters**: full sheets like the PCs, in a layer (a book) of their own | **landed** 2026-09-26 |
 | M3 | GM material into the pack (overview, threads, places, people) by a deterministic converter + an independent every-word check | **landed** 2026-09-26 |
-| M4 | Site tabs: home, Chronicle (sessions 2026-01-06, 01-20, 01-27, hand-written from the transcripts), Dramatis Personae (the named cast — no statblocks exist for them), the Otosan Uchi map | after M3 |
+| M4 | Site tabs: home, Chronicle (sessions 2026-01-06, 01-20, 01-27, hand-written from the transcripts), Dramatis Personae (the named cast — no statblocks exist for them), the Otosan Uchi map | **landed** 2026-09-26 |
 | M5 | Deploy: Worker `the-bushi-oni`, Pages, a domain — each step confirmed with the owner | owner's go |
 
 **M1 — the player characters (landed 2026-09-26).** `campaign/source/foundry/` holds the five Foundry
@@ -136,6 +136,23 @@ no word changes.
 - Browser (:8749 `/gm/`): the seed filled the local campaign (72 entries, the party member kept); Overview,
   Cast and Scenes render it, the diagram and the table as lines; no console errors.
 
+**M4 — the site tabs (landed 2026-09-26).** Four campaign tabs lead the site (`campaign/site/site.js`):
+*The Bushi Oni* (home), *Chronicle*, *Dramatis Personae*, *Otosan Uchi* (the map). Documents are
+`campaign/docs/*.html` drawn into `.bo-doc` and styled by `campaign/site/bo.css` from the VTT's own tokens; the
+map is a pan/zoom viewer (`campaign/site/map.js`) over two images; `campaign/site/portraits.js` gives the PCs'
+live sheets their portraits. Art is `campaign/assets/` (19 portraits at 480px, the key art, both maps as webp).
+The voice is the project skill `.claude/skills/rokugan-voice` (adapted from Portents').
+- The Chronicle (three sessions, ~4,400 words) was written from the three transcripts read in full, with the
+  Archivist recaps as a skeleton only. Checked back against the transcripts claim by claim; seven overreaches
+  fixed before commit (e.g. an unreliable-speaker line no longer attributed; Tsume Rin's pronoun; "that
+  morning" for Ujiaki's departure, which the transcript does not say).
+- The Dramatis Personae (22 people) carries only what the table learned; an entry that set two clues side by
+  side was cut back so the page draws no conclusion the players have not.
+- `campaign/source/check_docs.py` → **OK, 40 links and sources, 0 broken** (planted a bad anchor and a
+  missing image → both named, exit 1). Browser (:8749): every tab renders with no console errors and no broken
+  image; the map toggles (`#map/plan`), zooms and drags; home cards open each PC's sheet; Hasumi's live sheet
+  on `/gm/` shows her portrait; at 375px no horizontal scroll; `#chronicle/session-two` lands clear of the header.
+
 ## Decision log
 
 - 2026-09-26 — Archive buckets follow Caul/B&OD; the Otosan Uchi map-and-poster set kept as its own
@@ -159,6 +176,13 @@ no word changes.
   any later is safe (the seed only adds new ids). *L5R Rewrite Public.docx* is a third-party rules
   rewrite, not campaign material — not carried. The planned scenes are all `played: false`: the
   transcript cannot say reliably which were run, and the seed can never flip `played`; the GM marks them.
+- 2026-09-26 — M4 spellings: *Kitsuki Kagi* (the owner's own notes; the Archivist writes *Kāgi*), *Asako
+  Kikue* (the portrait's file name; the Archivist writes *Kikuë*), *Tsume Rin* (the transcript and the
+  Archivist; the portrait file is `tsume-ren`), *Daidoji Masahiro* (the planning documents). The Chronicle
+  says Taigen was absent on 20 Jan (his player was) and uses the GM's own explanation from 27 Jan.
+- 2026-09-26 — M4 art: portraits and both maps are the archive's own files. Some portraits are published card
+  art (Aramoro, Kachiko, Dairu, Shoju, Satoshi, Shizue) and both maps are the owner's stitched scans of the
+  published Otosan Uchi map and poster — published on a public site, like the books' text (owner's B3/push).
 
 ## To resume
 

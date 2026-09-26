@@ -1,0 +1,66 @@
+/* campaign/site/bo.css — the campaign's documents inside the VTT's site. Everything is scoped to .bo-doc
+   and drawn from the VTT's own tokens (assets/css/l5r5e.css :root), so the pages sit in its paper. */
+
+.bo-doc { color: var(--ink); font-family: var(--serif); font-size: 18px; line-height: 1.6; }
+.bo-doc.bo-tab { max-width: 980px; margin: 0 auto; padding: 0.2rem 0 3rem; }
+.bo-doc .bo-muted { color: var(--ink-soft); }
+.bo-doc a { color: var(--crimson-deep); text-decoration-color: var(--edge); text-underline-offset: 2px; }
+.bo-doc a:hover { color: var(--crimson); text-decoration-color: currentColor; }
+
+/* the masthead every document opens with */
+.bo-doc .bo-mast { text-align: center; padding: 1.4rem 0 0.8rem; border-bottom: 1px solid var(--edge); margin-bottom: 1.6rem; }
+.bo-doc .bo-eyebrow { font-family: var(--caps); font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--crimson); }
+.bo-doc h1 { font-family: var(--disp); font-weight: 600; font-size: clamp(2.1rem, 5vw, 3rem); line-height: 1.1; margin: 0.3rem 0 0.4rem; color: var(--sumi); }
+.bo-doc .bo-sub { font-style: italic; color: var(--ink-2); margin: 0; }
+.bo-doc h2 { font-family: var(--disp); font-weight: 600; font-size: 1.9rem; line-height: 1.2; margin: 2.4rem 0 0.2rem; color: var(--sumi); }
+.bo-doc h3 { font-family: var(--caps); font-weight: 600; font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: var(--crimson-deep); margin: 1.8rem 0 0.5rem; }
+.bo-doc p { margin: 0 0 1rem; }
+.bo-doc .bo-lede { font-size: 1.12em; color: var(--ink-2); }
+
+/* the home page */
+.bo-doc .bo-hero { position: relative; border-radius: 6px; overflow: hidden; box-shadow: var(--shadow-soft); background: var(--lacquer); }
+.bo-doc .bo-hero img { display: block; width: 100%; height: clamp(220px, 42vw, 440px); object-fit: cover; object-position: 60% 30%; opacity: .92; }
+.bo-doc .bo-hero .bo-hero-t { position: absolute; left: 0; right: 0; bottom: 0; padding: 1.2rem 1.4rem 1.1rem; background: linear-gradient(transparent, rgba(23, 18, 13, .92)); color: var(--paper-2); }
+.bo-doc .bo-hero h1 { color: var(--paper-2); margin: 0.2rem 0 0; }
+.bo-doc .bo-hero .bo-eyebrow { color: var(--gold-lit); }
+.bo-doc .bo-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin: 1rem 0 1.4rem; }
+.bo-doc .bo-card { display: block; background: var(--paper-2); border: 1px solid var(--edge); border-radius: 6px; overflow: hidden; text-decoration: none; color: var(--ink); }
+.bo-doc .bo-card:hover { border-color: var(--crimson); color: var(--ink); }
+.bo-doc .bo-card img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 20%; background: var(--paper-3); }
+.bo-doc .bo-card .bo-card-b { padding: 0.6rem 0.8rem 0.8rem; line-height: 1.35; }
+.bo-doc .bo-card strong { font-family: var(--disp); font-size: 1.3rem; display: block; }
+.bo-doc .bo-card span { font-family: var(--caps); font-size: 13px; letter-spacing: .08em; color: var(--ink-soft); }
+.bo-doc .bo-toc { list-style: none; padding: 0; margin: 0 0 1rem; display: grid; gap: 6px; }
+.bo-doc .bo-toc li { padding: 0.5rem 0.8rem; background: var(--paper-2); border-left: 3px solid var(--crimson); border-radius: 0 4px 4px 0; }
+.bo-doc .bo-toc small { color: var(--ink-soft); font-family: var(--caps); letter-spacing: .06em; margin-left: 0.4rem; }
+
+/* the Chronicle */
+.bo-doc .bo-sess { margin-top: 2.6rem; padding-top: 0.6rem; border-top: 2px solid var(--crimson); scroll-margin-top: 90px; }
+.bo-doc .bo-sess-n { font-family: var(--caps); font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink-soft); }
+.bo-doc .bo-sess h2 { margin-top: 0.1rem; }
+
+/* the Dramatis Personae */
+.bo-doc .bo-people { display: grid; gap: 14px; margin: 0.6rem 0 1.4rem; }
+.bo-doc .bo-person { display: grid; grid-template-columns: 112px 1fr; gap: 14px; background: var(--paper-2); border: 1px solid var(--edge); border-radius: 6px; padding: 12px; scroll-margin-top: 80px; }
+.bo-doc .bo-person img, .bo-doc .bo-person .bo-noimg { width: 112px; height: 140px; object-fit: cover; object-position: 50% 20%; border-radius: 4px; background: var(--paper-3); }
+.bo-doc .bo-person .bo-noimg { display: flex; align-items: center; justify-content: center; font-family: var(--disp); font-size: 2.2rem; color: var(--ink-dim); }
+.bo-doc .bo-person h4 { font-family: var(--disp); font-size: 1.35rem; font-weight: 600; margin: 0; line-height: 1.2; }
+.bo-doc .bo-person .bo-role { font-family: var(--caps); font-size: 13px; letter-spacing: .08em; color: var(--crimson-deep); margin: 0.1rem 0 0.4rem; }
+.bo-doc .bo-person p { margin: 0 0 0.5rem; font-size: 17px; }
+.bo-doc .bo-person p:last-child { margin-bottom: 0; }
+
+/* the map */
+.bo-doc .bo-map-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 8px; }
+.bo-doc .bo-map-bar button { font-family: var(--caps); font-size: 13px; letter-spacing: .1em; text-transform: uppercase; background: var(--paper-2); color: var(--ink); border: 1px solid var(--edge); border-radius: 4px; padding: 5px 12px; cursor: pointer; }
+.bo-doc .bo-map-bar button.on { background: var(--crimson); border-color: var(--crimson); color: var(--paper-2); }
+.bo-doc .bo-map-bar .bo-sp { flex: 1; }
+.bo-doc .bo-map-vp { position: relative; height: min(72vh, 760px); overflow: hidden; background: var(--lacquer-2); border-radius: 6px; cursor: grab; touch-action: none; user-select: none; }
+.bo-doc .bo-map-vp.grab { cursor: grabbing; }
+.bo-doc .bo-map-img { position: absolute; left: 0; top: 0; transform-origin: 0 0; max-width: none; pointer-events: none; }
+.bo-doc .bo-map-note { font-size: 15px; color: var(--ink-soft); margin: 8px 0 0; }
+
+@media (max-width: 640px) {
+  .bo-doc { font-size: 17px; }
+  .bo-doc .bo-person { grid-template-columns: 80px 1fr; }
+  .bo-doc .bo-person img, .bo-doc .bo-person .bo-noimg { width: 80px; height: 100px; }
+}

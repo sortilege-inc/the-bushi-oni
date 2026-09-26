@@ -34,12 +34,15 @@ window.VttConfig = {
   // What this instance adds to the upstream pages (engine/instance.js). Two DSL layers, each a book
   // built by build/build_layer.sh: the GM's characters (campaign/dsl-gm → campaign/data-gm) and the
   // players' (campaign/dsl → campaign/data). Each index puts its book first, so the players' loads last
-  // and leads. Site tabs and styles are added as campaign/PLAN.md's milestones land.
+  // and leads.
   instance: {
-    styles: [],
+    // the campaign's documents, scoped to .bo-doc (campaign/site/bo.css)
+    styles: ['campaign/site/bo.css'],
     stages: {
-      data: ['campaign/data-gm/index.js', 'campaign/data/index.js'],
-      site: [], gm: [], table: [], play: [],
+      data: ['campaign/data-gm/index.js', 'campaign/data/index.js', 'campaign/site/portraits.js'],
+      // the campaign's tabs (M4): home, Chronicle, Dramatis Personae, the map — campaign/docs/
+      site: ['campaign/site/map.js', 'campaign/site/site.js'],
+      gm: [], table: [], play: [],
     },
   },
   // The Worker that holds player sessions. Served from localhost the app talks to
