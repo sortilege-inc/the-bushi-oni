@@ -39,6 +39,10 @@ Status words: **PROPOSED** (awaiting the owner), **(owner)** decided, **landed**
 was set to `upstream/main` (`312af2b`) and the boundary files added on top. Instance-owned root files
 per INSTANCES.md: `engine/config.js`, `worker/wrangler.jsonc` (Worker `the-bushi-oni`), `README.md`,
 `.gitignore` (+`!.claude/skills/`), `.claude/launch.json`, `.gitattributes` (`merge=ours`).
+Boundary proven in throwaway clones (a fake upstream commit editing `engine/config.js`'s title line
+and appending to `engine/app.js`): without the driver the merge exits 1, `CONFLICT … engine/config.js`;
+with it the merge exits 0, `config.js` keeps *The Bushi Oni* (0 upstream lines) and `app.js` takes the
+upstream change.
 
 **B2 — The family standards from the start (landed 2026-09-26).** `ownAdventure` + `hidePanes:
 ['adventure', 'notes']`, the `/gm/` gate ("The Magistrate's Papers"), `siteBooks: false`, robots
