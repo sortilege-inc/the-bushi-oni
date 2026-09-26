@@ -1,32 +1,20 @@
-# sortilege-vtt-l5r5e
+# The Bushi Oni
 
-A virtual tabletop for **Legend of the Five Rings, 5th Edition**, generated from the Titterpig
-corpus `titterpig-dsl-l5r5e/0.5`: the books to read, the Roll & Keep dice, character creation
-by the Twenty Questions, the GM's table for the sixteen published adventures, and live sessions
-for players on their own devices.
+A **Legend of the Five Rings 5th Edition** campaign, run as an **instance** of
+[`sortilege-vtt-l5r5e`](https://github.com/sortilege-inc/sortilege-vtt-l5r5e): a fork of the VTT
+that owns `campaign/` and a few per-deployment root files, and never edits upstream.
 
-- `/` — the site: the books, schools, techniques, NPCs, pregens, adventures, the lore, the dice,
-  making a character, search. Writes nothing.
-- `/gm/` — the GM's table: panels over the campaign, the map table (`gm/vtt.html`), the
-  player's page (`gm/play.html`).
+- `/` — the site: the campaign's tabs, then the VTT's reference tabs and dice (the books' own text
+  is off on the public site; the GM turns it on per browser in Settings).
+- `/gm/` — the GM's table, behind a gate.
+- `campaign/` — the campaign's own material; `campaign/PLAN.md` is the plan and decision log.
 
-No build step for the pages; `data/` is generated:
-
-```bash
-bash build/build.sh
-```
-
-It parses every corpus file, writes `data/`, and gates the result both ways (every string the
-corpus prints reaches the data as often as it is printed, and nothing in the data is not in the
-corpus). The art is copied from the owner's Portents & Fortunes site by `bash build/build_art.sh`.
-
-A campaign can run as an **instance** of this VTT — a fork that owns a `campaign/` folder and
-never edits upstream. It declares its own scripts in `engine/config.js` (loaded by
-`engine/instance.js`) and builds its homebrew as one more book, gated as the books are:
+Pull upstream with a merge, never a rebase:
 
 ```bash
-bash build/build_layer.sh campaign/dsl campaign "<its title>" campaign/data
+git config merge.ours.driver true   # once per clone
+git fetch upstream && git merge upstream/main
 ```
 
-Local: the launch entries `vtt-l5r5e` (8740) and `vtt-l5r5e-worker` (8792). See `PLAN.md` for
-the milestones, the decisions and the proof of each, and its *Instances* section for the pattern.
+The instance-owned files (`.gitattributes`, `merge=ours`) keep this repo's copy on every pull; a key
+upstream adds to `engine/config.js` is carried by hand. The process is `~/Sortilege/VTT/INSTANCES.md`.

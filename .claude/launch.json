@@ -2,16 +2,16 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "vtt-l5r5e",
+      "name": "bushi-oni",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8740"],
-      "port": 8740
+      "runtimeArgs": ["-m", "http.server", "8749"],
+      "port": 8749
     },
     {
-      "name": "vtt-l5r5e-worker",
+      "name": "bushi-oni-worker",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["wrangler", "dev", "--port", "8792"],
-      "port": 8792,
+      "runtimeArgs": ["wrangler", "dev", "--port", "8799"],
+      "port": 8799,
       "cwd": "worker"
     }
   ]

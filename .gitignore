@@ -1,6 +1,8 @@
 # Local Claude Code state
 .claude/*
 !.claude/launch.json
+# instance: the campaign's own project skills are kept
+!.claude/skills/
 __pycache__/
 build/__pycache__/
 # a campaign is an instance, not part of the engine (see PLAN.md); keep any local one out
