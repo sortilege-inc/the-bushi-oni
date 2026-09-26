@@ -1,0 +1,1570 @@
+{
+  "folder": "dVLnSH4NplO14AGk",
+  "name": "Kitsune Yuma[backup character]",
+  "type": "character",
+  "img": "systems/l5r5e/assets/icons/actors/character.svg",
+  "prototypeToken": {
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "fatigue"
+    },
+    "bar2": {
+      "attribute": "strife"
+    },
+    "name": "Kitsune Yuma[backup character]",
+    "displayName": 0,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/l5r5e/assets/icons/actors/character.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "displayBars": 0,
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "system": {
+    "soft_locked": false,
+    "identity": {
+      "age": "",
+      "clan": "Fox",
+      "family": "Kitsune",
+      "female": null,
+      "marital_status": "",
+      "roles": "",
+      "school": "Shiba Guardian School [Phoenix]",
+      "school_rank": 1,
+      "school_curriculum_journal": {}
+    },
+    "rings": {
+      "earth": 3,
+      "air": 2,
+      "water": 2,
+      "fire": 2,
+      "void": 2
+    },
+    "notes": "",
+    "description": "<p>Ally& Dark Secret Ikoma Tsanuri</p>",
+    "social": {
+      "honor": 55,
+      "glory": 55,
+      "status": 43,
+      "ninjo": "Found a minor family with a bushi/guardian school",
+      "giri": "Kitsune Gohei",
+      "bushido_tenets": {
+        "paramount": "Jin[Compassion]",
+        "less_significant": "Makoto[Sincerity]"
+      }
+    },
+    "skills": {
+      "artisan": {
+        "aesthetics": 0,
+        "composition": 0,
+        "design": 0,
+        "smithing": 2
+      },
+      "martial": {
+        "fitness": 2,
+        "melee": 3,
+        "ranged": 0,
+        "unarmed": 0,
+        "meditation": 0,
+        "tactics": 1
+      },
+      "scholar": {
+        "culture": 0,
+        "government": 0,
+        "medicine": 0,
+        "sentiment": 1,
+        "theology": 2
+      },
+      "social": {
+        "command": 1,
+        "courtesy": 1,
+        "games": 0,
+        "performance": 0
+      },
+      "trade": {
+        "commerce": 0,
+        "labor": 0,
+        "seafaring": 0,
+        "skulduggery": 0,
+        "survival": 1
+      }
+    },
+    "techniques": {
+      "kata": true,
+      "kiho": false,
+      "inversion": false,
+      "invocation": false,
+      "ritual": true,
+      "shuji": true,
+      "maho": false,
+      "ninjutsu": false,
+      "mantra": false,
+      "specificity": true
+    },
+    "endurance": 10,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": {
+      "max": 2,
+      "value": 0
+    },
+    "fatigue": {
+      "max": 10,
+      "value": 0
+    },
+    "strife": {
+      "max": 10,
+      "value": 0
+    },
+    "stance": "void",
+    "prepared": true,
+    "xp_total": 35,
+    "xp_spent": 0,
+    "xp_saved": 0,
+    "template": "core",
+    "twenty_questions": {
+      "template": "core",
+      "generated": true,
+      "step1": {
+        "clan": "Fox",
+        "ring": "earth",
+        "skill": "survival",
+        "social_status": 30
+      },
+      "step2": {
+        "family": "Kitsune",
+        "ring": "air",
+        "skill1": "theology",
+        "skill2": "fitness",
+        "wealth": 2,
+        "social_glory": 40
+      },
+      "step3": {
+        "school": "Shiba Guardian School [Phoenix]",
+        "roles": "",
+        "ring1": "earth",
+        "ring2": "water",
+        "skill1": "melee",
+        "skill2": "fitness",
+        "skill3": "courtesy",
+        "skill4": "theology",
+        "skill5": "tactics",
+        "allowed_techniques": {
+          "kata": true,
+          "kiho": false,
+          "inversion": false,
+          "invocation": false,
+          "ritual": true,
+          "shuji": true,
+          "maho": false,
+          "ninjutsu": false,
+          "mantra": false,
+          "specificity": true
+        },
+        "techniques": [
+          "jiXcSF3wA11SFPaN",
+          "aKTfAZXbHo77kHOq"
+        ],
+        "school_ability": [
+          "4onn6qKseUxM0hq6"
+        ],
+        "equipment": [
+          "BhKwwnN5UHI5rZpp",
+          "S1MG4qPHEV3N8XnO",
+          "8yVNQ8f4TrCXlD1g",
+          "pk0DJcUiOeHz6akG",
+          "zcsgspz4VluSMeI0",
+          "Rex7fGo6R1KuUhQJ"
+        ],
+        "social_honor": 45
+      },
+      "step4": {
+        "stand_out": "Self awareness",
+        "ring": "void"
+      },
+      "step5": {
+        "social_giri": "Kitsune Gohei"
+      },
+      "step6": {
+        "social_ninjo": "Found a minor family with a bushi/guardian school"
+      },
+      "step7": {
+        "clan_relations": "Loyal to his clan",
+        "skill": "none",
+        "social_add_glory": 5
+      },
+      "step8": {
+        "bushido": "He follows the tenets closely",
+        "skill": "none",
+        "social_add_honor": 10,
+        "tenet_paramount": "Jin[Compassion]",
+        "tenet_less_significant": "Makoto[Sincerity",
+        "item": []
+      },
+      "step9": {
+        "success": "Befriending Ikoma Tsanuri during his travels whenever he had to go home or to phoenix lands",
+        "distinction": [
+          "Sj1Lo2Hz2gJOg6OG"
+        ]
+      },
+      "step10": {
+        "difficulty": "He never managed to get over being blunt from his childhood",
+        "adversity": [
+          "HQ0jlXlXHIWo1buy"
+        ]
+      },
+      "step11": {
+        "calms": "He Enjoys working with weapons and armor",
+        "passion": [
+          "n4XQNJt4H0hrftsW"
+        ]
+      },
+      "step12": {
+        "worries": "He has secretly fallen in love with his ally Ikoma Tsanuri attempting to have a child with her even thou he is engaged to Kitsune Ryosei",
+        "anxiety": [
+          "bd12LEtxVlmVVckt"
+        ]
+      },
+      "step13": {
+        "most_learn": "His lord Kitsune Gohei, were he earned the Betrohal of Kitsune Ryosei[the daughter of Gohei]",
+        "skill": "none",
+        "advantage": [
+          "xi1siK7KniN8HYIK"
+        ],
+        "disadvantage": []
+      },
+      "step14": {
+        "first_sight": "His White haori coat and fur on his shoulders",
+        "special_features": []
+      },
+      "step15": {
+        "stress": "He starts to bounce his right leg or foot depending on his seating and he tends to go treat with wooden verison of his weapons"
+      },
+      "step16": {
+        "relations": "He has strong ties to the crane and the fox clan but hates the lion clan due to his maternal line",
+        "item": [
+          "sPKkavq6O0SoxiPj"
+        ]
+      },
+      "step17": {
+        "parents_pov": "",
+        "skill": "none",
+        "bond": []
+      },
+      "step18": {
+        "heritage_name": "Matsu Yunaki",
+        "heritage_1": 10,
+        "heritage_2": 7,
+        "heritage_item": [],
+        "heritage_add_honor": null,
+        "heritage_add_glory": null,
+        "heritage_add_status": 3,
+        "skill": "none"
+      },
+      "step19": {
+        "firstname": "Yuma"
+      },
+      "step20": {
+        "death": "In battle or protecting his loved one"
+      },
+      "autoCompleteListName": "step3.school",
+      "autoCompleteListSelectedIndex": "19"
+    },
+    "zeni": 100,
+    "money": {
+      "koku": 0,
+      "bu": 0,
+      "zeni": 0
+    },
+    "is_afflicted_or_compromised": false
+  },
+  "items": [
+    {
+      "name": "Lord Shiba’s Valor (Phoenix)",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.jiXcSF3wA11SFPaN",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 177
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>Once, in the Shadowlands, the Kami Shiba stood alone between a vast horde of its foul denizens and the last of the Seven Thunders after their victory against Fu Leng. Drawing the legendary sword Ofushikai, Shiba cut his way through the host to the First Oni. Legends say that their blades flashed for a hundred days, shattering mountains around them and cutting great rifts across the ground. In the end, each slew the other, but Shiba fell with his oath to protect unbroken.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">Once per game session, as a Support action using one readied weapon, you may make a </span><span class=\"fontstyle2\">TN 2 Tactics (void) check </span><span class=\"fontstyle3\">targeting any number of friendly characters in range of your weapon.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, other characters cannot select your targets as the targets of their Attack or Scheme actions if they could select you instead. If an action has multiple targets, you must be the first target chosen. This effect persists for a number of rounds equal to your school rank.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(void)(op): </span><span class=\"fontstyle3\">If you succeed, increase the TN of Attack and Scheme checks targeting you by 1. This effect persists until the end of your next turn.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 2,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "skill": "tactics",
+        "difficulty": "2",
+        "technique_type": "kata"
+      },
+      "folder": "eKn62n6zERrRUMNW",
+      "_id": "WdWnOU3GHWbsLM3g",
+      "sort": 900000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Striking as Earth",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.aKTfAZXbHo77kHOq",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 178
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>After striking, the bushi roots themself to the ground, hunkering down to make sure their armor takes the brunt of a hit or raising a weapon in a warding position where it can deflect harm without being damaged.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Martial Arts [Melee, Ranged, or Unarmed] (earth) check, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(earth)(op)+: </span><span class=\"fontstyle3\">Treat your physical resistance as 1 higher per </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">spent this way until the beginning of your next turn.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 0,
+        "ring": "earth",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "kata"
+      },
+      "folder": "eKn62n6zERrRUMNW",
+      "_id": "cSHdOXe4g0svfF6C",
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Way of the Phoenix",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.4onn6qKseUxM0hq6",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 76
+        },
+        "description": "<p><span class=\"fontstyle0\">Once per scene, when a character at range 0–3 makes a check that contains 1 or more (st) symbols, you may negate all of those (st) symbols. Then, that character removes strife and fatigue equal to your school rank.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 0,
+        "rank": 1,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "school_ability"
+      },
+      "folder": null,
+      "_id": "3xP1Y2fVDd4eiQQg",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Katana",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.BhKwwnN5UHI5rZpp",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 232
+        },
+        "description": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "7",
+        "zeni": "20 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "1",
+        "damage": 4,
+        "deadliness": 5,
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "_id": "2R9CfgRXvHBEMjBi",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Wakizashi",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.S1MG4qPHEV3N8XnO",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 233
+        },
+        "description": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "7",
+        "zeni": "15 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "0-1",
+        "damage": 3,
+        "deadliness": 5,
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "_id": "k4q3wn0GPsy34sCZ",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Naginata",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/bo.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.8yVNQ8f4TrCXlD1g",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 235
+        },
+        "description": "<p><span class=\"fontstyle0\">Most samurai’s preferred polearm, the naginata is highly regarded. It has a long, flexible shaft made of bamboo or springy wood with a large, lightweight, slightly curved blade at the top. A naginata’s blade is forged with the same ceremony and meticulous craftsmanship as a katana’s, and commands the same reverence as the daishō. It is carried in elite units such as the Heaven’s Wing Brotherhood and the Utaku Battle Maidens</span>.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 2,
+        "rarity": "8",
+        "zeni": "10 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000006",
+            "name": "Cumbersome"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          },
+          {
+            "id": "L5RCorePro000011",
+            "name": "Wargear"
+          }
+        ],
+        "category": "Polearms",
+        "skill": "melee",
+        "readied": false,
+        "range": "2",
+        "damage": 6,
+        "deadliness": 6,
+        "grip_1": "N/A",
+        "grip_2": ""
+      },
+      "folder": null,
+      "_id": "L8XtJ53MT2EpTFbf",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Ashigaru Armor",
+      "type": "armor",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/armor.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.pk0DJcUiOeHz6akG",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 239
+        },
+        "description": "<p>Cheap, lightweight, and easy to acquire, ashigaru armor is issued to the peasant soldiery. Possessing neither the beauty nor the fine craftsmanship of lacquered or plated armor, ashigaru armor consists of light plates sewn together to protect the head, torso, and upper legs. It is occasionally paired with a light helmet. Although it does not protect as well as heavier armor, it is lightweight, flexible, and inexpensive as armor goes.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "3",
+        "zeni": "5 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000011",
+            "name": "Wargear"
+          }
+        ],
+        "armor": {
+          "physical": 3,
+          "supernatural": 0
+        }
+      },
+      "folder": null,
+      "_id": "DoOdrJ86xGrhz8zw",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Traveling Clothes",
+      "type": "armor",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.zcsgspz4VluSMeI0",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 239
+        },
+        "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "2",
+        "zeni": "2 bu",
+        "properties": [
+          {
+            "id": "L5RCorePro000015",
+            "name": "Durable"
+          },
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          },
+          {
+            "id": "L5RCorePro000016",
+            "name": "Subtle"
+          }
+        ],
+        "armor": {
+          "physical": 2,
+          "supernatural": 0
+        }
+      },
+      "folder": null,
+      "_id": "S7q8iPAhSIwJ46mR",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Traveling pack",
+      "type": "item",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.Rex7fGo6R1KuUhQJ",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 245
+        },
+        "description": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 0,
+        "rarity": "1",
+        "zeni": "10 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ]
+      },
+      "folder": null,
+      "_id": "oLXrT1RtSVvfNRRZ",
+      "sort": 5800000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Ally [Name]",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.distinctions-l5r-sortilege.Item.Sj1Lo2Hz2gJOg6OG",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 101
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>Do not use my name too freely, beloved, on every tea matron and Miwaku Kabe guard. But if our connection should advantage you in court, it pleases me to think that I may open doors for you.</em></span></p><p><span class=\"fontstyle2\"><em>- A letter to Iuchi Shahai, signed only with a Chrysanthemum seal</em></span></p><p></p><p><span class=\"fontstyle2\">The following apply to a character with the Ally [Name] distinction:</span></p><ul><li><p><span class=\"fontstyle2\">- You have proven yourself to a someone, who is willing to help you (within reason). They are open to sharing what they know about most topics, whether via a face-to-face meeting or written correspondence. They are also willing to arrange introductions for you with people they know.</span></p></li><li><p><span class=\"fontstyle0\">When performing a check that benefits from your close relationship with the character (such as a Courtesy (water) check to requisition an item through them or a Sentiment (water) check to read their emotions), you may reroll up to two dice.</span> <br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "water",
+        "peculiarity_type": "distinction",
+        "types": "Interpersonal"
+      },
+      "folder": null,
+      "_id": "pIbu7dlro2PLEDnd",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Bluntness",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.adversities-l5r-sortilege.Item.HQ0jlXlXHIWo1buy",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 118
+        },
+        "description": "<p><em>“You look terrible, my lord.”</em></p><p></p><p>The following apply to a character with the Bluntness adversity:</p><ul><li><p>- You have difficulty expressing things indirectly, and you overlook insinuations and implications in the statements of others unless they are pointed out to you directly.</p></li><li><p>- When you make a check to create or interpret subtext (such as a Design (air) check to select a wardrobe that conveys the proper subtle message to your intended recipient or a Sentiment (air) check to read someone’s unstated feelings), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "air",
+        "peculiarity_type": "adversity",
+        "types": "Interpersonal"
+      },
+      "folder": null,
+      "_id": "F02yOU1fas9Fkk1O",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Armament",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.passions-l5r-sortilege.Item.n4XQNJt4H0hrftsW",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 111
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>“The craftsmanship on this truly is exquisite,” Ikoma Eiji said, examining the spear on the table before him. The weapon had an eight-foot shaft of strong wood, surmounted by a two-foot blade carved with intricate symbols.</em></span></p><p><span class=\"fontstyle0\"><em>“Great Fortunes! Do you realize what this is? These carvings…” he ran his finger along the crest engraved into the metal of the blade. “This is Kotoku, the ancestral weapon of the Daidoji family!”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Armament passion:</span></p><ul><li><p><span class=\"fontstyle3\">- Unless the piece comes from outside of the Emerald Empire, you know the name of any weapon or piece of armor you encounter, are aware of its function, and have a rudimentary understanding of how to equip and wield it.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to make or study arms or armor (such as a Smithing (earth) check to polish a suit of armor or a Tactics (earth) check to know how to arrange a proper spear formation), you remove 3 strife.</span></p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "earth",
+        "peculiarity_type": "passion",
+        "types": "Mental"
+      },
+      "folder": null,
+      "_id": "RAM9jgbsUrVLiAYp",
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Dark Secret",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.anxieties-l5r-sortilege.Item.bd12LEtxVlmVVckt",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 132
+        },
+        "description": "<p><em>“I’m sorry that you saw that, Megumi-chan,” Kayoko said, her voice as soft as spider’s silk, her hands stained scarlet with blood.</em></p><p><em>A scream hung in Megumi’s throat, refusing to emerge. She could only stare in wide-eyed horror as Kayoko stepped closer.</em></p><p><em>“Power requires sacrifice, Megumi dear. That urchin has given her life for a higher purpose, and I have saved her from a lifetime of suffering. The power that I have gained will keep us all safe.”</em></p><p><em>Megumi tried to run, but her mind seemed disconnected from her body. Her pulse raced with the impulse to flee, but her legs would not obey.</em></p><p><em>Kayoko glided ever closer. “I can’t have you telling anyone, of course. I’m sure you understand…”</em></p><p><strong>Effects:</strong> The following apply to a character with the Dark Secret anxiety:</p><ul><li><p>-  You have a dark secret that, if exposed, could bring ruin upon your house and disgrace your ancestors and descendants alike. If the details of this secret become public, your glory value decreases dramatically, as if you had lost staked glory (by 10 to 20). Depending on the secret, your status value might also decrease considerably (by 5 to 10), as if you had lost staked status.</p></li><li><p>-  After performing a check to assert your will over yourself or others (such as a Command (void) check to order troops to fight to the bitter end or a Meditation (void) check to find inner peace), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "peculiarity_type": "anxiety",
+        "types": "Interpersonal"
+      },
+      "folder": null,
+      "_id": "qKdtMSSrQGxwER8M",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Blissful Betrothal",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.distinctions-l5r-sortilege.Item.xi1siK7KniN8HYIK",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 103
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>Autumn nights, it seems</em></span></p><p><span class=\"fontstyle0\"><em>Are long by repute alone:</em></span></p><p><span class=\"fontstyle0\"><em>Scarcely had we met</em></span></p><p><span class=\"fontstyle0\"><em>When morning’s first light appeared,</em></span></p><p><span class=\"fontstyle0\"><em>Leaving everything unsaid.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Blissful Betrothal distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- Your spouse fulfills certain social duties in your name when you are absent (such as attending events or caring for family members), provides assistance in their areas of expertise, and offers counsel when you face a difficult decision.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check for which your good relationship with your betrothed or spouse is a benefit (such as a Courtesy (water) check to persuade someone from their family or clan to assist you), you may reroll up to two dice.</span></p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "water",
+        "peculiarity_type": "distinction",
+        "types": "Interpersonal"
+      },
+      "folder": null,
+      "_id": "Pu4ujAf84pJEuLHs",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Lacquered Armor",
+      "type": "armor",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/armor.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.sPKkavq6O0SoxiPj",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580369793,
+        "modifiedTime": 1767580369793,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 239
+        },
+        "description": "<p><span class=\"fontstyle0\">Heavier than ashigaru armor, lacquered armor is worn by samurai who desire a good mix of protection and grandeur, and is just at home at war as at a martial ceremony. These suits are made of thick leather or steel plates stitched or riveted to a leather backing. They protect the torso, head, upper arms, and groin, and the legs above the knee. They can also include a helmet and mask, though these are not considered integral.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 2,
+        "rarity": "6",
+        "zeni": "25 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000006",
+            "name": "Cumbersome"
+          },
+          {
+            "id": "L5RCorePro000011",
+            "name": "Wargear"
+          }
+        ],
+        "armor": {
+          "physical": 4,
+          "supernatural": 0
+        }
+      },
+      "folder": null,
+      "_id": "41CKD1ogQWqlKbdJ",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Fire +1 (1 -> 2)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/icons/rings/fire.svg",
+      "_id": "wyypd5AoC36qT6vV",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 6,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "fire",
+        "advancement_type": "ring",
+        "skill": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580429311,
+        "modifiedTime": 1767580432961,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Trip the Leg",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.wJuo5wuCSga4kIc2",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580684499,
+        "modifiedTime": 1767580686531,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "court_of_stones",
+          "page": 113
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>The bushi’s spear flashes out, aiming low to trip up their opponent and send the unlucky foe crashing to the ground.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack action using one readied polearm, you may make a </span><span class=\"fontstyle2\">TN 2 Martial Arts [Melee] check </span><span class=\"fontstyle3\">targeting one character at range 1–2.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, your target suffers the Prone condition.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(op): </span><span class=\"fontstyle3\">If you succeed, the target receives 2 fatigue and 2 strife.</span></p><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle2\">+: </span><span class=\"fontstyle3\">If your target’s vigilance is lower than or equal to </span><span class=\"fontstyle5\">(op) </span><span class=\"fontstyle3\">spent this way, they suffer the Disoriented condition.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 3,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "air",
+        "skill": "melee",
+        "difficulty": "2",
+        "technique_type": "kata"
+      },
+      "folder": "9wUKvhOffK3VQ1xA",
+      "_id": "iOLR204W4GnGNZuC",
+      "sort": 2400000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Elemental Legionnaire",
+      "type": "title",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/title.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.titles-l5r-sortilege.Item.XtxTmmE0YNUSItpr",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767580951223,
+        "modifiedTime": 1767581278935,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 133
+        },
+        "description": "<p><span class=\"fontstyle0\">Although the shugenja of the Elemental Guards can call forth the very fury of nature, their complex invocations leave them vulnerable to attack. In battle, the Elemental Legions of Air, Earth, Fire, and Water are sworn to protect their corresponding Elemental Guard.</span></p><p><span class=\"fontstyle2\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">A daimyō of the Shiba family or the Phoenix Clan Champion, with permission from a member of the Elemental Council.</span></p><p><span class=\"fontstyle2\"><strong>Glory Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Status Award:</strong> </span><span class=\"fontstyle0\">+10</span></p><p><span class=\"fontstyle2\"><strong>Title Ability:</strong> Strength of the Elements</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Skills</p></td><td><p>Skill Group</p></td></tr><tr><td><p>Command</p></td><td><p>Skill</p></td></tr><tr><td><p>Medicine</p></td><td><p>Skill</p></td></tr><tr><td><p>Smithing</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-3 Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000076\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000076\">(shuji) Great Anvil's Measure</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000086\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000086\">(shuji) Moment of Glory</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+        "parent_id": null,
+        "items": [
+          {
+            "_id": "RbGqrcxdkGL100tV",
+            "name": "Advancement",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "6D2jaojs6K6jv2Vi",
+                "actor_id": "OADa0UOcFVEbsyEm"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 4,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "melee"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 0,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.351",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.2",
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "xNhpOM5pgmOIcEyD",
+            "name": "Advancement",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "6D2jaojs6K6jv2Vi",
+                "actor_id": "OADa0UOcFVEbsyEm"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 2,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "smithing"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 0,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.351",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.2",
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "BPIVNdKYKgWlBYSx",
+            "name": "Advancement",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "6D2jaojs6K6jv2Vi",
+                "actor_id": "OADa0UOcFVEbsyEm"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 4,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "smithing"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 0,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.351",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.2",
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "Hb2owdMdZLQ2kf3v",
+            "name": "Advancement",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "6D2jaojs6K6jv2Vi",
+                "actor_id": "OADa0UOcFVEbsyEm"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 2,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "command"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 0,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.351",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.2",
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "FoVb9AXQo59SAOe0",
+            "name": "Great Anvil's Measure",
+            "type": "technique",
+            "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+            "system": {
+              "source_reference": {
+                "source": "fields_of_victory",
+                "page": 100
+              },
+              "description": "<p><span class=\"fontstyle0\"><em>A proud leader often draws attention to themselves in battle, and a leader both proud and skilled does so to draw their enemy into attacking them—especially when the enemy would rather attack elsewhere. When the leader’s troops are properly readied, and especially when they are in a highly defensible location, such an attack against them is doomed to fail.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a check to perform a Guard action in a skirmish (see page 264 of the core rulebook) or a Reinforce action in a mass battle (see page 279 of the core rulebook), you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(earth)(op)+ (Guard): </span><span class=\"fontstyle3\">Choose any number of characters in the scene with focus lower than or equal to your ranks in Performance plus 2 per (op) spent this way. Each chosen character must receive strife equal to your ranks in Performance to perform an Attack or Scheme action targeting any character other than you. This effect persists until the end of your next turn.</span></p><p><span class=\"fontstyle2\">(earth)(op)+ (Reinforce): </span><span class=\"fontstyle3\">Choose any number of leaders in the enemy army with focus lower than or equal to your ranks in Performance plus 2 per (op) spent this way. The enemy army receives panic equal to your ranks in Performance each time any of those leaders performs an Attack or Scheme action targeting any cohort other than yours. This effect persists until the end of your next turn.</span></p>",
+              "parent_id": {
+                "item_id": "6D2jaojs6K6jv2Vi",
+                "actor_id": "OADa0UOcFVEbsyEm"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 2,
+              "bought_at_rank": 0,
+              "ring": "earth",
+              "skill": "",
+              "difficulty": "",
+              "technique_type": "shuji"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 100049,
+            "ownership": {
+              "default": 0,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.350",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.1",
+              "createdTime": 1761147828401,
+              "modifiedTime": 1761264882045,
+              "lastModifiedBy": "7vKCnwOtrdD7lBip",
+              "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.F4ukKaPLuPJCCDKe",
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "bT3Tm0Fx0QvMcZSN",
+            "name": "Crescent Moon Style",
+            "type": "technique",
+            "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "core_rulebook",
+                "page": 175
+              },
+              "description": "<p><span class=\"fontstyle0\"><em>Striking first is valuable, but so is surviving. To defend without sacrificing offense, a bushi must be ready to retaliate swiftly after blocking or evading. With a quick shift, the bushi switches from defense to bring down their full force upon their enemy.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you perform Guard action (see page 264), you may spend </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">in the following way:</span></p><p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">After a character at range 1–2 performs an Attack action targeting you or another character you are guarding, you may perform a Strike action with one readied Martial Arts [Melee or Unarmed] weapon targeting that character (if they are within your weapon’s range). This effect persists until the start of your next turn, or until you perform a Strike action this way.</span></p>",
+              "parent_id": {
+                "item_id": "6D2jaojs6K6jv2Vi",
+                "actor_id": "OADa0UOcFVEbsyEm"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 2,
+              "bought_at_rank": 0,
+              "ring": "void",
+              "skill": "",
+              "difficulty": "",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 1800000,
+            "ownership": {
+              "default": 0,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.350",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.1",
+              "createdTime": 1761147785394,
+              "modifiedTime": 1761249993895,
+              "lastModifiedBy": "7vKCnwOtrdD7lBip",
+              "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.skeRFViU7iirdPkB",
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "i6tuckXPW1FTVmVH",
+            "name": "Advancement",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "6D2jaojs6K6jv2Vi",
+                "actor_id": "OADa0UOcFVEbsyEm"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 6,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "melee"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 0,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.351",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.2",
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          }
+        ],
+        "in_curriculum": false,
+        "xp_used": 24,
+        "xp_cost": 24,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancements": [],
+        "xp_used_total": 24
+      },
+      "folder": "CXZ7ea8BGXfeuwid",
+      "_id": "6D2jaojs6K6jv2Vi",
+      "sort": 112500,
+      "ownership": {
+        "default": 3
+      }
+    },
+    {
+      "name": "Sentiment +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "_id": "Xw8CTODl8XCg6LUF",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 2,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "skill",
+        "skill": "sentiment"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767581330492,
+        "modifiedTime": 1767581363673,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": "Actor.OADa0UOcFVEbsyEm",
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-bushi-oni",
+      "uuid": "Actor.OADa0UOcFVEbsyEm",
+      "coreVersion": "13.351",
+      "systemId": "l5r5e",
+      "systemVersion": "1.13.3"
+    },
+    "coreVersion": "13.351",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.2",
+    "createdTime": 1764541368484,
+    "modifiedTime": 1771335974362,
+    "lastModifiedBy": "MsVYyMuYlVaanYGX"
+  },
+  "ownership": {
+    "default": 2
+  }
+}

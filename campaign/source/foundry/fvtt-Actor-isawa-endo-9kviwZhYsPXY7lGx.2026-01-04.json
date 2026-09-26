@@ -1,0 +1,1178 @@
+{
+  "name": "Isawa Endo",
+  "type": "character",
+  "img": "systems/l5r5e/assets/icons/actors/character.svg",
+  "prototypeToken": {
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "fatigue"
+    },
+    "bar2": {
+      "attribute": "strife"
+    },
+    "name": "Isawa Endo",
+    "displayName": 0,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "systems/l5r5e/assets/icons/actors/character.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "displayBars": 0,
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "system": {
+    "soft_locked": false,
+    "identity": {
+      "age": "",
+      "clan": "Phoenix",
+      "family": "Isawa",
+      "female": null,
+      "marital_status": "",
+      "roles": "Shugenja",
+      "school": "Isawa Elementalist School",
+      "school_rank": 1,
+      "school_curriculum_journal": {}
+    },
+    "rings": {
+      "earth": 3,
+      "air": 1,
+      "water": 2,
+      "fire": 3,
+      "void": 1
+    },
+    "notes": "",
+    "description": "",
+    "social": {
+      "honor": 50,
+      "glory": 42,
+      "status": 30,
+      "ninjo": "I want to know why the elements move and interact as they do. Why harmony is so easily broken. ",
+      "giri": "I serve under Isawa Uona, an Elemental Master of fire. He provides me with guidance but feels like I am able to guide my own path within the school. Uona provides me with direction.",
+      "bushido_tenets": {
+        "paramount": "Gi",
+        "less_significant": "Rei"
+      }
+    },
+    "skills": {
+      "artisan": {
+        "aesthetics": 0,
+        "composition": 0,
+        "design": 1,
+        "smithing": 0
+      },
+      "martial": {
+        "fitness": 0,
+        "melee": 0,
+        "ranged": 0,
+        "unarmed": 0,
+        "meditation": 0,
+        "tactics": 0
+      },
+      "scholar": {
+        "culture": 0,
+        "government": 0,
+        "medicine": 1,
+        "sentiment": 2,
+        "theology": 3
+      },
+      "social": {
+        "command": 1,
+        "courtesy": 0,
+        "games": 2,
+        "performance": 1
+      },
+      "trade": {
+        "commerce": 0,
+        "labor": 0,
+        "seafaring": 0,
+        "skulduggery": 0,
+        "survival": 0
+      }
+    },
+    "techniques": {
+      "kata": false,
+      "kiho": false,
+      "inversion": false,
+      "invocation": true,
+      "ritual": true,
+      "shuji": true,
+      "maho": false,
+      "ninjutsu": false,
+      "mantra": false,
+      "specificity": true
+    },
+    "endurance": 12,
+    "composure": 10,
+    "focus": 4,
+    "vigilance": 2,
+    "void_points": {
+      "max": 1,
+      "value": 0
+    },
+    "fatigue": {
+      "max": 12,
+      "value": 0
+    },
+    "strife": {
+      "max": 10,
+      "value": 0
+    },
+    "stance": "void",
+    "prepared": true,
+    "xp_total": 0,
+    "xp_spent": 0,
+    "xp_saved": 0,
+    "template": "core",
+    "twenty_questions": {
+      "template": "core",
+      "generated": true,
+      "step1": {
+        "clan": "Phoenix",
+        "ring": "fire",
+        "skill": "theology",
+        "social_status": 30
+      },
+      "step2": {
+        "family": "Isawa",
+        "ring": "fire",
+        "skill1": "theology",
+        "skill2": "games",
+        "wealth": 3,
+        "social_glory": 39
+      },
+      "step3": {
+        "school": "Isawa Elementalist School",
+        "roles": "Shugenja",
+        "ring1": "water",
+        "ring2": "earth",
+        "skill1": "theology",
+        "skill2": "medicine",
+        "skill3": "games",
+        "skill4": "design",
+        "skill5": "none",
+        "allowed_techniques": {
+          "kata": false,
+          "kiho": false,
+          "inversion": false,
+          "invocation": true,
+          "ritual": true,
+          "shuji": true,
+          "maho": false,
+          "ninjutsu": false,
+          "mantra": false,
+          "specificity": true
+        },
+        "techniques": [
+          "L5RCoreInv000036",
+          "L5RCoreInv000024",
+          "L5RCoreRit000002",
+          "L5RCoreRit000003",
+          "L5RCoreInv000014"
+        ],
+        "school_ability": [
+          "L5RCoreSch000019"
+        ],
+        "equipment": [
+          "L5RCoreArm000007",
+          "L5RCoreWea000009",
+          "L5RCoreWea000019",
+          "L5RCoreIte000031",
+          "L5RCoreIte000032"
+        ],
+        "social_honor": 40
+      },
+      "step4": {
+        "stand_out": "I exhibit a natural affinity for fire kami. Teachers whispers that my talents feels less learned and more fated, as if my kami noticed me before others did. My spells are larger, louder, and burn brighter. Some of the teachers are concerned about my growth.",
+        "ring": "earth"
+      },
+      "step5": {
+        "social_giri": "I serve under Isawa Uona, an Elemental Master of fire. He provides me with guidance but feels like I am able to guide my own path within the school. Uona provides me with direction."
+      },
+      "step6": {
+        "social_ninjo": "I want to know why the elements move and interact as they do. Why harmony is so easily broken. "
+      },
+      "step7": {
+        "clan_relations": "I feel as though there is too much burden on the Pheonix clan, as each generation seems to be carrying more weight then previous ones.",
+        "skill": "sentiment",
+        "social_add_glory": 0
+      },
+      "step8": {
+        "bushido": "I have great respect for the bushido as they are a mortal attempt to define truths.",
+        "skill": "none",
+        "social_add_honor": 10,
+        "tenet_paramount": "Gi",
+        "tenet_less_significant": "Rei",
+        "item": []
+      },
+      "step9": {
+        "success": "Other people have heard of me for my ability to get results at any costs, and they believe it by default unless given evidence to the contrary",
+        "distinction": [
+          "L5RCoreDis000014"
+        ]
+      },
+      "step10": {
+        "difficulty": "I am well known but not for the right reasons. Characters who do not know me personally always assume that those around me will perish or meet bad ends. This comes from my natural affinity to call upon the elements with less training than most, which gives pause to those who don't know me.",
+        "adversity": [
+          "L5RCoreAdv000046"
+        ]
+      },
+      "step11": {
+        "calms": "I risk my life without consideration or hesitation, even if the potential consequences are obvious and dire",
+        "passion": [
+          "L5RCorePas000005"
+        ]
+      },
+      "step12": {
+        "worries": "I believe I'm destined for greatness and nothing will dissuade me from my fixation upon that goal.",
+        "anxiety": [
+          "L5RCoreAnx000005"
+        ]
+      },
+      "step13": {
+        "most_learn": "theatrical Kakita duelist who taught you that style is power. From them you learned your stance, your flair, your dramatic timing.",
+        "skill": "performance",
+        "advantage": [],
+        "disadvantage": [
+          "L5RCoreAnx000034"
+        ]
+      },
+      "step14": {
+        "first_sight": "My gold glasses, they are striking and seem to give a sharp reflection anytime I need to speak to someone with intent. Additionally, I carry a gorgeously folded fan painted with rising flames. When opened, a thin shimmer of heat ripples the air. I absolutely use it for emphasis during conversations.",
+        "special_features": [
+          "L5RCoreIte000039"
+        ]
+      },
+      "step15": {
+        "stress": "I laugh in the face of danger, it helps hide my real emotions."
+      },
+      "step16": {
+        "relations": "Asako Junpei who is a flamboyant storyteller and helped encourage my larger-than-life persona. He gave me sand clock that I like to pull out when I am tired of conversation and want to make things happen expeditously ",
+        "item": [
+          "L5RCoreIte000119"
+        ]
+      },
+      "step17": {
+        "parents_pov": "They are proud beyond measure, but terrified that my brilliance will draw envy and disaster",
+        "skill": "command",
+        "bond": []
+      },
+      "step18": {
+        "heritage_name": "Isawa Arasou, a famous Pheonix shugenja known for daring feats that defied tradition.",
+        "heritage_1": 5,
+        "heritage_2": 3,
+        "heritage_item": [],
+        "heritage_add_honor": 0,
+        "heritage_add_glory": 3,
+        "heritage_add_status": 0,
+        "skill": "sentiment"
+      },
+      "step19": {
+        "firstname": "Isawa Endo"
+      },
+      "step20": {
+        "death": "Holding the line, in a blaze of fire set forth by himself using every last bit of magic he has"
+      },
+      "autoCompleteListName": "step3.roles",
+      "autoCompleteListSelectedIndex": "6"
+    },
+    "zeni": 150,
+    "money": {
+      "koku": 0,
+      "bu": 0,
+      "zeni": 0
+    },
+    "is_afflicted_or_compromised": false
+  },
+  "items": [
+    {
+      "_id": "FgUbWFikl6AJzxYO",
+      "name": "Extinguish",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/invocation.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-invocations.Item.L5RCoreInv000036",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "202"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": "3",
+        "rank": "1",
+        "bought_at_rank": 0,
+        "ring": "fire",
+        "skill": "theology",
+        "difficulty": "3",
+        "technique_type": "invocation"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "fOoze2Px091H2RmV",
+      "name": "Grasp of Earth",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/invocation.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-invocations.Item.L5RCoreInv000024",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "199"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": "3",
+        "rank": "1",
+        "bought_at_rank": 0,
+        "ring": "earth",
+        "skill": "theology",
+        "difficulty": "2",
+        "technique_type": "invocation"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "1ZAC94OfZdbz1Hsz",
+      "name": "Commune with the Spirits",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000002",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "212"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": "3",
+        "rank": "1",
+        "bought_at_rank": 0,
+        "ring": "void",
+        "skill": "theology",
+        "difficulty": "1",
+        "technique_type": "ritual"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "B5wC4cJCc2YwWOAu",
+      "name": "Divination",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/ritual.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-rituals.Item.L5RCoreRit000003",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "212"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": "3",
+        "rank": "1",
+        "bought_at_rank": 0,
+        "ring": "void",
+        "skill": "theology",
+        "difficulty": "2",
+        "technique_type": "ritual"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "nKFv8IZpsidliqPl",
+      "name": "Tempest of Air",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/invocation.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-invocations.Item.L5RCoreInv000014",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "195"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": "3",
+        "rank": "1",
+        "bought_at_rank": 0,
+        "ring": "air",
+        "skill": "theology",
+        "difficulty": "3",
+        "technique_type": "invocation"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "rEjAQmVvn8h1xXQQ",
+      "name": "One with the Elements",
+      "type": "technique",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/clans/phoenix.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-techniques-school.Item.L5RCoreSch000019",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "75"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": "0",
+        "rank": "1",
+        "bought_at_rank": 0,
+        "ring": "void",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "school_ability"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "Ezh8deG2M5Tk7N1E",
+      "name": "Sanctified Robes",
+      "type": "armor",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-armors.Item.L5RCoreArm000007",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "239"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "7",
+        "zeni": "4 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          }
+        ],
+        "armor": {
+          "physical": "1",
+          "supernatural": "3"
+        }
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "eyxZM1SNcr7rsc1d",
+      "name": "Wakizashi",
+      "type": "weapon",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-weapons.Item.L5RCoreWea000009",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "233"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "7",
+        "zeni": "15 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "0-1",
+        "damage": "3",
+        "deadliness": "5",
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "tb2UU53RD4d5J6Vn",
+      "name": "Knife",
+      "type": "weapon",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/knife.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-weapons.Item.L5RCoreWea000019",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "234"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "1",
+        "rarity": "1",
+        "zeni": "1 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          },
+          {
+            "id": "L5RCorePro000005",
+            "name": "Concealable"
+          },
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ],
+        "category": "Hand Weapons",
+        "skill": "melee",
+        "readied": false,
+        "range": "",
+        "damage": "2",
+        "deadliness": "4",
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "W9AENHn3pPcmc20u",
+      "name": "Scroll satchel",
+      "type": "item",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-items.Item.L5RCoreIte000031",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "60"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "0",
+        "rarity": "3",
+        "zeni": "1 bu",
+        "properties": []
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "W1n8MdY9H7hdk6BX",
+      "name": "Traveling pack",
+      "type": "item",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-items.Item.L5RCoreIte000032",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "245"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "0",
+        "rarity": "1",
+        "zeni": "10 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ]
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "IO5tUo9KcYzAHAYe",
+      "name": "Famously Successful",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-distinctions.Item.L5RCoreDis000014",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "105"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "fire",
+        "peculiarity_type": "distinction",
+        "types": "Fame, Interpersonal"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "TVEHnafzEVRM8cJ9",
+      "name": "Whispers of Doom",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-adversities.Item.L5RCoreAdv000046",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "129"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "peculiarity_type": "adversity",
+        "types": "Infamy, Interpersonal"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "eXj0UNt4knDqRjge",
+      "name": "Daredevil",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-passions.Item.L5RCorePas000005",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "112"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "fire",
+        "peculiarity_type": "passion",
+        "types": "Mental, Physical"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "G1umKWJ2pxTZXnit",
+      "name": "Delusions of Grandeur",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-anxieties.Item.L5RCoreAnx000005",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": "132"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "peculiarity_type": "anxiety",
+        "types": "Interpersonal, Mental"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "eGHB6S6R7u2uAzV4",
+      "name": "Failure",
+      "type": "peculiarity",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-peculiarities-anxieties.Item.L5RCoreAnx000034",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "path_of_waves",
+          "page": "74"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "water",
+        "peculiarity_type": "anxiety",
+        "types": "Mental"
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "RasYPQvpB0Wq6LBS",
+      "name": "Folding Fan",
+      "type": "item",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-items.Item.L5RCoreIte000039",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "court_of_stones",
+          "page": "105"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "0",
+        "rarity": "3",
+        "zeni": "1 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000010",
+            "name": "Resplendent"
+          }
+        ]
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "_id": "jKoF9z2843iWaPOO",
+      "name": "Sand Clock",
+      "type": "item",
+      "sort": 100001,
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e.core-items.Item.L5RCoreIte000119",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1764632777317,
+        "modifiedTime": 1764632777317,
+        "lastModifiedBy": "kr8EuWaFOc6zD7Ew"
+      },
+      "system": {
+        "source_reference": {
+          "source": "children_of_the_five_winds",
+          "page": "102"
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": "0",
+        "rarity": "6",
+        "zeni": "2 Koku",
+        "properties": []
+      },
+      "folder": null,
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "effects": [],
+  "folder": "3ujgEl2oYP8z9yA3",
+  "flags": {
+    "archivist-sync": {
+      "archivistId": "692ff13d02c3493d817979114d34beb4"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-bushi-oni",
+      "uuid": "Actor.9kviwZhYsPXY7lGx",
+      "coreVersion": "13.351",
+      "systemId": "l5r5e",
+      "systemVersion": "1.13.2"
+    },
+    "coreVersion": "13.351",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.2",
+    "createdTime": 1764478143624,
+    "modifiedTime": 1766721540805,
+    "lastModifiedBy": "MsVYyMuYlVaanYGX"
+  },
+  "ownership": {
+    "default": 2
+  }
+}

@@ -1,0 +1,197 @@
+EXTENSION "BushiOni_Characters" {
+    NAME "The Bushi Oni — the player characters"
+    VERSION "0.1.0"
+    SPEC_VERSION "0.5"
+    RELEASE_DATE "2026-09-26"
+    DEPENDS_ON "L5R5e_Core_Core"
+
+    # The task force: instances of the Samurai ACTOR in the corpus's pregen conventions. Converted from
+    # campaign/source/foundry/ (the Foundry exports, byte for byte) by campaign/source/convert_pcs.py;
+    # campaign/source/check_pcs.py reads the built layer back against them field by field.
+
+    # The current sheet: foundry/fvtt-Actor-kitsuki-hasumi-1OU8cpsBQL7Jq8ea.2026-01-06.json.
+    #BOpcKitsukiHasumi ^"Kitsuki Hasumi" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Kitsuki Hasumi" FIXED
+            ^"Clan" STRING "Dragon" FIXED
+            ^"Family" STRING "Kitsuki" FIXED
+            ^"School" STRING "Kitsuki Investigator"
+            ^"School Rank" INTEGER 1
+            ^"Roles" LIST OF STRING ["Courtier", "Bushi"]
+            ^"Rings" DEF { ^"Air" INTEGER 3 ^"Earth" INTEGER 2 ^"Fire" INTEGER 2 ^"Water" INTEGER 1 ^"Void" INTEGER 3 }
+            ^"Honor" INTEGER 45
+            ^"Glory" INTEGER 39
+            ^"Status" INTEGER 30
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 6
+            ^"Focus" INTEGER 5
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 3
+            ^"Ninjō" STRING "She was taught that \"truth is pure only when detached from emotion.\" Her uncle raised her to view all social interactions as transactional and all outsiders as manipulative. Deep down, she longs for a genuine connection that isn't a \"move\" in a game."
+            ^"Giri" STRING "Lord: Kitsuki Jusai leads clandestine network, Eyes and Ears of the Dragon)\n                                    \n                                    Seek out and reveal the secrets, plots & clandestine operations my lord wishes for me to investigate. "
+            ^"Skills" LIST OF STRING ["Aesthetics 1", "Martial Arts [Melee] 1", "Meditation 1", "Culture 1", "Government 2", "Medicine 2", "Sentiment 3", "Theology 1", "Skulduggery 3"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#8Yh77FWi4wCMphnZVYwU30 ^"Shallow Waters", #UskyyuB3xgSuYTawcQK1cn ^"Tactical Assessment", #mfl9jlCknrtobgA4Rc4Rmp ^"Honest Assessment", #l2wYxPgu8jTyj5EdSlvmOM ^"Crescent Moon Style"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#bzYHoMnigihpZguj26otrN ^"Precise Memory", #lg17VyhKISSHK1IlO20F4i ^"Secrets"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#sZTondTDTcxo5Pf6edk1E2 ^"Horrible Scar", #cP6yHYFF1eU3nRdLQjjYEl ^"Isolation", #varuU3zrlVDHkMrUhqq4xt ^"Haunting"]
+            ^"Equipment" LIST OF STRING ["Traveling Clothes", "Wakizashi", "Jian", "Knife", "Traveling pack", "Calligraphy Set", "Journal of observations", "Black Gloves", "300 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Makoto [Sincerity]" ^"Less Significant Tenet" STRING "Rei [Courtesy] " }
+            ^"Experience" INTEGER 35
+            ^"Experience Spent" INTEGER 23
+            ^"Experience Ledger" LIST OF STRING ["4 · Government +1 (1 -> 2) · rank 1", "3 · Honest Assessment · rank 1", "4 · Medicine +1 (1 -> 2) · rank 1", "9 · Void +1 (2 -> 3) · rank 1", "3 · Crescent Moon Style · rank 1"]
+            ^"Stance" STRING "Void"
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-isawa-endo-9kviwZhYsPXY7lGx.2026-01-04.json.
+    #BOpcIsawaEndo ^"Isawa Endo" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Isawa Endo" FIXED
+            ^"Clan" STRING "Phoenix" FIXED
+            ^"Family" STRING "Isawa" FIXED
+            ^"School" STRING "Isawa Elementalist"
+            ^"School Rank" INTEGER 1
+            ^"Roles" LIST OF STRING ["Shugenja"]
+            ^"Rings" DEF { ^"Air" INTEGER 1 ^"Earth" INTEGER 3 ^"Fire" INTEGER 3 ^"Water" INTEGER 2 ^"Void" INTEGER 1 }
+            ^"Honor" INTEGER 50
+            ^"Glory" INTEGER 42
+            ^"Status" INTEGER 30
+            ^"Endurance" INTEGER 12
+            ^"Composure" INTEGER 10
+            ^"Focus" INTEGER 4
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 1
+            ^"Ninjō" STRING "I want to know why the elements move and interact as they do. Why harmony is so easily broken. "
+            ^"Giri" STRING "I serve under Isawa Uona, an Elemental Master of fire. He provides me with guidance but feels like I am able to guide my own path within the school. Uona provides me with direction."
+            ^"Skills" LIST OF STRING ["Design 1", "Medicine 1", "Sentiment 2", "Theology 3", "Command 1", "Games 2", "Performance 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#UxqYyOYBTIjoiKI173BUqa ^"Extinguish", #7qY7Tid6mGxbXVjQ1WQ2Hs ^"Grasp of Earth", #i2GEqhySgpp0wZ2MGeJZXo ^"Commune with the Spirits", #bNxt2ZFUbgSKhc6XxSTMUh ^"Divination", #mQA8bcf9pDPdbetjIcw9Dr ^"Tempest of Air"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#TgTnBnqZtHhNPTHTtfP8Ul ^"Famously Successful", #x665hZcqXsgHPAlRDRGvQU ^"Daredevil"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#EviFkhjQc9MzbBQSjfHRlM ^"Whispers of Doom", #9NDfs1FVJqQ8fyVEfIrHdL ^"Delusions of Grandeur", #VVEceyfNXbUM0rf2AxPpp8 ^"Failure"]
+            ^"Equipment" LIST OF STRING ["Sanctified Robes", "Wakizashi", "Knife", "Scroll satchel", "Traveling pack", "Folding Fan", "Sand Clock", "150 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Gi" ^"Less Significant Tenet" STRING "Rei" }
+            ^"Experience" INTEGER 0
+            ^"Experience Spent" INTEGER 0
+            ^"Stance" STRING "Void"
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-bayushi-taigen-Wc1j7VDOVXJDRqq9.2026-01-04.json.
+    #BOpcBayushiTaigen ^"Bayushi Taigen" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Bayushi Taigen" FIXED
+            ^"Clan" STRING "Scorpion" FIXED
+            ^"Family" STRING "Bayushi" FIXED
+            ^"School" STRING "Hida Defender"
+            ^"School Rank" INTEGER 1
+            ^"Roles" LIST OF STRING ["Bushi"]
+            ^"Rings" DEF { ^"Air" INTEGER 3 ^"Earth" INTEGER 2 ^"Fire" INTEGER 2 ^"Water" INTEGER 2 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 50
+            ^"Glory" INTEGER 64
+            ^"Status" INTEGER 45
+            ^"Endurance" INTEGER 8
+            ^"Composure" INTEGER 8
+            ^"Focus" INTEGER 5
+            ^"Vigilance" INTEGER 3
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "Start own minor family that trains bodyguards/duelist"
+            ^"Giri" STRING "Bayushi Shoju his father and lord"
+            ^"Skills" LIST OF STRING ["Design 1", "Smithing 2", "Fitness 1", "Martial Arts [Melee] 2", "Meditation 1", "Tactics 2", "Government 1", "Command 1", "Courtesy 1", "Skulduggery 1", "Survival 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#VZRaBoZ23jv6pba1NYHPZz ^"Lord Hida's Grip", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#X4aKEEo9kO9CAtG5wU13EF ^"Ambidexterity", #RKCP6k4Ouo5L2MFH6DfuVc ^"Armament", #IUjREit0fjWPymZeJTXhtu ^"Blissful Betrothal", #esSp6Eof1QH3kxH40Z7DB7 ^"Blessed Lineage"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#cRNEv5Yf6iFJNfMMW2TrIu ^"Sworn Enemy", #uvpsuVnY4JkM1RXBkGZHrk ^"Fear of Poison"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#6SoUaVJEHdot0Vn4b1NSoG ^"Sword-Saint"]
+            ^"Bonds" LIST OF #L5R262wX4yZ6aB8cD0eF2g ^"Bond" [#CyrnYiMyZEIYWW6UWAi5LT ^"Lover Bond"]
+            ^"Equipment" LIST OF STRING ["Traveling pack", "Lacquered Armor", "Katana", "Wakizashi", "Traveling Clothes", "Knife", "Club", "Ōtsuchi", "Katana", "400 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Chugi[Duty and Loyalty]" ^"Less Significant Tenet" STRING "Gi[Righteousness]" }
+            ^"Experience" INTEGER 35
+            ^"Experience Spent" INTEGER 35
+            ^"Experience Ledger" LIST OF STRING ["24 · Sword Saint · rank 1", "2 · Command +1 (0 -> 1) · rank 1", "9 · Air +1 (2 -> 3) · rank 1"]
+            ^"Stance" STRING "Earth"
+            ^"Description" STRING "Born to Bayushi Shoju and Bayushi Kachiko\nTwin brother Bayushi Dairu[older]"
+            ^"Notes" STRING "Betrohal- Doji Shizue"
+            ^"As Recorded" LIST OF STRING ["Lord Hida’s Grip (Crab)", "Sword Saint", "Lover[Doji Shizue]"]
+        }
+    }
+
+    # Archived: foundry/fvtt-Actor-bayushi-taigen-Wc1j7VDOVXJDRqq9.2025-12-01.json.
+    #BOpcBayushiTaigen20251201 ^"Bayushi Taigen (1 Dec 2025)" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Version Of" #BOpcBayushiTaigen ^"Bayushi Taigen"
+            ^"Version Label" STRING "Foundry export · 1 Dec 2025"
+            ^"Version Date" STRING "2025-12-01"
+            ^"Name" STRING "Bayushi Taigen" FIXED
+            ^"Clan" STRING "Scorpion" FIXED
+            ^"Family" STRING "Bayushi" FIXED
+            ^"School" STRING "Shiba Guardian"
+            ^"School Rank" INTEGER 1
+            ^"Roles" LIST OF STRING ["Bushi"]
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 3 ^"Fire" INTEGER 2 ^"Water" INTEGER 2 ^"Void" INTEGER 1 }
+            ^"Honor" INTEGER 30
+            ^"Glory" INTEGER 67
+            ^"Status" INTEGER 35
+            ^"Endurance" INTEGER 10
+            ^"Composure" INTEGER 10
+            ^"Focus" INTEGER 4
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 1
+            ^"Ninjō" STRING "Start own minor family that trains bodyguards"
+            ^"Giri" STRING "Bayushi Shoju"
+            ^"Skills" LIST OF STRING ["Design 1", "Fitness 1", "Martial Arts [Melee] 3", "Meditation 1", "Tactics 1", "Government 1", "Command 1", "Courtesy 3", "Skulduggery 1", "Survival 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#FpFKDUlzB1l3h8wu1zEcIH ^"Lord Shiba's Valor", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #YRrwJlgAyPpVIMmg9hKPC4 ^"Civility Foremost", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#oycJDCftm6tryL6yTaEDpK ^"Keen Hearing", #Uhp9T4WVNNW8fMxAIIZiNJ ^"Ancestry", #IUjREit0fjWPymZeJTXhtu ^"Blissful Betrothal"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#sZTondTDTcxo5Pf6edk1E2 ^"Horrible Scar", #AVhLvrn9JkweqLTdUEw5Xd ^"Dark Secret"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#t3wbGE4jkSR9YWSCAjhyRk ^"Kenshinzen", #8L56PqWyoquPGtIJVM4lXO ^"Yojimbo"]
+            ^"Equipment" LIST OF STRING ["Ashigaru Armor", "Katana", "Wakizashi", "Naginata", "Traveling Clothes", "Traveling pack", "Lacquered Armor", "Hiyori Veil", "400 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Chugi [Duty and Loyalty]" ^"Less Significant Tenet" STRING "Gi [Righteousness]" }
+            ^"Experience" INTEGER 35
+            ^"Experience Spent" INTEGER 33
+            ^"Experience Ledger" LIST OF STRING ["24 · Kenshinzen · rank 1", "3 · Yojimbo · rank 1", "3 · Civility Foremost · rank 1", "3 · Striking as Earth · rank 1"]
+            ^"Stance" STRING "Earth"
+            ^"Description" STRING "Born in 1103 to Bayushi Hoshi and Otaku Kiku"
+            ^"Notes" STRING "Dark Secret [In love with Doji Shizune after a long tryst]"
+            ^"Strife" INTEGER 0
+            ^"Fatigue" INTEGER 0
+            ^"As Recorded" LIST OF STRING ["Lord Shiba’s Valor (Phoenix)", "Dark Secret (In love with Doji Shizue)", "Blissful Betrothal: Ikoma Tsanuri"]
+        }
+    }
+
+    # The current sheet: foundry/fvtt-Actor-kitsune-yuma[backup-character]-OADa0UOcFVEbsyEm.2026-02-17.json.
+    #BOpcKitsuneYuma ^"Kitsune Yuma" DEF {
+        EXTENDS #L5R003xY4zA6bC8dE0fG2hI ^"Samurai"
+        PROPERTIES {
+            ^"Name" STRING "Kitsune Yuma" FIXED
+            ^"Clan" STRING "Fox" FIXED
+            ^"Family" STRING "Kitsune" FIXED
+            ^"School" STRING "Shiba Guardian"
+            ^"School Rank" INTEGER 1
+            ^"Roles" LIST OF STRING []
+            ^"Rings" DEF { ^"Air" INTEGER 2 ^"Earth" INTEGER 3 ^"Fire" INTEGER 2 ^"Water" INTEGER 2 ^"Void" INTEGER 2 }
+            ^"Honor" INTEGER 55
+            ^"Glory" INTEGER 55
+            ^"Status" INTEGER 43
+            ^"Endurance" INTEGER 10
+            ^"Composure" INTEGER 10
+            ^"Focus" INTEGER 4
+            ^"Vigilance" INTEGER 2
+            ^"Void Points" INTEGER 2
+            ^"Ninjō" STRING "Found a minor family with a bushi/guardian school"
+            ^"Giri" STRING "Kitsune Gohei"
+            ^"Skills" LIST OF STRING ["Smithing 2", "Fitness 2", "Martial Arts [Melee] 3", "Tactics 1", "Sentiment 1", "Theology 2", "Command 1", "Courtesy 1", "Survival 1"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#FpFKDUlzB1l3h8wu1zEcIH ^"Lord Shiba's Valor", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #LbBFOkWe8dv3afzuxUGsgA ^"Trip the Leg"]
+            ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#cpDClG2BOTwUsHUek6aCfs ^"Ally [Name]", #RKCP6k4Ouo5L2MFH6DfuVc ^"Armament", #IUjREit0fjWPymZeJTXhtu ^"Blissful Betrothal"]
+            ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#JXePzahyXOw9AgGqmF4cLa ^"Bluntness", #AVhLvrn9JkweqLTdUEw5Xd ^"Dark Secret"]
+            ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#8IECWrsBZ8OrNycFawg4JX ^"Elemental Legionnaire"]
+            ^"Equipment" LIST OF STRING ["Katana", "Wakizashi", "Naginata", "Ashigaru Armor", "Traveling Clothes", "Traveling pack", "Lacquered Armor", "100 zeni"]
+            ^"Bushido" DEF { ^"Paramount Tenet" STRING "Jin[Compassion]" ^"Less Significant Tenet" STRING "Makoto[Sincerity]" }
+            ^"Experience" INTEGER 35
+            ^"Experience Spent" INTEGER 35
+            ^"Experience Ledger" LIST OF STRING ["6 · Fire +1 (1 -> 2) · rank 1", "3 · Trip the Leg · rank 1", "24 · Elemental Legionnaire · rank 1", "2 · Sentiment +1 (0 -> 1) · rank 1"]
+            ^"Stance" STRING "Void"
+            ^"Description" STRING "Ally& Dark Secret Ikoma Tsanuri"
+            ^"As Recorded" LIST OF STRING ["Lord Shiba’s Valor (Phoenix)"]
+        }
+    }
+}

@@ -29,9 +29,16 @@ window.VttConfig = {
   siteBooks: false,
   // the three panels the GM page opens on (engine/app.js)
   defaultSlots: ['overview', 'scenes', 'threads'],
-  // What this instance adds to the upstream pages (engine/instance.js). None yet: the campaign's
-  // DSL layer, site tabs and styles are added as campaign/PLAN.md's milestones land.
-  instance: null,
+  // What this instance adds to the upstream pages (engine/instance.js). The campaign's DSL layer —
+  // the player characters (M1) — is built by build/build_layer.sh into campaign/data/; site tabs and
+  // styles are added as campaign/PLAN.md's milestones land.
+  instance: {
+    styles: [],
+    stages: {
+      data: ['campaign/data/index.js'],
+      site: [], gm: [], table: [], play: [],
+    },
+  },
   // The Worker that holds player sessions. Served from localhost the app talks to
   // `wrangler dev` (launch entry bushi-oni-worker); deployed, to the URL below. Empty = sessions
   // disabled until the owner deploys (campaign/PLAN.md).

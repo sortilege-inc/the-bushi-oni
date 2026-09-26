@@ -76,11 +76,29 @@ is a *backup character* (a PC version held in reserve). The six 2025-10-27 prege
 | | What | Status |
 |---|---|---|
 | M0 | Support folder sorted; fork; boundary; standards; local proof | **landed** 2026-09-26 |
-| M1 | PCs into `campaign/dsl/` as `ACTOR Samurai` instances, converted from the Foundry exports by a script in `campaign/source/`, piloted on one PC and checked field by field (planted difference must fail), every version kept | next |
+| M1 | PCs into `campaign/dsl/` as `ACTOR Samurai` instances, converted from the Foundry exports by a script in `campaign/source/`, piloted on one PC and checked field by field (planted difference must fail), every version kept | **landed** 2026-09-26 |
 | M2 | NPCs (the pregens, then the named cast) as full statblocks on the corpus's NPC type | after M1 |
 | M3 | GM material into the pack (overview, threads, places, people) by a deterministic converter + an independent every-word check | after M2 |
 | M4 | Site tabs: home, Chronicle (sessions 2026-01-06, 01-20, 01-27, hand-written from the transcripts), Dramatis Personae from the layer, the Otosan Uchi map | after M1–M2 |
 | M5 | Deploy: Worker `the-bushi-oni`, Pages, a domain — each step confirmed with the owner | owner's go |
+
+**M1 — the player characters (landed 2026-09-26).** `campaign/source/foundry/` holds the five Foundry
+exports byte for byte (`cmp` against the archive: identical). `convert_pcs.py` writes
+`campaign/dsl/bushi-oni-pcs.actor` — Hasumi, Endo, Taigen (current 2026-01-04 + the 2025-12-01 sheet as a
+version) and Yuma; `corpus_index.py` resolves every technique, peculiarity, title and bond to its root
+DEF in the corpus, and the conversion stops on anything unresolved. `check_pcs.py` reads the BUILT layer
+back against the exports with its own parsing.
+- Pilot (Hasumi): `check_pcs.py '#BOpcKitsukiHasumi'` → 40 fields, 0 differ. Planted Honor 45→46 and a
+  dropped skill in the DSL → exit 1, both named; restored → 0 differ.
+- All: `build_layer.sh` → OK (214 strings, 0 uncovered/short/unsourced; 5 ids, none the corpus's; every
+  reference resolves); `check_pcs.py` → **209 fields across 5 sheets, 0 differ**. The first full run
+  failed on Taigen's and Yuma's Foundry notes/description (backstory the converter had dropped); they are
+  now carried as `Description`/`Notes` text.
+- Browser (:8749): the Characters tab lists the four under *The Bushi Oni* (the version is not a fifth);
+  Taigen's sheet shows every field; on `/gm/` Party, Hasumi's derived values from the corpus's formulas
+  are Endurance 8, Composure 6, Focus 5, Vigilance 2 — the export's. No console errors. (On the public
+  site's character page the derived line reads "?" for every character, corpus pregens included —
+  upstream behaviour with the core book not loaded there, not the layer's.)
 
 ## Decision log
 
@@ -91,6 +109,13 @@ is a *backup character* (a PC version held in reserve). The six 2025-10-27 prege
 - 2026-09-26 — Dev ports 8749/8799 (free across every launch.json under `~/Sortilege` and `~/.claude`).
 - 2026-09-26 — Owner: B3 public seed, B4 and B5 as proposed, and the push (publishes the books' `data/`, as Portents does).
 - 2026-09-26 — `instance: null` until M1 — no empty stage scripts shipped.
+- 2026-09-26 — M1: Iuchi Reijun (left the campaign) is **not** converted — her two exports stay in the
+  archive. Yuma's Foundry name carries "[backup character]"; the entity is *Kitsune Yuma*. Void Points =
+  Foundry's `void_points.max` (every export's live trackers read 0 — out of play), as Portents took the
+  maximum. XP spent = the sum of the items' own `xp_used` (Foundry stores `xp_spent` 0 and computes it);
+  the ledger lists each such item. A Foundry name the corpus spells otherwise (a specifier, a clan
+  suffix, "Sword Saint" = `Sword-Saint`, "Lover" = `Lover Bond`) is kept verbatim in `As Recorded`.
+  School and title abilities come with the School/Title (Portents). An empty `koku` (None) is 0.
 
 ## To resume
 

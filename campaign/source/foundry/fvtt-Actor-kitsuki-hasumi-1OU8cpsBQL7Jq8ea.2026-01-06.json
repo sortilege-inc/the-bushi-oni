@@ -1,0 +1,1300 @@
+{
+  "folder": "3ujgEl2oYP8z9yA3",
+  "name": "Kitsuki Hasumi",
+  "type": "character",
+  "img": "sortilege/the-bushi-oni/characters/pcs/hasumi.png",
+  "prototypeToken": {
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "fatigue"
+    },
+    "bar2": {
+      "attribute": "strife"
+    },
+    "name": "Kitsuki Hasumi",
+    "displayName": 30,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "sortilege/the-bushi-oni/characters/pcs/hasumi-token.png",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "displayBars": 0,
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 0,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "system": {
+    "soft_locked": false,
+    "identity": {
+      "age": "",
+      "clan": "Dragon",
+      "family": "Kitsuki",
+      "female": null,
+      "marital_status": "",
+      "roles": "Courtier, Bushi",
+      "school": "Kitsuki Investigator School",
+      "school_rank": 1,
+      "school_curriculum_journal": {}
+    },
+    "rings": {
+      "earth": 2,
+      "air": 3,
+      "water": 1,
+      "fire": 2,
+      "void": 3
+    },
+    "notes": "",
+    "description": "",
+    "social": {
+      "honor": 45,
+      "glory": 39,
+      "status": 30,
+      "ninjo": "She was taught that \"truth is pure only when detached from emotion.\" Her uncle raised her to view all social interactions as transactional and all outsiders as manipulative. Deep down, she longs for a genuine connection that isn't a \"move\" in a game.",
+      "giri": "Lord: Kitsuki Jusai leads clandestine network, Eyes and Ears of the Dragon)\n                                    \n                                    Seek out and reveal the secrets, plots & clandestine operations my lord wishes for me to investigate. ",
+      "bushido_tenets": {
+        "paramount": "Makoto [Sincerity]",
+        "less_significant": "Rei [Courtesy] "
+      }
+    },
+    "skills": {
+      "artisan": {
+        "aesthetics": 1,
+        "composition": 0,
+        "design": 0,
+        "smithing": 0
+      },
+      "martial": {
+        "fitness": 0,
+        "melee": 1,
+        "ranged": 0,
+        "unarmed": 0,
+        "meditation": 1,
+        "tactics": 0
+      },
+      "scholar": {
+        "culture": 1,
+        "government": 2,
+        "medicine": 2,
+        "sentiment": 3,
+        "theology": 1
+      },
+      "social": {
+        "command": 0,
+        "courtesy": 0,
+        "games": 0,
+        "performance": 0
+      },
+      "trade": {
+        "commerce": 0,
+        "labor": 0,
+        "seafaring": 0,
+        "skulduggery": 3,
+        "survival": 0
+      }
+    },
+    "techniques": {
+      "kata": true,
+      "kiho": false,
+      "inversion": false,
+      "invocation": false,
+      "ritual": false,
+      "shuji": true,
+      "maho": false,
+      "ninjutsu": false,
+      "mantra": false,
+      "specificity": true
+    },
+    "endurance": 8,
+    "composure": 6,
+    "focus": 5,
+    "vigilance": 2,
+    "void_points": {
+      "max": 3,
+      "value": 0
+    },
+    "fatigue": {
+      "max": 8,
+      "value": 0
+    },
+    "strife": {
+      "max": 6,
+      "value": 0
+    },
+    "stance": "void",
+    "prepared": true,
+    "xp_total": 35,
+    "xp_spent": 0,
+    "xp_saved": 0,
+    "template": "core",
+    "twenty_questions": {
+      "template": "core",
+      "generated": true,
+      "step1": {
+        "clan": "Dragon",
+        "ring": "fire",
+        "skill": "meditation",
+        "social_status": 30
+      },
+      "step2": {
+        "family": "Kitsuki",
+        "ring": "air",
+        "skill1": "skulduggery",
+        "skill2": "sentiment",
+        "wealth": 6,
+        "social_glory": 44
+      },
+      "step3": {
+        "school": "Kitsuki Investigator School",
+        "roles": "Courtier, Bushi",
+        "ring1": "earth",
+        "ring2": "air",
+        "skill1": "skulduggery",
+        "skill2": "culture",
+        "skill3": "medicine",
+        "skill4": "melee",
+        "skill5": "sentiment",
+        "allowed_techniques": {
+          "kata": true,
+          "kiho": false,
+          "inversion": false,
+          "invocation": false,
+          "ritual": false,
+          "shuji": true,
+          "maho": false,
+          "ninjutsu": false,
+          "mantra": false,
+          "specificity": true
+        },
+        "techniques": [
+          "S4OASGrJcnGMYvIP",
+          "TcFVNDk57aKGpLR2"
+        ],
+        "school_ability": [
+          "ys7G4EJTYDpGLJEQ"
+        ],
+        "equipment": [
+          "zcsgspz4VluSMeI0",
+          "S1MG4qPHEV3N8XnO",
+          "bWrva6JnP8wqNRve",
+          "n8xA05Fb9WpXg3oo",
+          "Rex7fGo6R1KuUhQJ",
+          "MWzx5Wiu6xcCWc9J",
+          "NzpCgpcL29WBIRpZ"
+        ],
+        "social_honor": 45
+      },
+      "step4": {
+        "stand_out": "She is characterized by an impartial and detached nature, even by the stoic standards of the Dragon Clan. She prioritizes objective evidence over social testimony.",
+        "ring": "void"
+      },
+      "step5": {
+        "social_giri": "Lord: Kitsuki Jusai leads clandestine network, Eyes and Ears of the Dragon)\n\nSeek out and reveal the secrets, plots & clandestine operations my lord wishes for me to investigate. "
+      },
+      "step6": {
+        "social_ninjo": "She was taught that \"truth is pure only when detached from emotion.\" Her uncle raised her to view all social interactions as transactional and all outsiders as manipulative. Deep down, she longs for a genuine connection that isn't a \"move\" in a game."
+      },
+      "step7": {
+        "clan_relations": "Despite the controversy surrounding the Izaku Library incident and the lack of communication from her superiors, she remains fundamentally loyal to the Dragon Clan. She firmly believes that her clan is the only one in Rokugan that truly values the pursuit of Truth and the wisdom of its Togashi Monks above shallow politics or personal glory. The customs, methods, and indirect communication of the other Great Clans often seem irrational and counter-productive to her logical, Kitsuki way of thinking. She sees the Dragon as an island of sense in a sea of foolish traditions.",
+        "skill": "aesthetics",
+        "social_add_glory": 0
+      },
+      "step8": {
+        "bushido": " She respects Bushidō as a framework for discipline, but she finds it dangerously rigid. She believes that adherence to \"moral purity\" often forces samurai to accept poor outcomes or allow greater evils to persist simply to keep their hands clean. She is particularly critical of Rei. In Rokugani courts, the testimony of a higher-ranking samurai is legally considered \"truth,\" regardless of the facts. She views this system as a mask for liars and an obstacle to justice.",
+        "skill": "skulduggery",
+        "social_add_honor": 0,
+        "tenet_paramount": "Makoto [Sincerity]",
+        "tenet_less_significant": "Rei [Courtesy] ",
+        "item": []
+      },
+      "step9": {
+        "success": " Early in her training, she challenged the fundamental Kitsuki doctrine regarding the Evidence Journal. While most students are taught that the utility of written notes outweighs the risk of them being stolen, she proved her intellect was superior to the page. In a series of grueling examinations, she recited minute details from cases months old—facial ticks of witnesses, weather patterns, and exact wording of testimonies—with greater accuracy than students referencing their own journals.\n\nRecognizing the strategic value of her peers' assumptions, she continues to carry an investigator's journal, but it is a \"honey pot\"—a deliberate security trap. She uses her training in Skulduggery to maintain a book of false leads and philosophical taunts to identify those who would spy on her.\n\nThe journal is a masterwork of psychological and chemical warfare. If someone steals it, they find a cryptic warning on the first page:\n\n\"I have no use for a mirror that shows me what I already see. This journal contains only the echoes of a truth I have already mastered. If you seek the light from someone else's candle, you will always walk in their shadow. Seek the warmth of the flame if you do not believe in yourself.\"\n\nIf the thief follows the clue and holds the pages to a candle (a common technique to reveal invisible ink), hidden soybean oil reacts to the heat. The oil chars quickly, causing the pages to burst into flames while revealing one final message before the evidence is destroyed:\n\n\"The truth you sought in these pages is now revealed: you are exactly the person I suspected you were. Know this—in the halls of the Kitsuki, the walls have ears and these pages have eyes.\"",
+        "distinction": [
+          "DRsTvZdSiFsC59UT"
+        ]
+      },
+      "step10": {
+        "difficulty": "Her greatest obstacle is the physical and social fallout from her infiltration of the Izaku Library. The act was a betrayal of the trust placed in her by Kitsuki Jusai, and the resulting loss of Glory has turned her from a rising star into a disgraced subordinate.\n\nShe bears a visible burn scar across her face from the Agasha ward. While the wound is mild enough to be hidden with cosmetics, she refuses to do so. In line with Kitsuki philosophy, which views makeup and masks as \"deceptions that cloud the truth,\" she wears her scar openly. However, this creates constant friction; higher-status samurai often view her refusal to conceal such an \"untidy\" blemish as a breach of Etiquette (Rei), as if she were appearing in court in stained robes.\n\nHer hands suffered the brunt of the scrolls spell fire and are severely scarred. To hide the extent of the damage, she constantly wears black leather gloves. While gloves are a practical tool for investigators to avoid contaminating evidence, her refusal to remove them—even during formal tea ceremonies or prayers—is seen as eccentric and suspicious behavior.",
+        "adversity": [
+          "tPjzEue7209cSD8o"
+        ]
+      },
+      "step11": {
+        "calms": "She finds a rare sense of excitment and purpose in the pursuit uncovering plots the more challenging the better. She genuinely enjoys the work of an investigator—uncovering hidden plots and unraveling secrets that others wish to keep buried. ",
+        "passion": [
+          "Yspo6m0TGxwmwHkI"
+        ]
+      },
+      "step12": {
+        "worries": "She is haunted by the cynical philosophy of her uncle. Haunted by the death of his own son—whom he believes was murdered because he was too trusting and \"friendly\"—her uncle raised her to be a fortress of suspicion. He conditioned her to believe that all relationships are merely layers of manipulation and that emotions are a dangerous bias. He would often lecture her:\n\n\"Protect yourself against deception, and never allow others to read your true heart. Trust no one; every bond is an act of manipulation.  Assume the worst of people so you are never caught off guard. Most are adversaries. At best relationships are mutually beneficial or transactional even those should be kept at a distance when they have no use. Remember that.\"\n\nThis deep-seated paranoia leaves her unable to form genuine connections, as she views every kindness as a calculated move in a game she must win. ",
+        "anxiety": [
+          "zO7PZitJqT3j6Yyk"
+        ]
+      },
+      "step13": {
+        "most_learn": "What is her background and the source of her nightmares?\n( I leave up to you if the haunting is her grandfather or the 'Nazo spirt')\n\nShe learned the most from her grandfather, though her childhood was marked by a chilling distance from her peers. Sensing she was \"different,\" she began to investigate her own origins. She eventually discovered a forbidden scroll detailing her mother’s journey to a distant, mysterious power while pregnant—seeking a \"blessing\" for her unborn child.\n\nThe scroll contained a cryptic passage regarding the Nazo Mori:\n\n\"For unknown reasons, children of this region born on the first day of each month display the profound strengths of the Great Clan associated with that month, yet they are equally burdened by that clan’s greatest spiritual flaws.\"\n\nBefore she could finish reading, the scroll inexplicably burst into flames. This discovery was a catastrophic breach of duty. Her grandfather, already shamed by the loss of his son and now seeing his granddaughter's \"corrupted\" curiosity, committed seppuku to atone for the failures of his bloodline.\n\nNow, she is plagued by shifting nightmares that feel less like dreams and more like memories of a power she does not yet understand, waking her in a cold sweat as she wonders which \"blessing\" truly resides within her.",
+        "skill": "theology",
+        "advantage": [],
+        "disadvantage": [
+          "kc6gGspWMQATYqIO"
+        ]
+      },
+      "step14": {
+        "first_sight": "Most observers are immediately struck by her dual nature. Physically, her hair is black, providing a contrast to the  scar that mars her face. Socially, her presence is unsettling; she is either completely detached—appearing as if she is not paying attention to anyone—or she is watching those around her with an intensity that borders on predatory, as if she is dissecting their every lie in real-time. That & she seems to always have her black gloves on.",
+        "special_features": [
+          "dzJ6ArVBwE7DQzTK"
+        ]
+      },
+      "step15": {
+        "stress": "Under social or mental pressure, she retreats behind a wall of cold hostility. She is prone to making biting, rude comments to deflect others or will simply walk away from a conversation she deems \"manipulative.\" In physical combat, she is a pragmatist rather than a hero; she will almost always choose to retreat and regroup unless she is backed into a corner, where she fights with the desperation of someone who trusts only her own survival."
+      },
+      "step16": {
+        "relations": "Her standing within her own clan is precarious. The Agasha family (and their Izaku vassals) remain deeply offended that she, a Kitsuki, bypassed their protocols to enter the restricted inner sanctum of the Izaku Library. ",
+        "item": []
+      },
+      "step17": {
+        "parents_pov": "They wouldn't.",
+        "skill": "government",
+        "bond": []
+      },
+      "step18": {
+        "heritage_name": "Usually, she is given the same name as her childhood name. It is not an uncommon name for a child, but to keep it as a samurai is odd.\n\nA surface-level understanding, and the most common reason someone would not receive an ancestor's name, is because they are a \"black sheep\" or unworthy of one. A family can mitigate the dishonor of a new but disgraceful samurai in the family by not naming them after an ancestor.\n\nSomeone more knowledgeable, especially in the ways of the Dragon Clan, may know that the Dragon Clan will sometimes give promising students or children a unique name. This is because they think those who may do great deeds need a unique name so that they do not take the glory of their ancestors' names and instead create a name of renown for the clan.\n\nThe name remained unchanged so as not to anger the mysterious Void Kami of the realm where she was born.\n\nAfter his son’s death, her grandfather felt the failure was his fault. Before her birth, he found in his research a rumor of a forbidden forest in Phoenix territory. He heard that being born on the first day of the month would grant the child exaggerated positive and negative traits associated with that clan.\n\nThe name was what her mother gave her during childbirth (drugs were given to her that rushed the birth early to ensure she was born on the first day of the Month of the Dragon for the \"blessing\"). He believed that the traits of the Dragon Clan—the pros of the clan and mental resistance to outside influence—would counteract any possession. Additionally, the clan is biased and does not feel their weaknesses are very bad, or they may even view them as positive traits.\n\nAfter her birth, she was trained by her grandfather intensely. This caused issues in proving his theory later. When he tried to convince the Lord, he was reminded that though she was above average, this was just as likely (if not more likely) due to him training her harder. His theory about this Kami being a powerful blessing for the Dragon was viewed as inconclusive and likely just a rumor. As an investigator, he should have known better, as rumors of mystical forces are quite often circumstantial, have a mundane cause, or are simply fabricated by peasants.\n\nThey decided to test her further and allowed her to solve a case involving outsiders within the Emerald Empire.",
+        "heritage_1": null,
+        "heritage_2": null,
+        "heritage_item": [],
+        "heritage_add_honor": 0,
+        "heritage_add_glory": -5,
+        "heritage_add_status": 0,
+        "skill": "sentiment"
+      },
+      "step19": {
+        "firstname": "Hasumi"
+      },
+      "step20": {
+        "death": "She should die right after solving enigmatic plot, but even when annouced she suffers 'Dragon’s Curse': to see the truth clearly, but to be unable to change the outcome. As she is unable to convince other's she is killed for a improper allegation or silently removed after."
+      }
+    },
+    "zeni": 300,
+    "money": {
+      "koku": 0,
+      "bu": 0,
+      "zeni": 0
+    },
+    "is_afflicted_or_compromised": false
+  },
+  "items": [
+    {
+      "name": "Shallow Waters",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.S4OASGrJcnGMYvIP",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 220
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>A good courtier learns how to read the desires of those around them from the subtle cues of their responses in conversation, as well as how to probe for details without revealing their intentions.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Social skill (water) check targeting a character, you may spend (op) as follows:</span></p><p><span class=\"fontstyle2\">(water)(op): </span><span class=\"fontstyle3\">Learn of one material item or worldly experience the target desires.</span></p><p><span class=\"fontstyle2\">(water)(op)(op): </span><span class=\"fontstyle3\">Learn the target’s ninjō (see page 38).</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 0,
+        "ring": "water",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "shuji"
+      },
+      "folder": "VUgIQroTFMSoeNI5",
+      "_id": "va4FCQdnOl5KMDiQ",
+      "sort": 1700000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Tactical Assessment",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.TcFVNDk57aKGpLR2",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 178
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>Akodo’s </em></span><span class=\"fontstyle2\"><em>Leadership </em></span><span class=\"fontstyle0\"><em>and Bayushi’s </em></span><span class=\"fontstyle2\"><em>Lies </em></span><span class=\"fontstyle0\"><em>agree on a few topics, for both leaders were practical to a certain degree, even if Akodo famously scorned many of Bayushi’s methods. As the scholar Hida Fuyuko noted in her revelatory commentary on </em></span><span class=\"fontstyle2\"><em>Leadership</em></span><span class=\"fontstyle0\"><em>’s lessons for commanders on the Kaiu Wall, the most famous meeting of these two minds comes on the matter of preparation: battles are not won in the field, but in the leadup to the conflict. Even in small clashes, the warrior who better understands the terrain, the strength of their own forces, and the composition of the enemy’s troops is usually victorious.</em></span></p><p><span class=\"fontstyle3\"><strong>Activation:</strong> </span><span class=\"fontstyle2\">When you make an Initiative check, you may spend</span><span class=\"fontstyle4\"> (op) </span><span class=\"fontstyle2\">in the following way:</span></p><p><span class=\"fontstyle3\">(air)(op): </span><span class=\"fontstyle2\">Choose an enemy in the conflict. Learn one of their advantages (of their choice) and their physical or supernatural resistance (your choice).</span></p><p><span class=\"fontstyle3\">(earth)(op): </span><span class=\"fontstyle2\">Choose a character in the conflict. They do not apply any of their disadvantages to their checks until the end of their first turn.</span></p><p><span class=\"fontstyle3\">(water)(op): </span><span class=\"fontstyle2\">Choose a piece of terrain in the scene (see </span><span class=\"fontstyle3\">Terrain </span><span class=\"fontstyle2\">on page 267). Until the start of your first turn, it counts as having the Obscuring quality for Attack action checks targeting you and your allies.</span></p><p><span class=\"fontstyle3\">(fire)(op): </span><span class=\"fontstyle2\">Choose a character in the conflict and one of their advantages you know. Until the end of their first turn, they apply that advantage to all of their checks.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 2,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "kata"
+      },
+      "folder": "eKn62n6zERrRUMNW",
+      "_id": "kE5gNubUO4CMZT2k",
+      "sort": 125000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Kitsuki’s Method",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/clans/dragon.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.ys7G4EJTYDpGLJEQ",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 67
+        },
+        "description": "<p><span class=\"fontstyle0\">When performing a check to investigate with any skill (see </span><span class=\"fontstyle2\">The Art of Investigation</span><span class=\"fontstyle0\">, on page 170), you may treat your ranks in the skill you are using as being equal to your school rank. If your ranks in the skill are equal to or higher than your school rank, or if you have 5 ranks in the skill, you may add a kept (ring) set to an (op) result instead.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 0,
+        "rank": 1,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "school_ability"
+      },
+      "folder": null,
+      "_id": "H7ObDYNCLjoSVeh6",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Traveling Clothes",
+      "type": "armor",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.zcsgspz4VluSMeI0",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 239
+        },
+        "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "2",
+        "zeni": "2 bu",
+        "properties": [
+          {
+            "id": "L5RCorePro000015",
+            "name": "Durable"
+          },
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          },
+          {
+            "id": "L5RCorePro000016",
+            "name": "Subtle"
+          }
+        ],
+        "armor": {
+          "physical": 2,
+          "supernatural": 0
+        }
+      },
+      "folder": null,
+      "_id": "dgbDSrgh81Pemu1E",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Wakizashi",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.S1MG4qPHEV3N8XnO",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 233
+        },
+        "description": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "7",
+        "zeni": "15 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "0-1",
+        "damage": 3,
+        "deadliness": 5,
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "_id": "4sBG4Io3toONnwEE",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Jian",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.bWrva6JnP8wqNRve",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 232
+        },
+        "description": "<p><span class=\"fontstyle0\">Known primarily as a duelist’s weapon, the jian is an ancient and elegant sword that has changed very little in design since Rokugan’s misty past yet remains deadly to this day. About the same size as a chokutō, a typical jian has a straight, double-edged blade that tapers to a point; a small, thick, horizontal hand guard; and a heavy pommel with a tassel. Only slightly more common than the chokutō, it is used by some Mirumoto, Kitsuki, or Shiba swordmasters who favor its versatility.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "7",
+        "zeni": "15 koku",
+        "properties": [],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "0-1",
+        "damage": 4,
+        "deadliness": 4,
+        "grip_1": "",
+        "grip_2": "Deadliness +1, Razor-Edge"
+      },
+      "folder": null,
+      "_id": "bE76GxEUqWmiaDWf",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Knife",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/knife.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.n8xA05Fb9WpXg3oo",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 234
+        },
+        "description": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "1",
+        "zeni": "1 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          },
+          {
+            "id": "L5RCorePro000005",
+            "name": "Concealable"
+          },
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ],
+        "category": "Hand Weapons",
+        "skill": "melee",
+        "readied": false,
+        "range": "0",
+        "damage": 2,
+        "deadliness": 4,
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "_id": "Rf3B4eKkbqOj15v6",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Traveling pack",
+      "type": "item",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.Rex7fGo6R1KuUhQJ",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 245
+        },
+        "description": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 0,
+        "rarity": "1",
+        "zeni": "10 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ]
+      },
+      "folder": null,
+      "_id": "Gn59YsX93oBXAJlu",
+      "sort": 5800000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Calligraphy Set",
+      "type": "item",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.MWzx5Wiu6xcCWc9J",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 242
+        },
+        "description": "<p>These ornate boxes contain items a practiced calligrapher needs to craft books, letters, scrolls, and other written communications. It consists of a small wooden box that contains a variety of brushes, inkstones, and pigments; a small bowl for water; and a small bag of sand for drying. Calligraphers and scribes customarily carry a calligraphy set, as so do some samurai and courtiers who prefer to write their own correspondence. (Cost: 1 bu. Rarity: 3.)</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "3",
+        "zeni": "1 bu",
+        "properties": []
+      },
+      "folder": null,
+      "_id": "4x6IPAFRL3NfnIhm",
+      "sort": 4900000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Journal of observations",
+      "type": "item",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.NzpCgpcL29WBIRpZ",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 67
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 0,
+        "rarity": "3",
+        "zeni": "1 bu",
+        "properties": []
+      },
+      "folder": null,
+      "_id": "1KB7IeJ76rgPxFRk",
+      "sort": 5300000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Precise Memory",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.distinctions-l5r-sortilege.Item.DRsTvZdSiFsC59UT",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 109
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>The great libraries of the Phoenix Clan’s Asako family are home to a specialized group of scholars, renowned across Rokugan for their tremendous natural talent for memorization. The Asako Loremasters train in a special school, sharpening their skills in research and delving into multiple topics in order to intuit the connections between different fields of study. This practice gives them a nearly unique ability to grasp the connections between apparently unrelated bits of information.</em></span></p><p><span class=\"fontstyle0\"><em>The Asako Libraries are a priceless repository of knowledge, home to an unrivaled collection of original manuscripts, yet the minds of the scholars themselves are the greatest prize found within its walls.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Precise Memory distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- You can recall anything you have read or heard within the current game session exactly, and you often dredge up older facts with much greater ease than others.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check for which you must recall details precisely (such as a Games (earth) check to recall the opening moves of a classic defensive strategy in shōgi or a Government (earth) check to remember the specifics of a historical event), you may reroll up to two dice</span>.</p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "earth",
+        "peculiarity_type": "distinction",
+        "types": "Mental"
+      },
+      "folder": null,
+      "_id": "UiItvQksohPNewUy",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Horrible Scar",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.adversities-l5r-sortilege.Item.tPjzEue7209cSD8o",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "path_of_waves",
+          "page": 72
+        },
+        "description": "<p>Hibiki rose from a fitful sleep, his body aching from the prior night. Walking over to the basin of water he stared for a moment at his reflection, shocked by the awful gash that cut across his jaw. “Well,” his partner, Kyo, said from across the room, “I suppose you still have your beaming personality.” Hibiki swore and threw the basin at Kyo. </p><p></p><p>The following apply to a character with the Horrible Scar adversity: </p><ul><li><p>- You have gained an awful scar through your travels and it hinders your interactions with others. People stare at you, treat you unfairly, and otherwise judge you for your appearance. </p></li><li><p>- When you perform a check to interact socially with a stranger (such as a Courtesy (air) check to request information or a Sentiment (air) check to calm someone down), you must choose and reroll two dice containing (su) or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "air",
+        "peculiarity_type": "adversity",
+        "types": "Interpersonal, Mental"
+      },
+      "folder": null,
+      "_id": "F8ugiqLkNHQzg1gJ",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Secrets",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.passions-l5r-sortilege.Item.Yspo6m0TGxwmwHkI",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 115
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>There is no thrill to compare to having a secret. It’s a thrill so delicious, it must be shared, for what is the purpose of knowing what no one else knows, if no one knows you know it? Especially in an Empire as concerned with seeming and public face as Rokugan, secrets are both currency and delight to many in the courts.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Secrets passion:</span></p><ul><li><p><span class=\"fontstyle3\">- You never forget a secret you have heard, and you instinctively know if something you have heard is common knowledge or information someone wants concealed (even if you do not know who or why).</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to acquire or preserve a secret (such as a Meditation (void) check to resist efforts to pry a secret from you or a Sentiment (void) check to have a hunch about whether someone is concealing a dreadful secret), you remove 3 strife.</span></p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "peculiarity_type": "passion",
+        "types": "Interpersonal, Mental"
+      },
+      "folder": null,
+      "_id": "pCHWMFlQpqA9abWA",
+      "sort": 1700000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Isolation",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.anxieties-l5r-sortilege.Item.zO7PZitJqT3j6Yyk",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "court_of_stones",
+          "page": 103
+        },
+        "description": "<p><em>“I find myself unsatisfied with only knowing people.</em></p><p><em>I want to care,” Daimyō Shika Renji explained. “Such a pathetic human compulsion. I long to stab someone, or love them. Both, perhaps. These feelings are unavoidable, so we Deer lock them away, then redirected them somewhere safe. In the meantime, we cannot help but feel isolated from ourselves and others. We become a collection of masks crafted for a singular purpose. There is Renji the compassionate, Renji the unifier, Renji the protector. All lies. I fear if these masks were to break, there might be nothing underneath.”</em></p><p><strong>Effects:</strong> The following apply to a character with the Isolation anxiety:</p><ul><li><p>-  To best serve your clan’s interests, you must ignore your own needs. You cannot sympathize with the people you intend to bring harm. Likewise, you cannot help people for selfish reasons. Your clan requires you to focus on the larger picture and to remove your individual wants from the equation. You are a tool for a greater purpose. The temptation to form genuine human connections is strong, and it can pull you away from your life’s mission.</p></li><li><p>-  After performing a check related to interacting with people you care for (such as a Command (earth) check to issue orders to family members or a Sentiment (earth) check to recall the feelings of your friends concerning a particular subject), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "earth",
+        "peculiarity_type": "anxiety",
+        "types": "Interpersonal, Mental"
+      },
+      "folder": null,
+      "_id": "ND9pdhyF0EqmJGgT",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Haunting",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.adversities-l5r-sortilege.Item.kc6gGspWMQATYqIO",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 122
+        },
+        "description": "<p><em>The tale is told of Toritaka Kanoshi, a young samurai of the Falcon Clan, whose father was betrayed and murdered by a family friend. The ghost of the father appeared to the young man and bade him to avenge his murder, but Kanoshi refused to believe that the spirit was truly that of the elder Toritaka. The father’s ghost followed Kanoshi around for years, creating a great commotion that only his son could hear. In the end, nearly driven mad by the torment, Kanoshi finally obeyed the ghost’s wishes and brought the murderer to justice. Satisfied, his father was finally at rest, and he haunted Kanoshi no more.</em></p><p></p><p>The following apply to a character with the Haunted adversity:</p><ul><li><p>- The spirit has their own agenda (determined by the GM), which interferes with yours at inopportune times.</p></li><li><p>- When you make a check to defy the will of the spirit haunting you (such as a Meditation (void) check to find solace in meditation or a Skulduggery (void) check to perform disreputable acts to survive), you must choose and reroll two dice containing (su) or (ex). After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "peculiarity_type": "adversity",
+        "types": "Interpersonal, Spiritual"
+      },
+      "folder": null,
+      "_id": "F6fbRRQ1kAg4jZmX",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "folder": "LOi3lWXuHlyEmh7m",
+      "name": "Black Gloves",
+      "type": "item",
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "_id": "u7YhZChJLtpqkSZz",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 0,
+        "rarity": "0",
+        "zeni": "0",
+        "properties": []
+      },
+      "effects": [],
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": "Item.dzJ6ArVBwE7DQzTK",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705619979,
+        "modifiedTime": 1767705619979,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Government +1 (1 -> 2)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "_id": "WRmbUKiBPos7HzXf",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 4,
+        "xp_cost": 3,
+        "rank": 2,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "skill",
+        "skill": "government"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705644056,
+        "modifiedTime": 1767705667415,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Honest Assessment",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/shuji.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-shuji-l5r-sortilege.Item.t427qRaOh42dfbVM",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705757372,
+        "modifiedTime": 1767705760323,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 216
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>Honesty is a virtue of Bushidō, but direct honesty is often seen as rudeness among the samurai—instead, one is expected to find a polite way to imply one’s meaning to spare the feelings of the other involved. As a result, directness can be something of a rare and valuable commodity.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As a Support action, you may make a </span><span class=\"fontstyle2\">TN 2 Courtesy (earth) check </span><span class=\"fontstyle3\">to appraise the weaknesses of a character.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, choose one of the target’s known disadvantages. The target does not apply that disadvantage to their checks until the end of the scene.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(earth)(op)+: </span><span class=\"fontstyle3\">Choose one additional disadvantage per (op) spent this way.</span></p><p><span class=\"fontstyle5\">(earth)(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">Reduce the TN of the target’s next skill check using the ring the disadvantage is attached to by 2.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 3,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "earth",
+        "skill": "courtesy",
+        "difficulty": "2",
+        "technique_type": "shuji"
+      },
+      "folder": "mubKEa3wApkpwHra",
+      "_id": "ZBgF1V9mJySj7EE2",
+      "sort": 150000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Medicine +1 (1 -> 2)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "_id": "Cltod472bTGXlYLq",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 4,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "skill",
+        "skill": "medicine"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705773144,
+        "modifiedTime": 1767705779104,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Void +1 (2 -> 3)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/icons/rings/void.svg",
+      "_id": "V0ZtiCkCOmzsedwd",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 9,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "ring",
+        "skill": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705809877,
+        "modifiedTime": 1767705811847,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Crescent Moon Style",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.skeRFViU7iirdPkB",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767705823713,
+        "modifiedTime": 1767705823713,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 175
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>Striking first is valuable, but so is surviving. To defend without sacrificing offense, a bushi must be ready to retaliate swiftly after blocking or evading. With a quick shift, the bushi switches from defense to bring down their full force upon their enemy.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you perform Guard action (see page 264), you may spend </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">in the following way:</span></p><p><span class=\"fontstyle4\">(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">After a character at range 1–2 performs an Attack action targeting you or another character you are guarding, you may perform a Strike action with one readied Martial Arts [Melee or Unarmed] weapon targeting that character (if they are within your weapon’s range). This effect persists until the start of your next turn, or until you perform a Strike action this way.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 3,
+        "xp_cost": 3,
+        "rank": 2,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "kata"
+      },
+      "folder": "eKn62n6zERrRUMNW",
+      "_id": "WOCKlol4KgDiAqQD",
+      "sort": 1800000,
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-bushi-oni",
+      "uuid": "Actor.1OU8cpsBQL7Jq8ea",
+      "coreVersion": "13.351",
+      "systemId": "l5r5e",
+      "systemVersion": "1.13.2"
+    },
+    "coreVersion": "13.351",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.2",
+    "createdTime": 1767372891960,
+    "modifiedTime": 1767706985177,
+    "lastModifiedBy": "MsVYyMuYlVaanYGX"
+  },
+  "ownership": {
+    "default": 2
+  }
+}

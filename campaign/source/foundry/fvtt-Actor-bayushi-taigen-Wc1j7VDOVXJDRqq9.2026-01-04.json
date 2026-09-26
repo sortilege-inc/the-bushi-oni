@@ -1,0 +1,1734 @@
+{
+  "name": "Bayushi Taigen",
+  "type": "character",
+  "img": "sortilege/the-bushi-oni/taigen.jpeg",
+  "prototypeToken": {
+    "actorLink": true,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "fatigue"
+    },
+    "bar2": {
+      "attribute": "strife"
+    },
+    "name": "Bayushi Taigen",
+    "displayName": 0,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "sortilege/the-bushi-oni/taigen.jpeg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "displayBars": 0,
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "system": {
+    "soft_locked": false,
+    "identity": {
+      "age": "",
+      "clan": "Scorpion",
+      "family": "Bayushi",
+      "female": null,
+      "marital_status": "",
+      "roles": "Bushi",
+      "school": "Hida Defender School [Crab]",
+      "school_rank": 1,
+      "school_curriculum_journal": {}
+    },
+    "rings": {
+      "earth": 2,
+      "air": 3,
+      "water": 2,
+      "fire": 2,
+      "void": 2
+    },
+    "notes": "<p>Betrohal- Doji Shizue</p>",
+    "description": "<p>Born to Bayushi Shoju and Bayushi Kachiko</p><p></p><p>Twin brother Bayushi Dairu[older]</p>",
+    "social": {
+      "honor": 50,
+      "glory": 64,
+      "status": 45,
+      "ninjo": "Start own minor family that trains bodyguards/duelist",
+      "giri": "Bayushi Shoju his father and lord",
+      "bushido_tenets": {
+        "paramount": "Chugi[Duty and Loyalty]",
+        "less_significant": "Gi[Righteousness]"
+      }
+    },
+    "skills": {
+      "artisan": {
+        "aesthetics": 0,
+        "composition": 0,
+        "design": 1,
+        "smithing": 2
+      },
+      "martial": {
+        "fitness": 1,
+        "melee": 2,
+        "ranged": 0,
+        "unarmed": 0,
+        "meditation": 1,
+        "tactics": 2
+      },
+      "scholar": {
+        "culture": 0,
+        "government": 1,
+        "medicine": 0,
+        "sentiment": 0,
+        "theology": 0
+      },
+      "social": {
+        "command": 1,
+        "courtesy": 1,
+        "games": 0,
+        "performance": 0
+      },
+      "trade": {
+        "commerce": 0,
+        "labor": 0,
+        "seafaring": 0,
+        "skulduggery": 1,
+        "survival": 1
+      }
+    },
+    "techniques": {
+      "kata": true,
+      "kiho": false,
+      "inversion": false,
+      "invocation": false,
+      "ritual": true,
+      "shuji": true,
+      "maho": false,
+      "ninjutsu": false,
+      "mantra": false,
+      "specificity": true
+    },
+    "endurance": 8,
+    "composure": 8,
+    "focus": 5,
+    "vigilance": 3,
+    "void_points": {
+      "max": 2,
+      "value": 0
+    },
+    "fatigue": {
+      "max": 8,
+      "value": 0
+    },
+    "strife": {
+      "max": 8,
+      "value": 0
+    },
+    "stance": "earth",
+    "prepared": true,
+    "xp_total": 35,
+    "xp_spent": 0,
+    "xp_saved": 0,
+    "template": "core",
+    "twenty_questions": {
+      "template": "core",
+      "generated": true,
+      "step1": {
+        "clan": "Scorpion",
+        "ring": "air",
+        "skill": "skulduggery",
+        "social_status": 35
+      },
+      "step2": {
+        "family": "Bayushi",
+        "ring": "fire",
+        "skill1": "design",
+        "skill2": "courtesy",
+        "wealth": 8,
+        "social_glory": 44
+      },
+      "step3": {
+        "school": "Daidoji Iron Warrior School [Crane]",
+        "roles": "Bushi",
+        "ring1": "earth",
+        "ring2": "water",
+        "skill1": "melee",
+        "skill2": "meditation",
+        "skill3": "survival",
+        "skill4": "tactics",
+        "skill5": "fitness",
+        "allowed_techniques": {
+          "kata": true,
+          "kiho": false,
+          "inversion": false,
+          "invocation": false,
+          "ritual": true,
+          "shuji": true,
+          "maho": false,
+          "ninjutsu": false,
+          "mantra": false,
+          "specificity": true
+        },
+        "techniques": [],
+        "school_ability": [],
+        "equipment": [
+          "Rex7fGo6R1KuUhQJ",
+          "sPKkavq6O0SoxiPj",
+          "BhKwwnN5UHI5rZpp",
+          "S1MG4qPHEV3N8XnO",
+          "zcsgspz4VluSMeI0",
+          "n8xA05Fb9WpXg3oo",
+          "ElFJfEcGvWe6A5yU",
+          "rOwHxehK6Ofpl5IO"
+        ],
+        "social_honor": 40
+      },
+      "step4": {
+        "stand_out": "Insight, self-awareness,",
+        "ring": "void"
+      },
+      "step5": {
+        "social_giri": "Bayushi Shoju his father and lord"
+      },
+      "step6": {
+        "social_ninjo": "Start own minor family that trains bodyguards/duelist"
+      },
+      "step7": {
+        "clan_relations": "He is loyal to his clan",
+        "skill": "smithing",
+        "social_add_glory": 0
+      },
+      "step8": {
+        "bushido": "All bushido has it's uses",
+        "skill": "none",
+        "social_add_honor": 10,
+        "tenet_paramount": "Chugi[Duty and Loyalty]",
+        "tenet_less_significant": "Gi[Righteousness]",
+        "item": []
+      },
+      "step9": {
+        "success": "He learned during his training at the Iron warrior school to wield two swords at a time thou a mirumoto will beat him",
+        "distinction": [
+          "vlWhZBp4w6KBpJqr"
+        ]
+      },
+      "step10": {
+        "difficulty": "His brothal was heavily insulted by a lion courtier, ending up in a duel but his oppenent was a swordsaint[title] but with some effort he managed to defeat him, but the pupil of the swordsaint[preferable a Matsu] swore vengence.",
+        "adversity": [
+          "BB5HVzYruWcQHh4Y"
+        ]
+      },
+      "step11": {
+        "calms": "He enjoys working on weapons and armor",
+        "passion": [
+          "n4XQNJt4H0hrftsW"
+        ]
+      },
+      "step12": {
+        "worries": "He has a strong fear of poison after finding out about his mother's feud with her brother who is willing to undermine their family.",
+        "anxiety": [
+          "HbMcN6TiCPXRw2LJ"
+        ]
+      },
+      "step13": {
+        "most_learn": "His mother who helped him get training in a crane school and his betrohal to Doji Shizue",
+        "skill": "none",
+        "advantage": [
+          "xi1siK7KniN8HYIK"
+        ],
+        "disadvantage": []
+      },
+      "step14": {
+        "first_sight": "His black haori he wears at all times.",
+        "special_features": []
+      },
+      "step15": {
+        "stress": "He tends to be calm but when he is angered enough he sometimes throws objects or insults"
+      },
+      "step16": {
+        "relations": "He has Strong ties to the crane due to his brothal and his gift was a finely crafted katana.",
+        "item": [
+          "BhKwwnN5UHI5rZpp"
+        ]
+      },
+      "step17": {
+        "parents_pov": "He has a lordly confidence",
+        "skill": "government",
+        "bond": []
+      },
+      "step18": {
+        "heritage_name": "Tangen",
+        "heritage_1": 8,
+        "heritage_2": 9,
+        "heritage_item": [
+          "tRfoACKusbLsicmy"
+        ],
+        "heritage_add_honor": 0,
+        "heritage_add_glory": 0,
+        "heritage_add_status": 10,
+        "skill": "none"
+      },
+      "step19": {
+        "firstname": "Bayushi Taigen"
+      },
+      "step20": {
+        "death": "In battle or in duty of his lord or charge"
+      },
+      "autoCompleteListName": "step3.roles",
+      "autoCompleteListSelectedIndex": "1"
+    },
+    "zeni": 400,
+    "money": {
+      "koku": null,
+      "bu": 0,
+      "zeni": 0
+    },
+    "is_afflicted_or_compromised": false
+  },
+  "items": [
+    {
+      "name": "Traveling pack",
+      "type": "item",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/item.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.items-l5r-sortilege.Item.Rex7fGo6R1KuUhQJ",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 245
+        },
+        "description": "<p><span class=\"fontstyle0\">Blanket, bowl, chopsticks, four days of travel rations, flint and tinder, and any three other items of the player’s choice that are rarity 4 or lower.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 0,
+        "rarity": "1",
+        "zeni": "10 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ]
+      },
+      "folder": null,
+      "_id": "QJIMAUp9LWD9MfgB",
+      "sort": 5800000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Lacquered Armor",
+      "type": "armor",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/armor.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.sPKkavq6O0SoxiPj",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1767380976887,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 239
+        },
+        "description": "<p><span class=\"fontstyle0\">Heavier than ashigaru armor, lacquered armor is worn by samurai who desire a good mix of protection and grandeur, and is just at home at war as at a martial ceremony. These suits are made of thick leather or steel plates stitched or riveted to a leather backing. They protect the torso, head, upper arms, and groin, and the legs above the knee. They can also include a helmet and mask, though these are not considered integral.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": true,
+        "quantity": 1,
+        "weight": 2,
+        "rarity": "6",
+        "zeni": "25 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000006",
+            "name": "Cumbersome"
+          },
+          {
+            "id": "L5RCorePro000011",
+            "name": "Wargear"
+          }
+        ],
+        "armor": {
+          "physical": 4,
+          "supernatural": 0
+        }
+      },
+      "folder": null,
+      "_id": "0HxYkfVFuUKGFVTO",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Katana",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.BhKwwnN5UHI5rZpp",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1767380974026,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 232
+        },
+        "description": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": true,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "7",
+        "zeni": "20 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "1",
+        "damage": 4,
+        "deadliness": 5,
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "_id": "Cjg23lxemtUXZInn",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Wakizashi",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.S1MG4qPHEV3N8XnO",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 233
+        },
+        "description": "<p><span class=\"fontstyle0\">Whereas the katana represents a samurai’s status as a warrior, the wakizashi represents their place in Rokugan’s social order and strict caste system. The wakizashi is a small, katana-like sword usually two to three feet in length, with the same flexible blade and lethal edge. It is often made as part of a pair, with the same decorations as its matched katana. The wakizashi also fills another role: it clearly signals that its wearer is a samurai, and a person of honor who will make the ultimate sacrifice for their ideals and their master. It is the tool with which a samurai commits seppuku: ritual suicide, the last protest of an aggrieved and honorable samurai.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "7",
+        "zeni": "15 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "0-1",
+        "damage": 3,
+        "deadliness": 5,
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "_id": "NHOz6syYawFbXlGq",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Traveling Clothes",
+      "type": "armor",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/keikogi.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.armors-l5r-sortilege.Item.zcsgspz4VluSMeI0",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 239
+        },
+        "description": "<p><span class=\"fontstyle0\">Traveling clothes ordinarily consist of roughspun garments designed to resist wear and tear. They can be anything from robes to a kimono or jacket and leggings and are often accentuated with a hat or cloak</span>.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "2",
+        "zeni": "2 bu",
+        "properties": [
+          {
+            "id": "L5RCorePro000015",
+            "name": "Durable"
+          },
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          },
+          {
+            "id": "L5RCorePro000016",
+            "name": "Subtle"
+          }
+        ],
+        "armor": {
+          "physical": 2,
+          "supernatural": 0
+        }
+      },
+      "folder": null,
+      "_id": "b8yNg2TBatoZOwCH",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Knife",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/knife.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.n8xA05Fb9WpXg3oo",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 234
+        },
+        "description": "<p><span class=\"fontstyle0\">Knives come in a dizzying array of types and styles, from the familiar crudely constructed knife in a peasant’s kitchen to the deadly combat knives samurai take into battle. Those particularly designed for combat—like the aiguchi—are often equipped with small hand guards to make them more useful in the field.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "1",
+        "zeni": "1 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          },
+          {
+            "id": "L5RCorePro000005",
+            "name": "Concealable"
+          },
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ],
+        "category": "Hand Weapons",
+        "skill": "melee",
+        "readied": false,
+        "range": "0",
+        "damage": 2,
+        "deadliness": 4,
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "_id": "23abXKEAPEd9ITsa",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Club",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/mace.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.ElFJfEcGvWe6A5yU",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 234
+        },
+        "description": "<p><span class=\"fontstyle0\">The humble club is perhaps the oldest weapon in Rokugan—at least among humans. Often little more than a length of stout wood or shaped stone, a club can be fashioned with available materials by nearly anyone. While a club can certainly be used to kill, doing so takes some work on the part of the wielder</span>.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "1",
+        "zeni": "1 bu",
+        "properties": [
+          {
+            "id": "L5RCorePro000012",
+            "name": "Mundane"
+          }
+        ],
+        "category": "Blunt Weapons",
+        "skill": "melee",
+        "readied": false,
+        "range": "0-1",
+        "damage": 5,
+        "deadliness": 2,
+        "grip_1": "",
+        "grip_2": "Damage +1"
+      },
+      "folder": null,
+      "_id": "mq1tJu74mh9DXIVk",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Ōtsuchi",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/mace.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.rOwHxehK6Ofpl5IO",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 234
+        },
+        "description": "<p><span class=\"fontstyle0\">The ōtsuchi is to the carpenter’s hammer what the ono is to the woodcutter’s ax: larger, deadlier, and obviously designed with lethal purpose. With a shaft roughly six feet long topped by a huge, barrel-shaped mallet head, it is built to breach doors and smash walls—but it also works quite well on monsters with rock-like hides, as the warriors of the Hida school often demonstrate.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": false,
+        "quantity": 1,
+        "weight": 2,
+        "rarity": "8",
+        "zeni": "30 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000006",
+            "name": "Cumbersome"
+          },
+          {
+            "id": "L5RCorePro000011",
+            "name": "Wargear"
+          }
+        ],
+        "category": "Blunt Weapons",
+        "skill": "melee",
+        "readied": false,
+        "range": "1",
+        "damage": 8,
+        "deadliness": 3,
+        "grip_1": "N/A",
+        "grip_2": ""
+      },
+      "folder": null,
+      "_id": "f4DXOARMS6ZgAW6V",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Ambidexterity",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.distinctions-l5r-sortilege.Item.vlWhZBp4w6KBpJqr",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 102
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>The eager bandits circled the wagon. The wagon driver froze in his seat, hands raised and white as a ghost. With a heavy sigh, the wagon’s sole, unexpected passenger hopped down from the back onto the dusty road. She was as haggard and unkempt as the bandits themselves, but jammed into her makeshift belt were two fine katana. As she drew the swords with both hands, the bandits realized that they had chosen poorly.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Ambidexterity distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- As you have no dominant hand, you can compensate if your right hand is injured or lost.</span></p></li><li><p><span class=\"fontstyle3\">- When making a check for which your equal skill with both hands is a benefit (such as a Martial Arts [Melee] (air) check to strike an unexpected blow with a weapon in your left hand or a Skulduggery (air) check to stealthily pick someone’s pocket), you may reroll up to two dice.</span><br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "air",
+        "peculiarity_type": "distinction",
+        "types": "Physical"
+      },
+      "folder": null,
+      "_id": "1M0hmUAp7pDE76iT",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Sworn Enemy",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.adversities-l5r-sortilege.Item.BB5HVzYruWcQHh4Y",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 129
+        },
+        "description": "<p><em>\"As soon as a person leaves their house, they have seven enemies.”</em></p><p><em>– Tao of Shinse</em>i</p><p></p><p>The following apply to a character with the Sworn Enemy adversity:</p><ul><li><p>-  You and the GM should select or create a character to be your sworn enemy. Your sworn enemy exists within the world and periodically meddles in your affairs, directly or indirectly, at the GM’s discretion. If your sworn enemy perishes, you must either remove this disadvantage, acquire a new sworn enemy (perhaps someone who hates you because of your role in the demise of the previous one), or find a way for your deceased foe to continue playing a role in your life.</p></li><li><p>-  When you make a check to remain rational in the presence of this person you hate (such as a Courtesy (earth) check to interact with this person without being provocative or a Meditation (earth) check to stay stoic in the face of their insults), you must choose and reroll two dice containing (su)or (ex) . After resolving the check, if you failed, you gain 1 Void point.</p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "earth",
+        "peculiarity_type": "adversity",
+        "types": "Interpersonal"
+      },
+      "folder": null,
+      "_id": "ZHdfGM7GrufnlpVY",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Armament",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.passions-l5r-sortilege.Item.n4XQNJt4H0hrftsW",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 111
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>“The craftsmanship on this truly is exquisite,” Ikoma Eiji said, examining the spear on the table before him. The weapon had an eight-foot shaft of strong wood, surmounted by a two-foot blade carved with intricate symbols.</em></span></p><p><span class=\"fontstyle0\"><em>“Great Fortunes! Do you realize what this is? These carvings…” he ran his finger along the crest engraved into the metal of the blade. “This is Kotoku, the ancestral weapon of the Daidoji family!”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Armament passion:</span></p><ul><li><p><span class=\"fontstyle3\">- Unless the piece comes from outside of the Emerald Empire, you know the name of any weapon or piece of armor you encounter, are aware of its function, and have a rudimentary understanding of how to equip and wield it.</span></p></li><li><p><span class=\"fontstyle3\">- After performing a check to make or study arms or armor (such as a Smithing (earth) check to polish a suit of armor or a Tactics (earth) check to know how to arrange a proper spear formation), you remove 3 strife.</span></p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "earth",
+        "peculiarity_type": "passion",
+        "types": "Mental"
+      },
+      "folder": null,
+      "_id": "g2nNHazTbAtB2dDe",
+      "sort": 200000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Fear of Poison",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.anxieties-l5r-sortilege.Item.HbMcN6TiCPXRw2LJ",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "writ_of_the_wild",
+          "page": 106
+        },
+        "description": "<p><em>Yasuki Fusao could still smell the vile, stale bile when his cousin vomited on him on purpose. They had exchanged no words then and no words since. Her disgusting message was clear: your poison failed to kill me and now the stink lies on you.</em></p><p><em>A servant placed the afternoon tea on the table, and Fusao grabbed his wrist. “Did you drink this?”</em></p><p><em>“Pardon, Lord Yasuki?” the servant said, perplexed.</em></p><p><em>“Drink.”</em></p><p><em>The servant sighed and poured the water into the teapot. He looked on unperturbed, and Fusao fidgeted while the tea steeped. Finally, the servant poured the tea into the cup and took a sip.</em></p><p><em>“All of it,” Fusao said.</em></p><p><em>“The tea in the cup or the teapot, Lord Yasuki?”</em></p><p><em>“Yes.”</em></p><p><em>The servant had drunk so much tea in the past year, he swore he was made of it. And yet, still no sign of poisonous retribution from Lord Yasuki’s assassination attempt. Perhaps that was punishment enough.</em></p><p><strong>Effects:</strong> The following apply to a character with the Fear of Poison anxiety:</p><ul><li><p>-  You have a fear of being poisoned by others. You would rather go hungry than accept food or drink from anyone you do not trust completely, unless you witness that food being consumed by someone else first. When you are offered food or drink by others you do not trust, you cannot help but wonder if they are secretly plotting your demise.</p></li><li><p>-  After performing a check to interact with someone you do not completely trust who has offered you food or drink (such as a Sentiment (air) check to try to determine some else’s intentions or a Games (air) check to play a game well against someone who has offered you food), you receive 3 strife. If this is the first time this has occurred this scene, gain 1 Void point.</p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "air",
+        "peculiarity_type": "anxiety",
+        "types": "Mental"
+      },
+      "folder": null,
+      "_id": "Lmn9QBElPFM3Dyub",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Blissful Betrothal",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.distinctions-l5r-sortilege.Item.xi1siK7KniN8HYIK",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 103
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>Autumn nights, it seems</em></span></p><p><span class=\"fontstyle0\"><em>Are long by repute alone:</em></span></p><p><span class=\"fontstyle0\"><em>Scarcely had we met</em></span></p><p><span class=\"fontstyle0\"><em>When morning’s first light appeared,</em></span></p><p><span class=\"fontstyle0\"><em>Leaving everything unsaid.</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Blissful Betrothal distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- Your spouse fulfills certain social duties in your name when you are absent (such as attending events or caring for family members), provides assistance in their areas of expertise, and offers counsel when you face a difficult decision.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check for which your good relationship with your betrothed or spouse is a benefit (such as a Courtesy (water) check to persuade someone from their family or clan to assist you), you may reroll up to two dice.</span></p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "water",
+        "peculiarity_type": "distinction",
+        "types": "Interpersonal"
+      },
+      "folder": null,
+      "_id": "t44GNUNxqsqgYEJj",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Katana",
+      "type": "weapon",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/weapons/katana.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.weapons-l5r-sortilege.Item.BhKwwnN5UHI5rZpp",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1767380974587,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 232
+        },
+        "description": "<p><span class=\"fontstyle0\">As much a work of art as it is a weapon, the katana is perhaps the most revered weapon in Rokugan. It has an elegant, slightly curved blade between three and four feet long, made of steel that is specially folded during its creation. This unique forging style ensures that the inner part of the blade remains springy and soft while the outside is as hard as tempered steel. Each sword likely has a history and legacy, and it is a constant reminder of the weight that destiny has placed upon its bearer’s shoulders as a samurai of Rokugan</span>.</p>",
+        "parent_id": null,
+        "items": [],
+        "equipped": true,
+        "quantity": 1,
+        "weight": 1,
+        "rarity": "7",
+        "zeni": "20 koku",
+        "properties": [
+          {
+            "id": "L5RCorePro000002",
+            "name": "Ceremonial"
+          },
+          {
+            "id": "L5RCorePro000001",
+            "name": "Razor-Edged"
+          }
+        ],
+        "category": "Swords",
+        "skill": "melee",
+        "readied": false,
+        "range": "1",
+        "damage": 4,
+        "deadliness": 5,
+        "grip_1": "",
+        "grip_2": "Deadliness +2"
+      },
+      "folder": null,
+      "_id": "JG6dpkp41bX941yx",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Blessed Lineage",
+      "type": "peculiarity",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/peculiarity.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.distinctions-l5r-sortilege.Item.tRfoACKusbLsicmy",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736631566,
+        "modifiedTime": 1766736631566,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 103
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>“Perhaps you’d like to match your words with your steel,” the woman growled, her hands resting upon the hilts of her swords. “You will learn a hard lesson: nobody insults Mirumoto Ohatsu with impunity.”</em></span></p><p><span class=\"fontstyle0\"><em>The man she faced smiled in return.</em></span></p><p><span class=\"fontstyle0\"><em>“I certainly did not intend to offend you in any way, Ohatsu-san. Please allow me to introduce myself. I am Miya Matsuo. Perhaps you have heard of my cousin, the Imperial Herald?”</em></span></p><p></p><p><span class=\"fontstyle3\">The following apply to a character with the Blessed Lineage distinction:</span></p><ul><li><p><span class=\"fontstyle3\">- Characters with status of 50 or higher understand that they might suffer a loss of prestige if they harm you, and thus do not choose to kill you as their first option, even if you are a political obstacle they would otherwise eliminate without hesitation.</span></p></li><li><p><span class=\"fontstyle3\">- When performing a check for which your esteemed lineage is a benefit (such as a Command (void) check to challenge someone’s perception of a situation or a Government (void) check to know the likelihood of a political eventuality), you may reroll up to two dice.</span></p></li></ul>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 0,
+        "bought_at_rank": 0,
+        "ring": "void",
+        "peculiarity_type": "distinction",
+        "types": "Interpersonal, Spiritual"
+      },
+      "folder": null,
+      "_id": "PCTMCDcvCtHSbl6n",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Way of the Crab",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.school-abilities-l5r-sortilege.Item.7LHxYqmpqMUETLEq",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736697961,
+        "modifiedTime": 1766736697961,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 57
+        },
+        "description": "<p><span class=\"fontstyle0\">Ignore the Cumbersome quality of armor you wear.</span></p><p><span class=\"fontstyle0\">Once per round, before making a check to resist a critical strike, you may reduce the severity of that critical strike by the physical resistance of your armor plus your school rank (to a minimum of 0).</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 0,
+        "xp_cost": 0,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "school_ability"
+      },
+      "folder": null,
+      "_id": "DAq15onb7GUplw7O",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Lord Hida’s Grip (Crab)",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/clans/crab.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.ERExWdY04GNvu3p0",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736715013,
+        "modifiedTime": 1766737180006,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 176
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>The Kami Hida, patron of the Crab Clan, was a legendary slayer of monsters. He beheaded the massive demon that once menaced the rose-marble palace, and ripped out one skull of the two-headed Kabuto no Oni and crushed the other head with it. However, Hida was no mere brute: he was cunning, killing monsters by exploiting their weaknesses. Warriors of the Crab Clan train in similar techniques. They turn their foes' great weight against them by pinning or strategically damaging specific body parts.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack action, you may make a </span><span class=\"fontstyle2\">Fitness (void) check </span><span class=\"fontstyle3\">targeting one creature of silhouette 3 or larger at range 0–1. The TN of the check is equal to the silhouette of the target (to a minimum of 1).</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, your target suffers the Immobilized condition. If you succeed, you count as granting assistance (see page 26) to all characters who perform Attack actions against your target. This effect persists until the beginning of your next turn.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(void)(op): </span><span class=\"fontstyle3\">Your target must resist with a </span><span class=\"fontstyle2\">Fitness check </span><span class=\"fontstyle3\">or suffer physical damage equal to its silhouette, ignoring its resistance, and the Prone condition. The TN of this check is equal to your school rank.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 0,
+        "rank": 2,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "skill": "fitness",
+        "difficulty": "3",
+        "technique_type": "kata"
+      },
+      "folder": "eKn62n6zERrRUMNW",
+      "_id": "e4Y4QN1x48XVEuxO",
+      "sort": 1000000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Striking as Earth",
+      "type": "technique",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.aKTfAZXbHo77kHOq",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736757091,
+        "modifiedTime": 1766737173765,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "core_rulebook",
+          "page": 178
+        },
+        "description": "<p><span class=\"fontstyle0\"><em>After striking, the bushi roots themself to the ground, hunkering down to make sure their armor takes the brunt of a hit or raising a weapon in a warding position where it can deflect harm without being damaged.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Martial Arts [Melee, Ranged, or Unarmed] (earth) check, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(earth)(op)+: </span><span class=\"fontstyle3\">Treat your physical resistance as 1 higher per </span><span class=\"fontstyle4\">(op) </span><span class=\"fontstyle3\">spent this way until the beginning of your next turn.</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 0,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "earth",
+        "skill": "",
+        "difficulty": "",
+        "technique_type": "kata"
+      },
+      "folder": "eKn62n6zERrRUMNW",
+      "_id": "axnluRO4eKdw3qLs",
+      "sort": 500000,
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Sword Saint",
+      "type": "title",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/title.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.titles-l5r-sortilege.Item.L9FaEU81ejG2BoF8",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766736785631,
+        "modifiedTime": 1767405928217,
+        "lastModifiedBy": "MsVYyMuYlVaanYGX"
+      },
+      "system": {
+        "source_reference": {
+          "source": "fields_of_victory",
+          "page": 136
+        },
+        "description": "<p><span class=\"fontstyle0\">The kensei, or sword-saint, is a living master of the sword whose preternatural skills are hailed throughout the Empire. While </span><span class=\"fontstyle2\">kenshinzen </span><span class=\"fontstyle0\">duelists epitomize the highest level of </span><span class=\"fontstyle2\">iaidō</span><span class=\"fontstyle0\">, the sword-saint embodies the purest form of </span><span class=\"fontstyle2\">kenjutsu</span><span class=\"fontstyle0\">, or swordsmanship more broadly. To witness a single strike of a kensei is to experience a moment of spiritual clarity—their bond with their blade is considered sacred. A true sword-saint might come along once per generation, and past precedent maintains that only one person may bear the title at a given time. Students of the Heart of the Katana dōjō in Lion lands devote their lives to the sword with the hope of one day being anointed as a sword-saint.</span></p><p><span class=\"fontstyle3\"><strong>Assigned by:</strong> </span><span class=\"fontstyle0\">A clan champion or the Emperor. Alternately, the title can be assigned by an existing swordsaint who is slain by the character in an honorable duel to the death.</span></p><p><span class=\"fontstyle0\"><strong>Glory Award:</strong> </span><span class=\"fontstyle2\">+20 (to a maximum of 100)</span></p><p><span class=\"fontstyle0\"><strong>Title Ability:</strong> Invincible Blade</span></p><h2>Curriculum</h2><table><tbody><tr><td><p>Martial Arts [Melee]</p></td><td><p>Skill</p></td></tr><tr><td><p>Meditation</p></td><td><p>Skill</p></td></tr><tr><td><p>Smithing</p></td><td><p>Skill</p></td></tr><tr><td><p>Tactics</p></td><td><p>Skill</p></td></tr><tr><td><p><a class=\"compendium-link\" data-pack=\"l5r5e.core-techniques-kata\">(kata) Rank 1-5 Close Combat Kata</a> (prereq)</p></td><td><p>Tech. Grp.</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-kata.Item.L5RCoreKat000006\" data-pack=\"l5r5e.core-techniques-kata\" data-type=\"Item\" data-id=\"L5RCoreKat000006\">(kata) Soul Sunder</a> (prereq)</p></td><td><p>Technique</p></td></tr><tr><td><p><a class=\"entity-link content-link\" draggable=\"true\" data-link=\"\" data-uuid=\"Compendium.l5r5e.core-techniques-shuji.Item.L5RCoreShu000087\" data-pack=\"l5r5e.core-techniques-shuji\" data-type=\"Item\" data-id=\"L5RCoreShu000087\">(shuji) Victory Without a Sword</a> (prereq)</p></td><td><p>Technique</p></td></tr></tbody></table>",
+        "parent_id": null,
+        "items": [
+          {
+            "_id": "YSWGIREH2LewuW3P",
+            "name": "Martial Arts [Melee] Advancement",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "pSrrXhF1GB8hLADY",
+                "actor_id": "Wc1j7VDOVXJDRqq9"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 4,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "melee"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 2,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.351",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.2",
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "pzs569dpJBfEsUWL",
+            "name": "Smithing Advancement",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "pSrrXhF1GB8hLADY",
+                "actor_id": "Wc1j7VDOVXJDRqq9"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 4,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "smithing"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 2,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.351",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.2",
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "UTg0u1HbJESNKwrV",
+            "name": "Tactics Advancement",
+            "type": "advancement",
+            "img": "systems/l5r5e/assets/icons/items/advancement.svg",
+            "system": {
+              "source_reference": {
+                "source": "",
+                "page": 0
+              },
+              "description": "",
+              "parent_id": {
+                "item_id": "pSrrXhF1GB8hLADY",
+                "actor_id": "Wc1j7VDOVXJDRqq9"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 4,
+              "xp_cost": 3,
+              "rank": 1,
+              "bought_at_rank": 1,
+              "ring": "void",
+              "advancement_type": "skill",
+              "skill": "tactics"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+              "default": 2,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.351",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.2",
+              "lastModifiedBy": null,
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "e7ZGnw4utT2JzoB0",
+            "name": "Iaijutsu Cut: Crossing Blade",
+            "type": "technique",
+            "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "core_rulebook",
+                "page": 179
+              },
+              "description": "<p><span class=\"fontstyle0\"><em>The bushi twists their scabbard outward as they draw, cutting horizontally to extend their reach.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack and Movement action using one sheathed Razor-Edged weapon, you may make a </span><span class=\"fontstyle2\">TN 2 Martial Arts [Melee] check </span><span class=\"fontstyle3\">targeting one character at range 1–2.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">You draw and ready the sheathed weapon in a one-handed grip. If you succeed, you deal physical damage to the target equal to the weapon’s deadliness plus your bonus successes.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle5\">(op)</span><span class=\"fontstyle3\">: Ready one other sheathed Razor-Edged weapon.</span><br style=\" font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; \"></p>",
+              "parent_id": {
+                "item_id": "pSrrXhF1GB8hLADY",
+                "actor_id": "Wc1j7VDOVXJDRqq9"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 2,
+              "bought_at_rank": 0,
+              "ring": "void",
+              "skill": "melee",
+              "difficulty": "2",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 3400000,
+            "ownership": {
+              "default": 2,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.350",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.1",
+              "createdTime": 1761147785394,
+              "modifiedTime": 1761252208887,
+              "lastModifiedBy": "7vKCnwOtrdD7lBip",
+              "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.e7Pxi0N0fpUsvcSK",
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "cnrKmmhtEpkzbWIk",
+            "name": "Iaijutsu Cut: Sword and Sheath",
+            "type": "technique",
+            "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "path_of_waves",
+                "page": 89
+              },
+              "description": "<p><span class=\"fontstyle0\"><em>Bashing your enemy with a sheathed blade is hardly a refined move, but it can give a fighter the space needed to free their blade. By striking, then pulling off the sheath in a single movement, the fighter also gives themself a second weapon: the sheath. Some rōnin</em></span><em> carr</em><span class=\"fontstyle0\"><em>y iron-shod sheaths for this very purpose.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">As an Attack and Movement action using a sheathed Razor-Edged weapon, you may make a </span><span class=\"fontstyle2\">TN 2 Martial Arts [Melee] check </span><span class=\"fontstyle3\">targeting one character at range 0–1.</span></p><p><span class=\"fontstyle2\"><strong>Effects:</strong> </span><span class=\"fontstyle3\">If you succeed, your target suffers 5 physical damage with deadliness 2, plus additional damage equal to your bonus successes. You draw and ready the sheathed weapon in a one-handed grip in one hand and its sheath (see page 112) in a one-handed grip in the other hand.</span></p><h4><span class=\"fontstyle4\">New Opportunities</span></h4><p><span class=\"fontstyle2\">(op)(op):</span><span class=\"fontstyle3\">If you succeed, your target suffers the Dazed condition.</span></p>",
+              "parent_id": {
+                "item_id": "pSrrXhF1GB8hLADY",
+                "actor_id": "Wc1j7VDOVXJDRqq9"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 2,
+              "bought_at_rank": 0,
+              "ring": "void",
+              "skill": "melee",
+              "difficulty": "2",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 1000000,
+            "ownership": {
+              "default": 2,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.350",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.1",
+              "createdTime": 1761147785394,
+              "modifiedTime": 1761252208887,
+              "lastModifiedBy": "7vKCnwOtrdD7lBip",
+              "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.pWzWtpovq2Ie37H2",
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "sEcO6TZ0B2FgsqUI",
+            "name": "Twin Streams Style",
+            "type": "technique",
+            "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "path_of_waves",
+                "page": 91
+              },
+              "description": "<p><span class=\"fontstyle0\"><em>Wielding two blades as a single instrument of violence, the fighter stabs into their foe with both points or drives home two simultaneous slashes. By presenting two threats simultaneously, the warrior makes it much harder to guard against either.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you perform an Attack action check using a sword or ax, if you have another readied weapon of the same category, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle4\">(op)(op)</span><span class=\"fontstyle2\">: </span><span class=\"fontstyle3\">If your target suffers a critical strike as a result of this check, increase its severity by the deadliness of your other readied weapon</span>.</p>",
+              "parent_id": {
+                "item_id": "pSrrXhF1GB8hLADY",
+                "actor_id": "Wc1j7VDOVXJDRqq9"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 3,
+              "bought_at_rank": 0,
+              "ring": "void",
+              "skill": "",
+              "difficulty": "",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 150000,
+            "ownership": {
+              "default": 2,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.350",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.1",
+              "createdTime": 1761147785394,
+              "modifiedTime": 1761252251373,
+              "lastModifiedBy": "7vKCnwOtrdD7lBip",
+              "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.e1sPXd2OJxgALQI5",
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          },
+          {
+            "_id": "hAov4WrDlbeQ2W23",
+            "name": "Spinning Blades Style",
+            "type": "technique",
+            "img": "systems/l5r5e/assets/icons/techs/kata.svg",
+            "system": {
+              "source_reference": {
+                "source": "core_rulebook",
+                "page": 180
+              },
+              "description": "<p><span class=\"fontstyle0\"><em>The biggest advantage of dual wielding does not usually stem from striking with two weapons simultaneously, largely because this is a very difficult feat. Instead, it comes from the fact that the warrior does not need to sacrifice defense while attacking or offense while defending. The off-hand blade can deflect and threaten even as the main-hand weapon attacks, or the bushi can strike with the offhand weapon while the main-hand weapon is locked with the foe’s blade. Either weapon can deliver death, and so the enemy must watch both at all times.</em></span></p><p><span class=\"fontstyle2\"><strong>Activation:</strong> </span><span class=\"fontstyle3\">When you make a Martial Arts [Melee] or Martial Arts [Unarmed] Attack action check, if you have a second readied weapon you did not use for the attack, you may spend (op) in the following way:</span></p><p><span class=\"fontstyle2\">(op)+: </span><span class=\"fontstyle3\">You must spend </span><span class=\"fontstyle4\"> </span><span class=\"fontstyle3\">equal to your target’s Vigilance to activate this technique. You use your second readied weapon against one target of your action, inflicting physical damage equal to its base damage. If that target is Dazed, increase this damage by your ranks in the skill you used for the check.</span></p>",
+              "parent_id": {
+                "item_id": "pSrrXhF1GB8hLADY",
+                "actor_id": "Wc1j7VDOVXJDRqq9"
+              },
+              "items": {},
+              "in_curriculum": true,
+              "xp_used": 3,
+              "xp_cost": 3,
+              "rank": 2,
+              "bought_at_rank": 0,
+              "ring": "void",
+              "skill": "",
+              "difficulty": "",
+              "technique_type": "kata"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 2900000,
+            "ownership": {
+              "default": 2,
+              "MsVYyMuYlVaanYGX": 3,
+              "NPvRK8MjCL8JNk4z": 3
+            },
+            "flags": {},
+            "_stats": {
+              "coreVersion": "13.350",
+              "systemId": "l5r5e",
+              "systemVersion": "1.13.1",
+              "createdTime": 1761147785394,
+              "modifiedTime": 1761252208887,
+              "lastModifiedBy": "7vKCnwOtrdD7lBip",
+              "compendiumSource": "Compendium.l5r5e-compendia-sortilege.techniques-kata-l5r-sortilege.Item.6Z6a7exSTuVxGxoV",
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          }
+        ],
+        "in_curriculum": false,
+        "xp_used": 24,
+        "xp_cost": 24,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancements": [],
+        "xp_used_total": 24
+      },
+      "folder": "CXZ7ea8BGXfeuwid",
+      "_id": "pSrrXhF1GB8hLADY",
+      "sort": 300000,
+      "ownership": {
+        "default": 2
+      }
+    },
+    {
+      "name": "Command +1 (0 -> 1)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/dices/default/skill_blank.svg",
+      "_id": "G46t4TvSDp4ysqGq",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": true,
+        "xp_used": 2,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "advancement_type": "skill",
+        "skill": "command"
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1766737351557,
+        "modifiedTime": 1766737355927,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Air +1 (2 -> 3)",
+      "type": "advancement",
+      "img": "systems/l5r5e/assets/icons/rings/air.svg",
+      "_id": "HjvUV1rIqNV5CRrG",
+      "system": {
+        "source_reference": {
+          "source": "",
+          "page": 0
+        },
+        "description": "",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 9,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "air",
+        "advancement_type": "ring",
+        "skill": ""
+      },
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767386953254,
+        "modifiedTime": 1767386956940,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Lover[Doji Shizue]",
+      "type": "bond",
+      "flags": {},
+      "img": "systems/l5r5e/assets/icons/items/bond.svg",
+      "effects": [],
+      "_stats": {
+        "compendiumSource": "Compendium.l5r5e-compendia-sortilege.bonds-l5r-sortilege.Item.0ofAosTXaaIfkqoE",
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "l5r5e",
+        "systemVersion": "1.13.2",
+        "createdTime": 1767387095658,
+        "modifiedTime": 1767387110196,
+        "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+      },
+      "system": {
+        "source_reference": {
+          "source": "court_of_stones",
+          "page": 137
+        },
+        "description": "<p><span class=\"fontstyle0\">Samurai are expected to place romantic love below their obligations to family and clan—but the human heart is not so easily confined. Many samurai who fall in love keep their relationship secret, while others are more overt. The following are suggested narrative effects for a character with a Lover bond:</span></p><ul><li><p><span class=\"fontstyle0\">- A lover seeks to spend time with you, writes letters to you, and is willing to assist you in ways that do not require publicly acknowledging your bond (giving you information key to pursuing a desired goal, encouraging you to pursue your personal interests, helping you to deal with emotions you usually must keep to yourself), and they expect you to do the same.</span></p></li><li><p><span class=\"fontstyle0\">Generally, your lover’s allies do not acknowledge your relationship. Some might be favorably disposed to you covertly if you make their ally happy (and unfavorably disposed if you make them unhappy), while others might be jealous of the attention you receive. Your lover’s enemies might target you to attempt to gain leverage over your lover.</span></p></li><li><p><span class=\"fontstyle0\">If your bond rank is 3 or higher, a lover is more overt about your relationship, allowing them to assist you more publicly (such as giving you letters of introduction to officials above your status, allowing you to use their name to pursue your goals, and even helping you directly), and they expect the same from you.</span></p></li></ul><p></p><p><span class=\"fontstyle3\"><strong>Bond Ability:</strong> With You, the Storm Subsides</span></p>",
+        "parent_id": null,
+        "items": [],
+        "in_curriculum": false,
+        "xp_used": 0,
+        "xp_cost": 3,
+        "rank": 1,
+        "bought_at_rank": 1,
+        "ring": "void",
+        "bond_type": "Lover"
+      },
+      "folder": null,
+      "_id": "pw10PNF0IyitLlCN",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "effects": [],
+  "folder": "3ujgEl2oYP8z9yA3",
+  "flags": {
+    "archivist-sync": {
+      "archivistId": "5eb8adf8d654442dbd0ffe987dfca193"
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "the-bushi-oni",
+      "uuid": "Actor.Wc1j7VDOVXJDRqq9",
+      "coreVersion": "13.351",
+      "systemId": "l5r5e",
+      "systemVersion": "1.13.2"
+    },
+    "coreVersion": "13.351",
+    "systemId": "l5r5e",
+    "systemVersion": "1.13.2",
+    "createdTime": 1764460645335,
+    "modifiedTime": 1767387134981,
+    "lastModifiedBy": "NPvRK8MjCL8JNk4z"
+  },
+  "ownership": {
+    "default": 2
+  }
+}
