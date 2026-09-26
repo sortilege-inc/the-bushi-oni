@@ -50,7 +50,8 @@ upstream change.
 present, no console errors; `/gm/` shows the gate, *Enter* opens the GM page with Adventure and Notes
 absent and the overview pane titled *The Bushi Oni*.
 
-**B3 — PROPOSED: where the GM's material lives, given a public repo and several players.**
+**B3 — (owner, 2026-09-26) the Portents way: the GM's material is the public `campaign/pack/seed.json`.**
+The owner chose it over the recommendation below, knowing the players can read it.
 Portents (solo) and Caul keep the GM's material in the public `campaign/pack/seed.json`. Here, three
 players at the table could read the solution — e.g. `reference/planning/Bushido_Oni_Campaign_Final.md`
 names who ordered the murders, who carried them out and who the maho-tsukai is — readable
@@ -61,12 +62,12 @@ through the Campaign pane's *Restore pack…*; the public repo carries only play
 Trade-off: a fresh browser does not self-seed — the GM restores the pack once per browser.
 Alternative: a public seed like Portents (simplest; the solution is readable by the players).
 
-**B4 — PROPOSED: the sources of truth.** Following B&OD O2: **Foundry for records** (the latest dated
+**B4 — (owner, 2026-09-26) the sources of truth.** Following B&OD O2: **Foundry for records** (the latest dated
 export of each PC; a live pull over the relay when the owner supplies a key), **the GM's planning
 documents for setting and the conspiracy**, **the Chronicle written by hand from the transcripts**
 (the Archivist pages are raw material only).
 
-**B5 — PROPOSED: who is a PC.** From *Bushi Oni Characters.md*: Kitsuki Hasumi, Isawa Endo, Bayushi
+**B5 — (owner, 2026-09-26) who is a PC.** From *Bushi Oni Characters.md*: Kitsuki Hasumi, Isawa Endo, Bayushi
 Taigen. Iuchi Reijun *left the campaign* (kept as an earlier version, not on the roster); Kitsune Yuma
 is a *backup character* (a PC version held in reserve). The six 2025-10-27 pregens become NPCs; which of them are secret is the GM's to mark in the pack.
 
@@ -75,9 +76,9 @@ is a *backup character* (a PC version held in reserve). The six 2025-10-27 prege
 | | What | Status |
 |---|---|---|
 | M0 | Support folder sorted; fork; boundary; standards; local proof | **landed** 2026-09-26 |
-| M1 | PCs into `campaign/dsl/` as `ACTOR Samurai` instances, converted from the Foundry exports by a script in `campaign/source/`, piloted on one PC and checked field by field (planted difference must fail), every version kept | waits on B4/B5 |
+| M1 | PCs into `campaign/dsl/` as `ACTOR Samurai` instances, converted from the Foundry exports by a script in `campaign/source/`, piloted on one PC and checked field by field (planted difference must fail), every version kept | next |
 | M2 | NPCs (the pregens, then the named cast) as full statblocks on the corpus's NPC type | after M1 |
-| M3 | GM material into the pack (overview, threads, places, people) by a deterministic converter + an independent every-word check | waits on B3 |
+| M3 | GM material into the pack (overview, threads, places, people) by a deterministic converter + an independent every-word check | after M2 |
 | M4 | Site tabs: home, Chronicle (sessions 2026-01-06, 01-20, 01-27, hand-written from the transcripts), Dramatis Personae from the layer, the Otosan Uchi map | after M1–M2 |
 | M5 | Deploy: Worker `the-bushi-oni`, Pages, a domain — each step confirmed with the owner | owner's go |
 
@@ -88,6 +89,7 @@ is a *backup character* (a PC version held in reserve). The six 2025-10-27 prege
   `reference/` rather than `sourcebooks/` (it is lore, not rules). Browser `(1)` duplicates of Foundry
   exports are different, older exports — each kept under its own file date, not overwritten.
 - 2026-09-26 — Dev ports 8749/8799 (free across every launch.json under `~/Sortilege` and `~/.claude`).
+- 2026-09-26 — Owner: B3 public seed, B4 and B5 as proposed, and the push (publishes the books' `data/`, as Portents does).
 - 2026-09-26 — `instance: null` until M1 — no empty stage scripts shipped.
 
 ## To resume
