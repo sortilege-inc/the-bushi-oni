@@ -158,7 +158,12 @@ https://the-bushi-oni.sortilege.workers.dev (version `b9d07e2e`), `ALLOWED_ORIGI
 `engine/config.js` names it. Proven with curl: POST /session from the github.io origin → 200 and a room code;
 GET /session/<code> → 200 `{"exists":true}`; POST from a foreign origin → 403 `origin not allowed`.
 `.nojekyll` added (Blood & Other Drugs: Jekyll dies on front matter). `main` fast-forwarded to `vtt-instance`;
-Pages from `main` at https://sortilege-inc.github.io/the-bushi-oni/. Redeploy the Worker after any upstream
+Pages from `main` at https://sortilege-inc.github.io/the-bushi-oni/ (build `built` for `6f5de39`, HTTPS enforced;
+default branch set to `main`). Live proof: `/`, `/gm/`, robots.txt, config, the docs, the seed, both layers and
+the books all 200 over HTTPS; in a fresh browser the site renders the campaign tabs with no console errors, `/gm/`
+shows the gate and self-seeds the GM tabs from the public pack, and *Start session* opened live room `ZJFTV`,
+which the Worker confirms (`GET /session/ZJFTV` → 200 `{"exists":true}`). The two-device proof is the owner's
+first session with a player. Redeploy the Worker after any upstream
 change to `engine/ops.js` or `system/l5r5e/ops.js`: `cd worker && npx wrangler deploy`.
 
 ## Decision log
