@@ -46,10 +46,10 @@ window.VttConfig = {
     },
   },
   // The Worker that holds player sessions. Served from localhost the app talks to
-  // `wrangler dev` (launch entry bushi-oni-worker); deployed, to the URL below. Empty = sessions
-  // disabled until the owner deploys (campaign/PLAN.md).
+  // `wrangler dev` (launch entry bushi-oni-worker); deployed, to the Worker `the-bushi-oni`
+  // (campaign/PLAN.md M5; ALLOWED_ORIGIN in worker/wrangler.jsonc is the github.io origin).
   worker: {
-    deployed: '',
+    deployed: 'https://the-bushi-oni.sortilege.workers.dev',
     local: 'http://localhost:8799',
   },
 };

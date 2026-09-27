@@ -80,7 +80,7 @@ is a *backup character* (a PC version held in reserve). The six 2025-10-27 prege
 | M2 | The six 2025-10-27 pregens as **GM characters**: full sheets like the PCs, in a layer (a book) of their own | **landed** 2026-09-26 |
 | M3 | GM material into the pack (overview, threads, places, people) by a deterministic converter + an independent every-word check | **landed** 2026-09-26 |
 | M4 | Site tabs: home, Chronicle (sessions 2026-01-06, 01-20, 01-27, hand-written from the transcripts), Dramatis Personae (the named cast — no statblocks exist for them), the Otosan Uchi map | **landed** 2026-09-26 |
-| M5 | Deploy: Worker `the-bushi-oni`, Pages, a domain — each step confirmed with the owner | owner's go |
+| M5 | Deploy: Worker `the-bushi-oni`, Pages at the default github.io address (owner, 2026-09-26) | **landed** 2026-09-26 |
 
 **M1 — the player characters (landed 2026-09-26).** `campaign/source/foundry/` holds the five Foundry
 exports byte for byte (`cmp` against the archive: identical). `convert_pcs.py` writes
@@ -152,6 +152,14 @@ The voice is the project skill `.claude/skills/rokugan-voice` (adapted from Port
   missing image → both named, exit 1). Browser (:8749): every tab renders with no console errors and no broken
   image; the map toggles (`#map/plan`), zooms and drags; home cards open each PC's sheet; Hasumi's live sheet
   on `/gm/` shows her portrait; at 375px no horizontal scroll; `#chronicle/session-two` lands clear of the header.
+
+**M5 — deployed (owner, 2026-09-26: "default, go ahead").** Worker `the-bushi-oni` →
+https://the-bushi-oni.sortilege.workers.dev (version `b9d07e2e`), `ALLOWED_ORIGIN` https://sortilege-inc.github.io;
+`engine/config.js` names it. Proven with curl: POST /session from the github.io origin → 200 and a room code;
+GET /session/<code> → 200 `{"exists":true}`; POST from a foreign origin → 403 `origin not allowed`.
+`.nojekyll` added (Blood & Other Drugs: Jekyll dies on front matter). `main` fast-forwarded to `vtt-instance`;
+Pages from `main` at https://sortilege-inc.github.io/the-bushi-oni/. Redeploy the Worker after any upstream
+change to `engine/ops.js` or `system/l5r5e/ops.js`: `cd worker && npx wrangler deploy`.
 
 ## Decision log
 
