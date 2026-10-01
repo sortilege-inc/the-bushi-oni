@@ -201,6 +201,9 @@ change to `engine/ops.js` or `system/l5r5e/ops.js`: `cd worker && npx wrangler d
   own blocks, then only skills, advantages, the rest of the gear and the biography folded; one GM-notes
   heading; versions oldest first. Client files only, so the Worker needs no redeploy. Proven headless
   through the real controls with Kitsuki Hasumi added as the GM page adds a PC: 13 of 13, 0 console errors.
+- 2026-10-01 — Upstream I21 merged (`3d1f7c0`): every technique on the live sheet. I20 had left the Techniques
+  block naming only those with a check of their own that were already loaded. Kitsuki Hasumi's 4 of 4 named,
+  headless, with 0 console errors.
 
 ## To resume
 
