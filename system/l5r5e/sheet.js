@@ -391,9 +391,10 @@ window.L5RSheet = (function () {
     return out;
   }
   // the books the sheet's advantages come from, loaded so their types and rings are known
+  // …and the techniques' books, so the Techniques block can name every one
   function ensureTraits(v) {
     const books = [];
-    TRAIT_LISTS.forEach((k) => (v[k] || []).forEach((n) => {
+    TRAIT_LISTS.concat(['Techniques']).forEach((k) => (v[k] || []).forEach((n) => {
       const names = namesOf(n);
       if (names.some((x) => D.named(x))) return;
       names.forEach((x) => D.recordNamed(x).forEach((r) => !D.loaded(r.book) && books.indexOf(r.book) === -1 && books.push(r.book)));
@@ -599,7 +600,24 @@ window.L5RSheet = (function () {
     const rows = (v.Techniques || []).map((n) => {
       const e = D.named(String(n)) || D.named(bare(n));
       const a = e && activation(e);
-      if (!a) return null;
+      // a technique with no check of its own is still on the sheet: named, and read where it is printed
+      if (!a) {
+        const what = [e ? techniqueCategory(e) : null, e ? 'no check of its own' : 'not in a loaded book'].filter(Boolean).join(' · ');
+        if (compact) {
+          if (!e) return el('div', { class: 'tech-row' }, [el('span', { class: 'tech-name' }, [String(n)]), el('span', { class: 'muted small' }, [what])]);
+          const key = m.id + '|' + e.name;
+          const body = el('div', { class: 'tech-body' });
+          const fill = () => { if (!body.firstChild) body.appendChild(E.render(e, { bare: true })); };
+          const card = el('details', { class: 'tech-row tech-card', open: techOpen[key] || null }, [el('summary', {}, [el('span', { class: 'tech-name' }, [e.name]), el('span', { class: 'muted small' }, [what])]), body]);
+          if (techOpen[key]) fill();
+          card.addEventListener('toggle', () => { techOpen[key] = card.open; if (card.open) fill(); });
+          return card;
+        }
+        return el('div', { class: 'tech-row' }, [
+          e && window.L5ROpenEntity ? el('button', { class: 'ref', type: 'button', title: 'Read it in the Inspector', onclick: () => window.L5ROpenEntity(e.id) }, [e.name]) : el('span', {}, [e ? e.name : String(n)]),
+          el('span', { class: 'muted small' }, [what]),
+        ]);
+      }
       const used = a.limit ? usesOf(m, e.name, a.limit) : 0;
       const spent = a.limit && used >= 1;
       const cat = techniqueCategory(e);
