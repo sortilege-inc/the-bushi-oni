@@ -1245,9 +1245,12 @@ window.L5RSheet = (function () {
   // source entity id; or the member's own `portrait`), the clan mon from the art, and the deficient
   // ring marked — the ring of an Elemental Deficiency the character holds.
   const portraitOf = (m, v) => m.portrait || ((window.L5RPortraits || {})[(v._source || {}).id]) || null;
+  // the mon art build/build_art.sh ships (assets/art/mon/); a minor clan (Dragonfly, Mantis, Fox…) has
+  // none, and asking for it anyway logs a 404 on every sheet of that clan
+  const MONS = ['crab', 'crane', 'dragon', 'imperial', 'lion', 'phoenix', 'scorpion', 'unicorn'];
   function monOf(v) {
     const clan = String(v.Clan || '').replace(/\s+Clan$/, '').trim().toLowerCase();
-    return clan ? el('img', { class: 'mon', src: 'assets/art/mon/' + clan + '.svg', alt: v.Clan + ' mon', title: v.Clan, onerror: (ev) => ev.target.remove() }) : null;
+    return MONS.indexOf(clan) !== -1 ? el('img', { class: 'mon', src: 'assets/art/mon/' + clan + '.svg', alt: v.Clan + ' mon', title: v.Clan, onerror: (ev) => ev.target.remove() }) : null;
   }
   const deficientRings = (v) => traits(v).filter((t) => t.type === 'Adversity' && /^Elemental Deficiency\b/.test(t.name) && t.ring).map((t) => t.ring);
   function header(m, v, extra, compact) {
