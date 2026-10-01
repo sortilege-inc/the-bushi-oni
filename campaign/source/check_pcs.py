@@ -92,8 +92,24 @@ def plain(n):
         return ALIAS[n]
     if n in ('Ally [Name]', 'Shadowlands Taint (Air)', 'Stalked by [Creature]'):   # corpus entities whose names carry the brackets
         return n
+    # corpus entities whose names carry the colon: each Iaijutsu Cut is its own kata (core p.
+    # techniques; Path of Waves), held through Taigen's Sword Saint title
+    if n in ('Iaijutsu Cut: Crossing Blade', 'Iaijutsu Cut: Sword and Sheath'):
+        return n
     n = re.sub(r'\s*(\([^)]*\)|\[[^\]]*\])$', '', n).split(':')[0].strip()
     return ALIAS.get(n, n)
+
+
+def held(items):
+    """Every item the character holds, a title's own items after it: a technique bought through a
+    title lives in that title's `system.items`, not at the top level (Taigen's Sword Saint kata, Kaede's
+    Gunsō techniques). Fragile Peace's M4 found the same blind spot in this check's sibling."""
+    for i in items:
+        yield i
+        if i['type'] == 'title':
+            subs = (i.get('system') or {}).get('items') or []
+            for j in (subs.values() if isinstance(subs, dict) else subs):
+                yield j
 
 
 def compare(label, name, d, P, archived=None):
@@ -128,14 +144,14 @@ def compare(label, name, d, P, archived=None):
     nz = sorted((k, v) for g in s['skills'].values() for k, v in g.items() if v)
     got = sorted((re.sub(r'^Martial Arts \[(\w+)\]$', lambda m: m.group(1).lower(), x.rsplit(' ', 1)[0]).lower(), int(x.rsplit(' ', 1)[1])) for x in P.get('Skills') or [])
     eq('skills (every non-zero rank)', nz, got)
-    eq('techniques (less the school/title ability)', [plain(i['name']) for i in items if i['type'] == 'technique' and i['system'].get('technique_type') not in COMES_WITH], P.get('Techniques'))
+    eq('techniques, a title\'s own included (less the school/title ability)', [plain(i['name']) for i in held(items) if i['type'] == 'technique' and i['system'].get('technique_type') not in COMES_WITH], P.get('Techniques'))
     eq('peculiarities: distinction + passion', [plain(i['name']) for i in items if i['type'] == 'peculiarity' and i['system']['peculiarity_type'] in ('distinction', 'passion')], P.get('Advantages'))
     eq('peculiarities: adversity + anxiety', [plain(i['name']) for i in items if i['type'] == 'peculiarity' and i['system']['peculiarity_type'] in ('adversity', 'anxiety')], P.get('Disadvantages'))
     eq('titles', [plain(i['name']) for i in items if i['type'] == 'title'], P.get('Titles', []))
     eq('bonds', [plain(i['name']) for i in items if i['type'] == 'bond'], P.get('Bonds', []))
     money = s.get('zeni') or 0
     eq('gear names + money', [i['name'] for i in items if i['type'] in ('weapon', 'armor', 'item')] + (['%d zeni' % money] if money else []), P.get('Equipment'))
-    eq('as recorded: every item (and school) name the corpus spells otherwise', [i['name'] for i in items if i['type'] in ('technique', 'peculiarity', 'title', 'bond') and i['system'].get('technique_type') not in COMES_WITH and plain(i['name']) != i['name'].replace('’', "'")] + ([idn['school']] if sch in SCHOOL_ALIAS else []), P.get('As Recorded', []))
+    eq('as recorded: every item (and school) name the corpus spells otherwise', [i['name'] for i in held(items) if i['type'] in ('technique', 'peculiarity', 'title', 'bond') and i['system'].get('technique_type') not in COMES_WITH and plain(i['name']) != i['name'].replace('’', "'")] + ([idn['school']] if sch in SCHOOL_ALIAS else []), P.get('As Recorded', []))
     eq('money koku/bu/zeni all 0 (an empty field counts as 0)', {'koku': 0, 'bu': 0, 'zeni': 0}, {k: (v or 0) for k, v in s['money'].items()})
     for key in ('description', 'notes'):
         # the rich text read here with the stdlib parser, not the converter's regex

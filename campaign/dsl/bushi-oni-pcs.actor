@@ -1,6 +1,6 @@
 EXTENSION "BushiOni_Characters" {
     NAME "The Bushi Oni — the player characters"
-    VERSION "0.1.1"
+    VERSION "0.1.2"
     SPEC_VERSION "0.5"
     RELEASE_DATE "2026-09-26"
     DEPENDS_ON "L5R5e_Core_Core"
@@ -98,7 +98,7 @@ EXTENSION "BushiOni_Characters" {
             ^"Ninjō" STRING "Start own minor family that trains bodyguards/duelist"
             ^"Giri" STRING "Bayushi Shoju his father and lord"
             ^"Skills" LIST OF STRING ["Design 1", "Smithing 2", "Fitness 1", "Martial Arts [Melee] 2", "Meditation 1", "Tactics 2", "Government 1", "Command 1", "Courtesy 1", "Skulduggery 1", "Survival 1"]
-            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#VZRaBoZ23jv6pba1NYHPZz ^"Lord Hida's Grip", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#VZRaBoZ23jv6pba1NYHPZz ^"Lord Hida's Grip", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #2tXet8vVinnG7L7B32pbGY ^"Iaijutsu Cut: Crossing Blade", #rGC5kRCakiyK2mNYqjOYEN ^"Iaijutsu Cut: Sword and Sheath", #gE63OOH83yIyx3C2cTqYwB ^"Twin Streams Style", #gRerY2G6BTUOWgV93Cb9pv ^"Spinning Blades Style"]
             ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#X4aKEEo9kO9CAtG5wU13EF ^"Ambidexterity", #RKCP6k4Ouo5L2MFH6DfuVc ^"Armament", #IUjREit0fjWPymZeJTXhtu ^"Blissful Betrothal", #esSp6Eof1QH3kxH40Z7DB7 ^"Blessed Lineage"]
             ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#cRNEv5Yf6iFJNfMMW2TrIu ^"Sworn Enemy", #uvpsuVnY4JkM1RXBkGZHrk ^"Fear of Poison"]
             ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#6SoUaVJEHdot0Vn4b1NSoG ^"Sword-Saint"]
@@ -140,7 +140,7 @@ EXTENSION "BushiOni_Characters" {
             ^"Ninjō" STRING "Start own minor family that trains bodyguards"
             ^"Giri" STRING "Bayushi Shoju"
             ^"Skills" LIST OF STRING ["Design 1", "Fitness 1", "Martial Arts [Melee] 3", "Meditation 1", "Tactics 1", "Government 1", "Command 1", "Courtesy 3", "Skulduggery 1", "Survival 1"]
-            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#FpFKDUlzB1l3h8wu1zEcIH ^"Lord Shiba's Valor", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #YRrwJlgAyPpVIMmg9hKPC4 ^"Civility Foremost", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#FpFKDUlzB1l3h8wu1zEcIH ^"Lord Shiba's Valor", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #ahpgcTigitmTmFf8vWGMX1 ^"Lord Bayushi's Whispers", #bWzTE8wFpDe2NVPUtMENyC ^"Flowing Water Strike", #xPU8WmbyxLxC5CxRZEdt3b ^"Tea Ceremony", #2tXet8vVinnG7L7B32pbGY ^"Iaijutsu Cut: Crossing Blade", #YRrwJlgAyPpVIMmg9hKPC4 ^"Civility Foremost", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth"]
             ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#oycJDCftm6tryL6yTaEDpK ^"Keen Hearing", #Uhp9T4WVNNW8fMxAIIZiNJ ^"Ancestry", #IUjREit0fjWPymZeJTXhtu ^"Blissful Betrothal"]
             ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#sZTondTDTcxo5Pf6edk1E2 ^"Horrible Scar", #AVhLvrn9JkweqLTdUEw5Xd ^"Dark Secret"]
             ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#t3wbGE4jkSR9YWSCAjhyRk ^"Kenshinzen", #8L56PqWyoquPGtIJVM4lXO ^"Yojimbo"]
@@ -154,7 +154,7 @@ EXTENSION "BushiOni_Characters" {
             ^"Notes" STRING "Dark Secret [In love with Doji Shizune after a long tryst]"
             ^"Strife" INTEGER 0
             ^"Fatigue" INTEGER 0
-            ^"As Recorded" LIST OF STRING ["Lord Shiba’s Valor (Phoenix)", "Dark Secret (In love with Doji Shizue)", "Blissful Betrothal: Ikoma Tsanuri"]
+            ^"As Recorded" LIST OF STRING ["Lord Shiba’s Valor (Phoenix)", "Dark Secret (In love with Doji Shizue)", "Blissful Betrothal: Ikoma Tsanuri", "Lord Bayushi’s Whispers (Scorpion)"]
         }
     }
 
@@ -181,7 +181,7 @@ EXTENSION "BushiOni_Characters" {
             ^"Ninjō" STRING "Found a minor family with a bushi/guardian school"
             ^"Giri" STRING "Kitsune Gohei"
             ^"Skills" LIST OF STRING ["Smithing 2", "Fitness 2", "Martial Arts [Melee] 3", "Tactics 1", "Sentiment 1", "Theology 2", "Command 1", "Courtesy 1", "Survival 1"]
-            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#FpFKDUlzB1l3h8wu1zEcIH ^"Lord Shiba's Valor", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #LbBFOkWe8dv3afzuxUGsgA ^"Trip the Leg"]
+            ^"Techniques" LIST OF #L5R350fG9hI1jK3lM5nO7p ^"Technique" [#FpFKDUlzB1l3h8wu1zEcIH ^"Lord Shiba's Valor", #U5Y9ZuMONlY5eu2449bcxS ^"Striking as Earth", #LbBFOkWe8dv3afzuxUGsgA ^"Trip the Leg", #c4KvPwB5uGyV658OSHDJK9 ^"Great Anvil's Measure", #l2wYxPgu8jTyj5EdSlvmOM ^"Crescent Moon Style"]
             ^"Advantages" LIST OF #L5R263hI5jK7lM9nO1pQ3r ^"Advantage" [#cpDClG2BOTwUsHUek6aCfs ^"Ally [Name]", #RKCP6k4Ouo5L2MFH6DfuVc ^"Armament", #IUjREit0fjWPymZeJTXhtu ^"Blissful Betrothal"]
             ^"Disadvantages" LIST OF #L5R264sT6uV8wX0yZ2aB4c ^"Disadvantage" [#JXePzahyXOw9AgGqmF4cLa ^"Bluntness", #AVhLvrn9JkweqLTdUEw5Xd ^"Dark Secret"]
             ^"Titles" LIST OF #L5R463nO5pQ7rS9tU1vW3x ^"Title" [#8IECWrsBZ8OrNycFawg4JX ^"Elemental Legionnaire"]

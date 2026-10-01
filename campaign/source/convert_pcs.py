@@ -56,9 +56,9 @@ GM_SHEETS = [
 ]
 # (sheets, the .actor file, EXTENSION id, its NAME, what the file's header says)
 LAYERS = [
-    (SHEETS, 'campaign/dsl/bushi-oni-pcs.actor', 'BushiOni_Characters', 'The Bushi Oni — the player characters', '0.1.1',
+    (SHEETS, 'campaign/dsl/bushi-oni-pcs.actor', 'BushiOni_Characters', 'The Bushi Oni — the player characters', '0.1.2',
      'The task force: instances of the Samurai ACTOR in the corpus\'s pregen conventions.'),
-    (GM_SHEETS, 'campaign/dsl-gm/bushi-oni-gm-pcs.actor', 'BushiOni_GM_Characters', 'The Bushi Oni — the GM\'s characters', '0.1.0',
+    (GM_SHEETS, 'campaign/dsl-gm/bushi-oni-gm-pcs.actor', 'BushiOni_GM_Characters', 'The Bushi Oni — the GM\'s characters', '0.1.1',
      'The GM\'s characters — full sheets like the players\', kept in a layer (a book) of their own.'),
 ]
 
@@ -140,6 +140,21 @@ def fields(D, d, archived=False):
             else: raise Unresolved('%s: a peculiarity of no known kind (%s)' % (nm, k))
         elif t == 'title':
             h, cn = ref(D, 'title', nm); titles.append('%s ^"%s"' % (h, cn))
+            # the title's own As Recorded before its items', in the order the sheet holds them
+            if cn != nm.replace('\u2019', "'"):
+                recorded.append(nm)
+                cn = nm.replace('\u2019', "'")
+            # A technique bought through a title is the title's own item (`system.items`), not a
+            # top-level one — the character has it all the same (Taigen's Sword Saint kata, Kaede's
+            # Gunsō techniques). Its XP is already in the title's xp_used, so only the technique is
+            # taken; the title's advancements are skipped. (Fragile Peace F10 found the same gap.)
+            subs = si.get('items') or []
+            for sub in (subs.values() if isinstance(subs, dict) else subs):
+                if sub.get('type') != 'technique' or (sub.get('system') or {}).get('technique_type') in COMES_WITH:
+                    continue
+                sh, scn = ref(D, 'technique', sub['name']); techs.append('%s ^"%s"' % (sh, scn))
+                if scn != sub['name'].replace('\u2019', "'"):
+                    recorded.append(sub['name'])
         elif t == 'bond':
             h, cn = ref(D, 'bond', nm); bonds.append('%s ^"%s"' % (h, cn))
         elif t in GEAR:

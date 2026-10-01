@@ -204,6 +204,14 @@ change to `engine/ops.js` or `system/l5r5e/ops.js`: `cd worker && npx wrangler d
 - 2026-10-01 — Upstream I21 merged (`3d1f7c0`): every technique on the live sheet. I20 had left the Techniques
   block naming only those with a check of their own that were already loaded. Kitsuki Hasumi's 4 of 4 named,
   headless, with 0 console errors.
+- 2026-10-01 — **Techniques bought through a title, restored (owner: "fix the Bushi Oni bug").** Foundry keeps
+  them in the title's own `system.items`; `convert_pcs.py` read only the top level, and `check_pcs.py` did too,
+  so it passed them. Found by Fragile Peace's M4 (its F10) in the same code. 25 techniques were missing:
+  Taigen +4, and +4 more in his December version (Sword Saint, Kenshinzen, Yojimbo); Yuma +2 (Elemental
+  Legionnaire); and the GM characters Aarav +4, Kaede +4 (Gunsō), Yukiko +2, Kogo +1, Kunimichi +4. Both
+  scripts now read a title's own items. Against the old layers the new check fails 8 sheets (11 fields); after,
+  455 fields, 0 differ. `Iaijutsu Cut: Crossing Blade` and `: Sword and Sheath` keep their full names, being
+  corpus kata of their own. Layers 0.1.2 (players) and 0.1.1 (GM).
 
 ## To resume
 
