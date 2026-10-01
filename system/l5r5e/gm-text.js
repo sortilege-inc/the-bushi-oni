@@ -168,10 +168,11 @@ window.L5RGmText = (function () {
     draw();
   }
   // the sections of one list that are about someone (an entity id, a party member's name)
-  function aboutSections(where, key, redraw) {
+  // opts.bare: no heading, for a pane that has already given one
+  function aboutSections(where, key, redraw, opts) {
     const items = list(where).filter((x) => (x.about || []).indexOf(key) !== -1);
     if (!items.length) return null;
-    const box = el('div', { class: 'gm-about-block' }, [el('div', { class: 'prop-k' }, ['GM notes', el('span', { class: 'muted' }, [' · never sent to players'])])]);
+    const box = el('div', { class: 'gm-about-block' }, (opts || {}).bare ? [] : [el('div', { class: 'prop-k' }, ['GM notes', el('span', { class: 'muted' }, [' · never sent to players'])])]);
     items.forEach((x) => box.appendChild(sectionView(x, { redraw })));
     return box;
   }

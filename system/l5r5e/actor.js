@@ -148,6 +148,8 @@ window.L5RActor = (function () {
   function playTab(m, o) {
     const book = m.book;
     const wrap = el('div', { class: 'ac-play' });
+    // the live party sheet (system/l5r5e/sheet.js) draws these itself, with their controls
+    const skip = new Set(o.omit || []);
     if (!hasStat(m)) wrap.appendChild(el('p', { class: 'ac-meta ac-nostat' }, ['No statblock in the book — bio only.']));
     // the roll: a skill's (or a skill group's) click opens it set for that skill
     let roll = null;
@@ -161,20 +163,20 @@ window.L5RActor = (function () {
       wrap.appendChild(roll);
     }
     const ranks = m.ranks.combat != null || m.ranks.intrigue != null;
-    wrap.appendChild(el('div', { class: 'ac-typebar' }, [
+    if (!skip.has('type')) wrap.appendChild(el('div', { class: 'ac-typebar' }, [
       el('span', { class: 'ac-type' }, [m.kind + (m.category ? ' · ' + m.category : '')]),
       ranks ? el('span', { class: 'ac-ranks' }, [el('span', { class: 'ac-rk-lab' }, ['Conflict rank']),
         el('span', { class: 'ac-rk combat', title: 'Combat' }, ['⚔ ' + (m.ranks.combat == null ? '—' : m.ranks.combat)]),
         el('span', { class: 'ac-rk intrigue', title: 'Intrigue' }, ['❉ ' + (m.ranks.intrigue == null ? '—' : m.ranks.intrigue)])]) : null,
     ]));
-    if (m.ident.length) wrap.appendChild(el('p', { class: 'ac-ident' }, [m.ident.join(' · ')]));
+    if (m.ident.length && !skip.has('type')) wrap.appendChild(el('p', { class: 'ac-ident' }, [m.ident.join(' · ')]));
     if (m.description) wrap.appendChild(E.prose(m.description, 'ac-desc prose', book));
-    if (RINGS.some((r) => m.rings[r] != null)) {
+    if (RINGS.some((r) => m.rings[r] != null) && !skip.has('rings')) {
       wrap.appendChild(el('div', { class: 'ac-rings' }, RINGS.map((r) => el('div', { class: 'ac-ring ring-' + r.toLowerCase() + (o.stance === r ? ' stance' : '') }, [Dice.ringIcon(r), el('span', { class: 'ac-ring-nm' }, [r]), el('span', { class: 'ac-ring-v' }, [m.rings[r] == null ? '—' : String(m.rings[r])])]))));
     }
     const soc = m.social.filter((r) => r[1] != null);
     const per = m.personal.filter((r) => r[1] != null);
-    if (soc.length || per.length) wrap.appendChild(el('div', { class: 'ac-stats' }, [soc.length ? statCol('Societal', soc) : el('div'), per.length ? statCol('Personal', per) : el('div')]));
+    if ((soc.length || per.length) && !skip.has('stats')) wrap.appendChild(el('div', { class: 'ac-stats' }, [soc.length ? statCol('Societal', soc) : el('div'), per.length ? statCol('Personal', per) : el('div')]));
     if (m.demeanor || m.tnMods) wrap.appendChild(el('div', { class: 'ac-demeanor' }, [
       m.demeanor ? el('span', {}, [el('span', { class: 'ac-dm-lab' }, ['Demeanor']), E.span(plain(m.demeanor), book)]) : null,
       m.tnMods ? el('span', {}, [el('span', { class: 'ac-dm-lab' }, ['Social TN']), E.span(plain(m.tnMods), book)]) : null,
@@ -198,13 +200,17 @@ window.L5RActor = (function () {
       const col = (label, items) => el('div', { class: 'ac-adcol' }, [el('div', { class: 'ac-lab' }, [label])].concat(items.length ? items.map((x) => trait(x, book)) : [el('div', { class: 'ac-none' }, ['—'])]));
       wrap.appendChild(el('div', { class: 'ac-adv' }, [col('Advantages', m.advantages), col('Disadvantages', m.disadvantages)]));
     }
-    if (m.techniques.length) wrap.appendChild(el('div', {}, [el('div', { class: 'ac-h' }, ['Techniques']), el('div', { class: 'ac-techs' }, m.techniques.map((t) => el('span', { class: 'ac-tech' }, [link(t, book)])))]));
-    if (m.weapons.length || m.gear.length) {
-      wrap.appendChild(el('div', { class: 'ac-gear' }, [el('div', { class: 'ac-h' }, [m.weapons.length ? 'Favored weapons & gear' : 'Gear'])]
-        .concat(m.weapons.map((w) => weapon(w, book)))
+    if (m.techniques.length && !skip.has('techniques')) wrap.appendChild(el('div', {}, [el('div', { class: 'ac-h' }, ['Techniques']), el('div', { class: 'ac-techs' }, m.techniques.map((t) => el('span', { class: 'ac-tech' }, [link(t, book)])))]));
+    // o.carried: the names the live sheet's own weapons and armor already show
+    const carried = new Set((o.carried || []).map((x) => String(x).toLowerCase()));
+    const weapons = skip.has('weapons') ? [] : m.weapons;
+    const gear = m.gear.map(([k, items]) => [k, items.filter((x) => !carried.has(plain(String(x)).replace(/:.*$/, '').trim().toLowerCase()))]).filter(([, items]) => items.length);
+    if (weapons.length || gear.length) {
+      wrap.appendChild(el('div', { class: 'ac-gear' }, [el('div', { class: 'ac-h' }, [weapons.length ? 'Favored weapons & gear' : 'Gear'])]
+        .concat(weapons.map((w) => weapon(w, book)))
         // a short list reads as one line; items that carry their own profile ("Fists: Martial Arts
         // [Unarmed], Range 0, Damage 1") take a line each, as the weapons do
-        .concat(m.gear.map(([k, items]) => (items.some((x) => /:/.test(String(x)))
+        .concat(gear.map(([k, items]) => (items.some((x) => /:/.test(String(x)))
           ? el('div', { class: 'ac-gearlist' }, [el('span', { class: 'ac-gl-lab' }, [k])].concat(items.map((x) => weapon(x, book))))
           : el('p', { class: 'ac-gearline' }, [el('span', { class: 'ac-gl-lab' }, [k + ':']), ' '].concat(items.map((x, i) => [i ? ', ' : null, E.span(plain(x), book)]))))))));
     }
@@ -235,9 +241,18 @@ window.L5RActor = (function () {
   }
 
   // the sheet. opts: { tab: 'play'|'bio', roller: element|false, stance, actions: [elements] }
+  // { live: true } is the rest of the live party sheet, under its own header, trackers, techniques
+  // and gear: the skills, advantages and what else is carried, then the biography, folded
   function sheet(src, opts) {
     const o = opts || {};
     const m = src && src.ident ? src : of(src);
+    if (o.live) {
+      const host = el('div', { class: 'ac-sheet ac-live' });
+      host.appendChild(playTab(m, Object.assign({}, o, { omit: ['type', 'rings', 'stats', 'techniques', 'weapons'] })));
+      const bio = bioTab(m);
+      host.appendChild(el('details', { class: 'ac-fold' }, [el('summary', { class: 'ac-h' }, ['Biography & heart']), bio]));
+      return host;
+    }
     let tab = o.tab || (hasStat(m) ? tabPref() : 'bio');
     const host = el('div', { class: 'ac-sheet' });
     const body = el('div', { class: 'ac-body' });

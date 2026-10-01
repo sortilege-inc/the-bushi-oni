@@ -238,7 +238,7 @@
         container.appendChild(Sys().liveSheet(m));
         container.appendChild(el('div', { class: 'prop-k' }, ['GM notes', el('span', { class: 'muted' }, [' · never sent to players'])]));
         container.appendChild(el('textarea', { class: 'text', rows: 3, oninput: debounce((ev) => State.commit('setPartyNotes', [m.id, ev.target.value]), 400) }, [m.notes || '']));
-        const mine = window.L5RGmText && window.L5RGmText.aboutSections('pc', m.name, draw);
+        const mine = window.L5RGmText && window.L5RGmText.aboutSections('pc', m.name, draw, { bare: true });
         if (mine) container.appendChild(mine);
       } else container.appendChild(el('div', { class: 'empty' }, ['Nothing to show for ' + sel.kind + '.']));
     };

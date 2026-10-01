@@ -222,7 +222,7 @@ window.L5RSheet = (function () {
     const A = window.L5RActor;
     if (A && !onChange) {
       const o = opts || {};
-      return A.sheet(A.fromValues(v), { roller: false, onRoll: o.onRoll || null, stance: o.stance || null });
+      return A.sheet(A.fromValues(v), { roller: false, onRoll: o.onRoll || null, stance: o.stance || null, live: !!o.live, carried: o.carried || null });
     }
     return renderFields(v, onChange, opts);
   }
@@ -713,6 +713,8 @@ window.L5RSheet = (function () {
     return all.filter((w, i) => all.findIndex((x) => norm(x.name) === norm(w.name)) === i);   // the sheet's own profile before the book's unarmed one
   }
   const armorFor = (v) => carried(v, kids('Armor'));
+  // what the gear block lists, so the rest of the sheet need not list it again
+  const carriedNames = (v) => weaponsFor(v).filter((w) => !w.unarmed).map((w) => w.name).concat(armorFor(v).map((e) => e.name));
   function grips(e) {
     const g = e && D.text(e, 'Grips');
     return g ? g.split(/;\s*/).map((x) => { const mm = /^([^:]+):\s*(.*)$/.exec(x.trim()); return mm ? { name: mm[1].trim(), text: mm[2].trim(), damage: parseInt((/Damage \+(\d+)/.exec(mm[2]) || [0, 0])[1], 10), deadliness: parseInt((/Deadliness \+(\d+)/.exec(mm[2]) || [0, 0])[1], 10) } : null; }).filter(Boolean) : [];
@@ -1196,7 +1198,11 @@ window.L5RSheet = (function () {
   // in place of the live sheet (a local view — the party member does not change). Archiving is an
   // op (system/l5r5e/ops.js), so the room keeps it with the member.
   const viewing = {};
-  const versionsOf = (m) => m.versions || [];
+  // oldest first, by the date each was archived ("2026-09-23" or "23 Sep 2026"); one with no
+  // readable date keeps its place among the others at the end
+  const dateOf = (x) => { const t = Date.parse(x && x.date); return isNaN(t) ? null : t; };
+  const versionsOf = (m) => (m.versions || []).map((x, i) => [x, i, dateOf(x)])
+    .sort((a, b) => (a[2] != null && b[2] != null ? a[2] - b[2] : a[2] != null ? -1 : b[2] != null ? 1 : 0) || a[1] - b[1]).map((p) => p[0]);
   function archive(m) {
     const mm = memberNow(m.id, m);
     const n = versionsOf(mm).length + 1;
@@ -1254,7 +1260,7 @@ window.L5RSheet = (function () {
       box.appendChild(conditionsBlock(am, true));
       box.appendChild(socialBlock(am, true));
       box.appendChild(xpBlock(am, true));
-      box.appendChild(render(Object.assign({}, av, { Honor: current(am, 'Honor'), Glory: current(am, 'Glory'), Status: current(am, 'Status') }), null, { stance: (ver.live || {}).stance }));
+      box.appendChild(render(Object.assign({}, av, { Honor: current(am, 'Honor'), Glory: current(am, 'Glory'), Status: current(am, 'Status') }), null, { stance: (ver.live || {}).stance, live: true, carried: carriedNames(av) }));
       return box;
     }
     const v = complete(m.character || {});
@@ -1285,7 +1291,8 @@ window.L5RSheet = (function () {
     if (roller.refresh) roller.refresh();
     add(roller, 'roll');
     const onRoll = (skill, rank) => roller.set({ skill, skillRank: rank });
-    add(render(Object.assign({}, v, { Honor: current(m, 'Honor'), Glory: current(m, 'Glory'), Status: current(m, 'Status') }), null, { onRoll, stance: lv.stance, compact: cp }), 'sheet');
+    // the rest of the sheet: what the blocks above do not already show (system/l5r5e/actor.js)
+    add(render(Object.assign({}, v, { Honor: current(m, 'Honor'), Glory: current(m, 'Glory'), Status: current(m, 'Status') }), null, { onRoll, stance: lv.stance, compact: cp, live: true, carried: carriedNames(v) }), 'sheet');
     const rollLog = el('div', { class: 'roll-log' });
     // the player's page: their rolls only (the trackers already show what an event changed)
     (cp ? logOf(m).filter((x) => x.kind === 'roll').slice(-5) : logOf(m).slice(-8)).reverse().forEach((x) => rollLog.appendChild(Dice.logLine(x, { compact: cp })));
