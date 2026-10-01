@@ -196,6 +196,11 @@ change to `engine/ops.js` or `system/l5r5e/ops.js`: `cd worker && npx wrangler d
 - 2026-09-26 — M4 art: portraits and both maps are the archive's own files. Some portraits are published card
   art (Aramoro, Kachiko, Dairu, Shoju, Satoshi, Shizue) and both maps are the owner's stitched scans of the
   published Otosan Uchi map and poster — published on a public site, like the books' text (owner's B3/push).
+- 2026-10-01 — Upstream I20 merged (owner: "merge the fix into the Bushi Oni instance too"): the GM
+  Inspector's party sheet without its duplicated blocks (`f39afa9`, Portents' decision 80): the live sheet's
+  own blocks, then only skills, advantages, the rest of the gear and the biography folded; one GM-notes
+  heading; versions oldest first. Client files only, so the Worker needs no redeploy. Proven headless
+  through the real controls with Kitsuki Hasumi added as the GM page adds a PC: 13 of 13, 0 console errors.
 
 ## To resume
 
