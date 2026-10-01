@@ -215,7 +215,18 @@ window.L5RSheet = (function () {
     heart: ['Ninjō', 'Giri', 'Bushido', 'Demeanor'],
     lists: ['Techniques', 'Advantages', 'Disadvantages', 'Titles', 'Bonds', 'Equipment'],
   };
+  // Read-only, a character is drawn as an actor's sheet (system/l5r5e/actor.js — Portents &
+  // Fortunes' Dramatis Personae look); the field-by-field form below stays for editing and as
+  // the fallback where actor.js is not loaded.
   function render(v, onChange, opts) {
+    const A = window.L5RActor;
+    if (A && !onChange) {
+      const o = opts || {};
+      return A.sheet(A.fromValues(v), { roller: false, onRoll: o.onRoll || null, stance: o.stance || null });
+    }
+    return renderFields(v, onChange, opts);
+  }
+  function renderFields(v, onChange, opts) {
     const o = opts || {};
     const bare = !!o.compact && !onChange;   // the player's copy: what is on the sheet, no working, no blanks
     const S = spec();

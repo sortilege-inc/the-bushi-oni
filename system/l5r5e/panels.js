@@ -212,7 +212,8 @@
           // the wiki, for inspiration (system/l5r5e/lore.js), when the GM has a lore server
           window.L5RLore && window.L5RLore.configured() ? button('Find in lore', () => window.L5RLore.find(e.name), 'ghost tiny') : null,
         ]));
-        if (rings && rings.vk === 'def' && (rings.fields || []).some((f) => f.value !== undefined)) {
+        // an actor's skills roll from its sheet below; the bare roller is for anything else with rings
+        if (rings && rings.vk === 'def' && (rings.fields || []).some((f) => f.value !== undefined) && !(window.L5RActor && window.L5RActor.isActor(e))) {
           const r = npcRoller(e);
           const skills = [].concat(D.val(e, 'Skills') || []);
           container.appendChild(el('div', { class: 'inspector-roll' }, [
@@ -226,7 +227,11 @@
         if (e.type === 'NPC' || D.applies(e, 'NPC') || rings) container.appendChild(Sheet.npcConditionsBlock(e));
         const mine = window.L5RGmText && window.L5RGmText.aboutSections('people', e.id, draw);
         if (mine) container.appendChild(mine);
-        container.appendChild(el('div', { class: 'paper' }, [E.render(e)]));
+        // an actor reads as its sheet (system/l5r5e/actor.js), its skills rolling through the
+        // roller that logs to the table; anything else as the book prints it
+        const A = window.L5RActor;
+        if (A && A.isActor(e) && rings) container.appendChild(A.sheet(e, { roller: npcRoller(e) }));
+        else container.appendChild(el('div', { class: 'paper' }, [E.render(e)]));
       } else if (sel.kind === 'party') {
         const m = (S().party || []).find((x) => x.id === sel.id);
         if (!m) return container.appendChild(el('div', { class: 'empty' }, ['That character is no longer in the party.']));

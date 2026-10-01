@@ -76,7 +76,8 @@ window.VttSiteTabs = (function () {
     if (!bid) return renderShelf(container, ctx);
     const p = page(container);
     const meta = D.indexBook(bid);
-    after(p, bid, () => {
+    // an actor's sheet needs the core (the skill groups, the derived formulas)
+    after(p, bid === 'core' ? bid : [bid, 'core'], () => {
       const target = path[1] || null;
       const chFile = target && target.indexOf('ch:') === 0 ? target.slice(3) : null;
       const e = target && !chFile ? D.entity(target) : null;
@@ -95,7 +96,7 @@ window.VttSiteTabs = (function () {
           : chapterLink(bid, c, ctx, chFile === c.file)]);
       }))]);
       let body;
-      if (e) body = E.render(e);
+      if (e) body = A() && A().isActor(e) ? actorPage(e) : E.render(e);
       else if (chFile) body = chapterPage(bid, D.chapter(bid, chFile), ctx);
       else body = bookFront(bid, meta, ctx);
       p.appendChild(el('div', { class: 'reader' }, [toc, el('div', { class: 'site-reader' }, [body])]));
@@ -228,10 +229,33 @@ window.VttSiteTabs = (function () {
     });
   }
 
+  // ── actors: the sheet (system/l5r5e/actor.js), and below it the record as the book prints it ──
+  const A = () => window.L5RActor;
+  function actorPage(e, actions) {
+    return el('div', {}, [
+      A().sheet(e, { actions: actions || [] }),
+      el('details', { class: 'ac-record' }, [el('summary', { class: 'muted small' }, ['The record as the book prints it']), E.render(e)]),
+    ]);
+  }
+  // a card from a record's indexed fields: the roster draws without loading every book
+  function recordCard(r, href) {
+    const f = r.fields || {};
+    const n = A().splitName(r.name);
+    return A().card({ ident: [], name: n.name, epithet: n.epithet, kind: f.Type || (r.type === 'Samurai' ? 'Samurai' : r.type || 'NPC'), book: r.book,
+      ranks: { combat: f['Combat Conflict Rank'], intrigue: f['Intrigue Conflict Rank'] }, bio: [], description: null, portrait: typeof window.L5RActorPortrait === 'function' ? window.L5RActorPortrait(r.id, r.name) : null,
+      cardLine: [f.School, f.Clan].filter(Boolean).join(' · ') || f.Category || null }, href);
+  }
+
   // ── NPCs ───────────────────────────────────────────────────────────
   const npcState = { q: '' };
   function renderNpcs(container, path, ctx) {
     const p = page(container);
+    const one = path[0] && D.npcs().find((r) => r.id === path[0]);
+    if (one) {
+      p.appendChild(el('div', { class: 'crumbs' }, [el('a', { href: ctx.href('npcs', []) }, ['Non-player characters']), ' › ', one.name]));
+      after(p, one.book === 'core' ? one.book : [one.book, 'core'], () => p.appendChild(actorPage(D.entity(one.id), [el('a', { class: 'btn ghost tiny', href: '#book/' + encodeURIComponent(one.book) + '/' + encodeURIComponent(one.id) }, ['In the book'])])));
+      return;
+    }
     p.appendChild(el('h1', {}, ['Non-player characters']));
     const rows = D.npcs().map((r) => Object.assign({ t: (r.fields || {}).Type || '', cat: (r.fields || {}).Category || '' }, r));
     recordList(p, rows, {
@@ -241,13 +265,7 @@ window.VttSiteTabs = (function () {
         { key: 't', all: 'Adversaries and minions', values: (rs) => uniq(rs.map((r) => r.t)), get: (r) => r.t },
         { key: 'book', all: 'Every book', values: (rs) => uniq(rs.map((r) => r.book)), label: D.label, get: (r) => r.book },
       ],
-      draw: (hit) => el('table', { class: 'printed list' }, [
-        el('thead', {}, [el('tr', {}, [el('th', {}, ['Name']), el('th', {}, ['Type']), el('th', {}, ['Combat']), el('th', {}, ['Intrigue']), el('th', {}, ['Under']), el('th', {}, ['Book'])])]),
-        el('tbody', {}, hit.map((r) => el('tr', {}, [
-          el('td', {}, [openRow(r)]), el('td', {}, [r.t]), el('td', {}, [String((r.fields || {})['Combat Conflict Rank'] == null ? '' : r.fields['Combat Conflict Rank'])]),
-          el('td', {}, [String((r.fields || {})['Intrigue Conflict Rank'] == null ? '' : r.fields['Intrigue Conflict Rank'])]), el('td', { class: 'muted small' }, [r.cat || r.under || '']), el('td', { class: 'muted small' }, [D.label(r.book)]),
-        ]))),
-      ]),
+      draw: (hit) => el('div', { class: 'ac-cards' }, hit.map((r) => recordCard(r, ctx.href('npcs', [r.id])))),
     });
   }
 
@@ -259,7 +277,12 @@ window.VttSiteTabs = (function () {
     if (id) {
       const r = rows.find((x) => x.id === id);
       p.appendChild(el('div', { class: 'crumbs' }, [el('a', { href: ctx.href('characters', []) }, ['Pregenerated characters']), ' › ', r.name]));
-      after(p, r.book, () => p.appendChild(window.L5RSheet ? window.L5RSheet.fromEntityView(D.entity(id)) : E.render(D.entity(id))));
+      // the core first: the Samurai declaration, the skill groups and the formulas live there
+      after(p, r.book === 'core' ? r.book : [r.book, 'core'], () => {
+        const e = D.entity(id);
+        const S = window.L5RSheet;
+        p.appendChild(actorPage(e, S ? [button('Download the character file', () => S.download(S.fromEntity(e)), 'ghost tiny')] : []));
+      });
       return;
     }
     p.appendChild(el('h1', {}, ['Pregenerated characters']));
@@ -269,10 +292,7 @@ window.VttSiteTabs = (function () {
     const personas = D.records().filter((r) => r.type === 'Historical Persona');
     Object.keys(byBook).forEach((b) => {
       p.appendChild(el('h3', {}, [D.label(b)]));
-      p.appendChild(el('div', { class: 'shelf' }, byBook[b].map((r) => el('a', { class: 'shelf-book', href: ctx.href('characters', [r.id]) }, [
-        el('div', { class: 'shelf-title' }, [r.name]),
-        el('div', { class: 'muted small' }, [[(r.fields || {}).School, (r.fields || {}).Clan].filter(Boolean).join(' · ')]),
-      ]))));
+      p.appendChild(el('div', { class: 'ac-cards' }, byBook[b].map((r) => recordCard(r, ctx.href('characters', [r.id])))));
     });
     // Blood of the Lioness prints its Advisors as personas a player's own samurai takes on
     // for the vision of Part Two — an overlay, not a character (its .actor file says so)
