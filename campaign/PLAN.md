@@ -212,6 +212,9 @@ change to `engine/ops.js` or `system/l5r5e/ops.js`: `cd worker && npx wrangler d
   scripts now read a title's own items. Against the old layers the new check fails 8 sheets (11 fields); after,
   455 fields, 0 differ. `Iaijutsu Cut: Crossing Blade` and `: Sword and Sheath` keep their full names, being
   corpus kata of their own. Layers 0.1.2 (players) and 0.1.1 (GM).
+- 2026-10-01 — Upstream I22 merged: a clan's mon is asked for only where the art has one. Kitsune Yuma (Fox)
+  logged 404s on every draw before (headless, at `7329162`); none after. Taigen and Yuma show all their
+  techniques, 0 console errors.
 
 ## To resume
 
