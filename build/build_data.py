@@ -96,6 +96,11 @@ BOOKS = [
     {"id": "cresting-waves", "label": "Cresting Waves", "kind": "adventure", "prefix": "cresting-waves"},
     {"id": "deathly-turns", "label": "Deathly Turns", "kind": "adventure", "prefix": "deathly-turns"},
     {"id": "topaz-championship", "label": "The Topaz Championship", "kind": "adventure", "prefix": "topaz-championship"},
+    # The boxed Beginner Game: its rulebook, its cast, the Read This First sheet and the character
+    # folios. One product, so one book — the files split across two stems (beginner-game-… and
+    # beginner-rulebook…), which the single prefix "beginner" claims. Converted into the corpus
+    # 2026-10-02; the build refused until it was listed here, which is the gate doing its job.
+    {"id": "beginner-game", "label": "The L5R Beginner Game", "kind": "book", "prefix": "beginner"},
     {"id": "codex", "label": "The lore graph", "kind": "codex", "prefix": "codex"},
 ]
 DSL_EXTS = (".ttrpg", ".actor", ".arc", ".frame", ".codex")
